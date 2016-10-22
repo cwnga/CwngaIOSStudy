@@ -21,6 +21,8 @@
 		F705E08C1DBB715F0081CEED /* Ch2DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F705E0851DBB715F0081CEED /* Ch2DetailViewController.xib */; };
 		F705E08D1DBB715F0081CEED /* Ch2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F705E0871DBB715F0081CEED /* Ch2ViewController.m */; };
 		F705E08E1DBB715F0081CEED /* Ch2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F705E0881DBB715F0081CEED /* Ch2ViewController.xib */; };
+		F705E0931DBB7D070081CEED /* DynamicHeightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F705E0911DBB7D070081CEED /* DynamicHeightViewController.m */; };
+		F705E0941DBB7D070081CEED /* DynamicHeightViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F705E0921DBB7D070081CEED /* DynamicHeightViewController.xib */; };
 		F79D31EF1DBB69E400C63FF5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F79D31EE1DBB69E400C63FF5 /* main.m */; };
 		F79D31F21DBB69E400C63FF5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F79D31F11DBB69E400C63FF5 /* AppDelegate.m */; };
 		F79D31F51DBB69E400C63FF5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F79D31F41DBB69E400C63FF5 /* ViewController.m */; };
@@ -52,6 +54,9 @@
 		F705E0861DBB715F0081CEED /* Ch2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ch2ViewController.h; sourceTree = "<group>"; };
 		F705E0871DBB715F0081CEED /* Ch2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ch2ViewController.m; sourceTree = "<group>"; };
 		F705E0881DBB715F0081CEED /* Ch2ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Ch2ViewController.xib; sourceTree = "<group>"; };
+		F705E0901DBB7D070081CEED /* DynamicHeightViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicHeightViewController.h; sourceTree = "<group>"; };
+		F705E0911DBB7D070081CEED /* DynamicHeightViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicHeightViewController.m; sourceTree = "<group>"; };
+		F705E0921DBB7D070081CEED /* DynamicHeightViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DynamicHeightViewController.xib; sourceTree = "<group>"; };
 		F79D31EA1DBB69E400C63FF5 /* CwngaIOSStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CwngaIOSStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F79D31EE1DBB69E400C63FF5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F79D31F01DBB69E400C63FF5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -96,6 +101,7 @@
 		F705E0581DBB6B800081CEED /* Src */ = {
 			isa = PBXGroup;
 			children = (
+				F705E08F1DBB7CE60081CEED /* ADK */,
 				F705E07D1DBB715F0081CEED /* ReactiveCocoa */,
 				F705E0771DBB6E3A0081CEED /* Views */,
 				F705E0591DBB6B800081CEED /* Cells */,
@@ -156,6 +162,16 @@
 				F705E0881DBB715F0081CEED /* Ch2ViewController.xib */,
 			);
 			path = Ch2;
+			sourceTree = "<group>";
+		};
+		F705E08F1DBB7CE60081CEED /* ADK */ = {
+			isa = PBXGroup;
+			children = (
+				F705E0901DBB7D070081CEED /* DynamicHeightViewController.h */,
+				F705E0911DBB7D070081CEED /* DynamicHeightViewController.m */,
+				F705E0921DBB7D070081CEED /* DynamicHeightViewController.xib */,
+			);
+			path = ADK;
 			sourceTree = "<group>";
 		};
 		F79D31E11DBB69E300C63FF5 = {
@@ -265,6 +281,7 @@
 			files = (
 				F705E07C1DBB6E870081CEED /* TitleCollectionReusableView.xib in Resources */,
 				F705E08A1DBB715F0081CEED /* Ch1ViewController.xib in Resources */,
+				F705E0941DBB7D070081CEED /* DynamicHeightViewController.xib in Resources */,
 				F705E08E1DBB715F0081CEED /* Ch2ViewController.xib in Resources */,
 				F79D31FD1DBB69E400C63FF5 /* LaunchScreen.storyboard in Resources */,
 				F705E0761DBB6BE90081CEED /* ViewController.xib in Resources */,
@@ -340,6 +357,7 @@
 				F705E0891DBB715F0081CEED /* Ch1ViewController.m in Sources */,
 				F705E07B1DBB6E870081CEED /* TitleCollectionReusableView.m in Sources */,
 				F79D31EF1DBB69E400C63FF5 /* main.m in Sources */,
+				F705E0931DBB7D070081CEED /* DynamicHeightViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

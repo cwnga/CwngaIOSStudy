@@ -1,5 +1,14 @@
 # CwngaIOSStudy
 ## ADK
+### DynamicHeight Cell
+DynamicHeightViewController
+
+    CGSize preferredSize = CGSizeMake(self.collectionView.bounds.size.width, 0.0f);
+    CollectionViewCell *cell = (CollectionViewCell *)[[ADKNibCacheManager sharedInstance] instanceForNibNamed:CollectionViewCellIdentifier];
+    cell.titleLabel.text = [self stringWithMulti:indexPath.row];
+    CGSize size = [[ADKCellDynamicSizeCalculator sharedInstance] sizeForDynamicHeightCellInstance:cell preferredSize:preferredSize];
+    return size;
+
 
 ## ReactiveCocoaStudy
 ReactiveCocoaStudy
