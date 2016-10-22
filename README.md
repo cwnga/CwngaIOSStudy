@@ -15,6 +15,7 @@ DynamicTextViewHeightViewController
     ex:TextViewCollectionViewCell 
 
 code:
+
     @property (weak, nonatomic) IBOutlet NSLayoutConstraint *textViewHeightConstraint;
 
 - calculate text view height constraint ([cell.textView sizeThatFits:CGSizeMake(cell.textView.frame.size.width, FLT_MAX)];)
