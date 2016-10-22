@@ -28,10 +28,14 @@ static  NSString * const ReuseIdentifier = @"CollectionViewCell";
                                     @{
                                         @"title" : @"DynamicHeightViewController",
                                         @"className": @"DynamicHeightViewController"
-                                        }
-
+                                        },
+                                    @{
+                                        @"title" : @"DynamicTextViewHeightViewController",
+                                        @"className": @"DynamicTextViewHeightViewController"
+                                        },
                                     ],
                             },
+
                         @{
                             @"title": @"ReactiveCoCoa",
                             @"cells": @[

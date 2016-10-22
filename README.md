@@ -1,6 +1,6 @@
 # CwngaIOSStudy
 ## ADK
-### DynamicHeight Cell
+### DynamicHeight Cell(label)
 DynamicHeightViewController
 
     CGSize preferredSize = CGSizeMake(self.collectionView.bounds.size.width, 0.0f);
@@ -9,6 +9,26 @@ DynamicHeightViewController
     CGSize size = [[ADKCellDynamicSizeCalculator sharedInstance] sizeForDynamicHeightCellInstance:cell preferredSize:preferredSize];
     return size;
 
+### DynamicHeight Cell(textview)
+DynamicTextViewHeightViewController
+- cell text view add height constraint
+
+    ex:TextViewCollectionViewCell 
+
+    @property (weak, nonatomic) IBOutlet NSLayoutConstraint *textViewHeightConstraint;
+
+- calculate text view height constraint ([cell.textView sizeThatFits:CGSizeMake(cell.textView.frame.size.width, FLT_MAX)];)
+
+    CGSize textViewSize = [cell.textView sizeThatFits:CGSizeMake(cell.textView.frame.size.width, FLT_MAX)]; ///<NOTE set 
+
+    CGSize preferredSize = CGSizeMake(self.collectionView.bounds.size.width, 0.0f);
+    TextViewCollectionViewCell *cell = (TextViewCollectionViewCell *)[[ADKNibCacheManager sharedInstance] instanceForNibNamed:TextViewCollectionViewCellIndentifier];
+
+    cell.textView.text = [self stringWithMulti:indexPath.row];
+    CGSize textViewSize = [cell.textView sizeThatFits:CGSizeMake(cell.textView.frame.size.width, FLT_MAX)];
+
+    cell.textViewHeightConstraint.constant = textViewSize.height;
+    CGSize size = [[ADKCellDynamicSizeCalculator sharedInstance] sizeForDynamicHeightCellInstance:cell preferredSize:preferredSize];
 
 ## ReactiveCocoaStudy
 ReactiveCocoaStudy
