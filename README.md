@@ -12,15 +12,14 @@ DynamicHeightViewController
 ### DynamicHeight Cell(textview)
 DynamicTextViewHeightViewController
 - cell text view add height constraint
-
     ex:TextViewCollectionViewCell 
-
+code:
     @property (weak, nonatomic) IBOutlet NSLayoutConstraint *textViewHeightConstraint;
 
 - calculate text view height constraint ([cell.textView sizeThatFits:CGSizeMake(cell.textView.frame.size.width, FLT_MAX)];)
+code:
 
     CGSize textViewSize = [cell.textView sizeThatFits:CGSizeMake(cell.textView.frame.size.width, FLT_MAX)]; ///<NOTE set 
-
     CGSize preferredSize = CGSizeMake(self.collectionView.bounds.size.width, 0.0f);
     TextViewCollectionViewCell *cell = (TextViewCollectionViewCell *)[[ADKNibCacheManager sharedInstance] instanceForNibNamed:TextViewCollectionViewCellIndentifier];
 
