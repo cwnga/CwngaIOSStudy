@@ -1,0 +1,38 @@
+PODS:
+  - AppDevKit (1.0.2):
+    - AppDevKit/AppDevAnimateKit (= 1.0.2)
+    - AppDevKit/AppDevCommonKit (= 1.0.2)
+    - AppDevKit/AppDevImageKit (= 1.0.2)
+    - AppDevKit/AppDevListViewKit (= 1.0.2)
+    - AppDevKit/AppDevUIKit (= 1.0.2)
+  - AppDevKit/AppDevAnimateKit (1.0.2)
+  - AppDevKit/AppDevCommonKit (1.0.2)
+  - AppDevKit/AppDevImageKit (1.0.2):
+    - AppDevKit/AppDevCommonKit
+  - AppDevKit/AppDevListViewKit (1.0.2):
+    - AppDevKit/AppDevCommonKit
+    - AppDevKit/AppDevUIKit
+  - AppDevKit/AppDevUIKit (1.0.2):
+    - AppDevKit/AppDevCommonKit
+  - ReactiveCocoa (2.5):
+    - ReactiveCocoa/UI (= 2.5)
+  - ReactiveCocoa/Core (2.5):
+    - ReactiveCocoa/no-arc
+  - ReactiveCocoa/no-arc (2.5)
+  - ReactiveCocoa/UI (2.5):
+    - ReactiveCocoa/Core
+  - SDWebImage (3.8.2):
+    - SDWebImage/Core (= 3.8.2)
+  - SDWebImage/Core (3.8.2)
+
+DEPENDENCIES:
+  - AppDevKit
+  - ReactiveCocoa (~> 2.4)
+  - SDWebImage (~> 3.8)
+
+SPEC CHECKSUMS:
+  AppDevKit: b357311b0a4bfd3b9d5ab268e62081998aec884f
+  ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
+  SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
+
+COCOAPODS: 0.39.0
