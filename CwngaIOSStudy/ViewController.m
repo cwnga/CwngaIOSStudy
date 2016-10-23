@@ -22,36 +22,46 @@ static  NSString * const ReuseIdentifier = @"CollectionViewCell";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.data = @[      @{
-                            @"title": @"ADK",
-                            @"cells": @[
-                                    @{
-                                        @"title" : @"DynamicHeightViewController",
-                                        @"className": @"DynamicHeightViewController"
-                                        },
-                                    @{
-                                        @"title" : @"DynamicTextViewHeightViewController",
-                                        @"className": @"DynamicTextViewHeightViewController"
-                                        },
-                                    ],
-                            },
+    self.data = @[
+                  @{
+                      @"title": @"Algorithm",
+                      @"cells": @[
+                              @{
+                                  @"title" : @"Binary Tree Ordering",
+                                  @"className": @"BinaryTreeViewController"
+                                  },
+                              ],
+                      },
+                  @{
+                      @"title": @"ADK",
+                      @"cells": @[
+                              @{
+                                  @"title" : @"DynamicHeightViewController",
+                                  @"className": @"DynamicHeightViewController"
+                                  },
+                              @{
+                                  @"title" : @"DynamicTextViewHeightViewController",
+                                  @"className": @"DynamicTextViewHeightViewController"
+                                  },
+                              ],
+                      },
 
-                        @{
-                            @"title": @"ReactiveCoCoa",
-                            @"cells": @[
-                                    @{
-                                        @"title" : @"CH1",
-                                        @"className": @"Ch1ViewController"
-                                        },
-                                    @{
-                                        @"title" : @"CH2",
-                                        @"className": @"Ch2ViewController"
-                                        },
+                  @{
+                      @"title": @"ReactiveCoCoa",
+                      @"cells": @[
+                              @{
+                                  @"title" : @"CH1",
+                                  @"className": @"Ch1ViewController"
+                                  },
+                              @{
+                                  @"title" : @"CH2",
+                                  @"className": @"Ch2ViewController"
+                                  },
 
-                                    ]
+                              ]
 
-                            }
-                        ];
+                      }
+                  ];
     [self.collectionView registerNib:[UINib nibWithNibName:ReuseIdentifier bundle:nil] forCellWithReuseIdentifier:ReuseIdentifier];
 
     [self.collectionView registerNib:[UINib nibWithNibName:TitleCollectionReusableViewIdentifier bundle:nil] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:TitleCollectionReusableViewIdentifier];

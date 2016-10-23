@@ -27,6 +27,8 @@
 		F705E09F1DBB86C90081CEED /* DynamicHeightViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F705E09D1DBB86C90081CEED /* DynamicHeightViewController.xib */; };
 		F705E0A41DBB86F90081CEED /* DynamicTextViewHeightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F705E0A21DBB86F90081CEED /* DynamicTextViewHeightViewController.m */; };
 		F705E0A51DBB86F90081CEED /* DynamicTextViewHeightViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F705E0A31DBB86F90081CEED /* DynamicTextViewHeightViewController.xib */; };
+		F705E0AB1DBB97090081CEED /* BinaryTreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F705E0A91DBB97090081CEED /* BinaryTreeViewController.m */; };
+		F705E0AC1DBB97090081CEED /* BinaryTreeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F705E0AA1DBB97090081CEED /* BinaryTreeViewController.xib */; };
 		F79D31EF1DBB69E400C63FF5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F79D31EE1DBB69E400C63FF5 /* main.m */; };
 		F79D31F21DBB69E400C63FF5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F79D31F11DBB69E400C63FF5 /* AppDelegate.m */; };
 		F79D31F51DBB69E400C63FF5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F79D31F41DBB69E400C63FF5 /* ViewController.m */; };
@@ -67,6 +69,9 @@
 		F705E0A11DBB86F90081CEED /* DynamicTextViewHeightViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicTextViewHeightViewController.h; sourceTree = "<group>"; };
 		F705E0A21DBB86F90081CEED /* DynamicTextViewHeightViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicTextViewHeightViewController.m; sourceTree = "<group>"; };
 		F705E0A31DBB86F90081CEED /* DynamicTextViewHeightViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DynamicTextViewHeightViewController.xib; sourceTree = "<group>"; };
+		F705E0A81DBB97090081CEED /* BinaryTreeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BinaryTreeViewController.h; sourceTree = "<group>"; };
+		F705E0A91DBB97090081CEED /* BinaryTreeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BinaryTreeViewController.m; sourceTree = "<group>"; };
+		F705E0AA1DBB97090081CEED /* BinaryTreeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BinaryTreeViewController.xib; sourceTree = "<group>"; };
 		F79D31EA1DBB69E400C63FF5 /* CwngaIOSStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CwngaIOSStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F79D31EE1DBB69E400C63FF5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F79D31F01DBB69E400C63FF5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -111,6 +116,7 @@
 		F705E0581DBB6B800081CEED /* Src */ = {
 			isa = PBXGroup;
 			children = (
+				F705E0A61DBB96BD0081CEED /* Algorithm */,
 				F705E08F1DBB7CE60081CEED /* ADK */,
 				F705E07D1DBB715F0081CEED /* ReactiveCocoa */,
 				F705E0771DBB6E3A0081CEED /* Views */,
@@ -204,6 +210,24 @@
 				F705E0A31DBB86F90081CEED /* DynamicTextViewHeightViewController.xib */,
 			);
 			path = "Ch2-DynamicTextViewHeightViewController";
+			sourceTree = "<group>";
+		};
+		F705E0A61DBB96BD0081CEED /* Algorithm */ = {
+			isa = PBXGroup;
+			children = (
+				F705E0A71DBB96F10081CEED /* Ch1-Binary Tree */,
+			);
+			path = Algorithm;
+			sourceTree = "<group>";
+		};
+		F705E0A71DBB96F10081CEED /* Ch1-Binary Tree */ = {
+			isa = PBXGroup;
+			children = (
+				F705E0A81DBB97090081CEED /* BinaryTreeViewController.h */,
+				F705E0A91DBB97090081CEED /* BinaryTreeViewController.m */,
+				F705E0AA1DBB97090081CEED /* BinaryTreeViewController.xib */,
+			);
+			path = "Ch1-Binary Tree";
 			sourceTree = "<group>";
 		};
 		F79D31E11DBB69E300C63FF5 = {
@@ -322,6 +346,7 @@
 				F705E06E1DBB6B800081CEED /* ListingCollectionViewCell.xib in Resources */,
 				F705E08C1DBB715F0081CEED /* Ch2DetailViewController.xib in Resources */,
 				F79D31FA1DBB69E400C63FF5 /* Assets.xcassets in Resources */,
+				F705E0AC1DBB97090081CEED /* BinaryTreeViewController.xib in Resources */,
 				F705E06C1DBB6B800081CEED /* CollectionViewCell.xib in Resources */,
 				F79D31F81DBB69E400C63FF5 /* Main.storyboard in Resources */,
 			);
@@ -387,6 +412,7 @@
 				F705E09E1DBB86C90081CEED /* DynamicHeightViewController.m in Sources */,
 				F705E06D1DBB6B800081CEED /* ListingCollectionViewCell.m in Sources */,
 				F705E08B1DBB715F0081CEED /* Ch2DetailViewController.m in Sources */,
+				F705E0AB1DBB97090081CEED /* BinaryTreeViewController.m in Sources */,
 				F705E0A41DBB86F90081CEED /* DynamicTextViewHeightViewController.m in Sources */,
 				F705E08D1DBB715F0081CEED /* Ch2ViewController.m in Sources */,
 				F705E06B1DBB6B800081CEED /* CollectionViewCell.m in Sources */,

@@ -1,4 +1,78 @@
 # CwngaIOSStudy
+
+## Algorithm
+### Binary Tree Ordering
+
+node structure
+
+    @interface Node : NSObject
+    
+    @property (assign, nonatomic) CGFloat value;
+    @property (strong, nonatomic) Node *leftNode;
+    @property (strong, nonatomic) Node *rightNode;
+    
+    @end
+
+
+
+insert node
+
+    - (Node *)insertNewNode:(Node *)newNode withParentNode:(Node *)parentNode
+    {
+    
+        if (!parentNode) {
+            parentNode = newNode;
+    
+        } else {
+            if (newNode.value >= parentNode.value) {
+                if (parentNode.rightNode) {
+                    [self insertNewNode:newNode withParentNode:parentNode.rightNode];
+                } else {
+                    parentNode.rightNode = newNode;
+                }
+            } else {
+                if (parentNode.leftNode) {
+                    [self insertNewNode:newNode withParentNode:parentNode.leftNode];
+                } else {
+                    parentNode.leftNode = newNode;
+                }
+            }
+        }
+        return  parentNode;
+    }
+
+inorder, preorder, postorder
+
+    - (NSArray *)inOrder:(Node *)node array:(NSMutableArray *)array
+    {
+        if (node) {
+            [self inOrder:node.leftNode array:array];
+            [array addObject:node];
+            [self inOrder:node.rightNode array:array];
+        }
+        return nil;
+    }
+    
+    - (NSArray *)preOrder:(Node *)node array:(NSMutableArray *)array
+    {
+        if (node) {
+            [array addObject:node];
+            [self preOrder:node.leftNode array:array];
+            [self preOrder:node.rightNode array:array];
+        }
+        return nil;
+    }
+    - (NSArray *)postOrder:(Node *)node array:(NSMutableArray *)array
+    {
+        if (node) {
+            [self postOrder:node.leftNode array:array];
+    
+            [self postOrder:node.rightNode array:array];
+            [array addObject:node];
+        }
+        return nil;
+    }
+
 ## ADK
 ### DynamicHeight Cell(label)
 DynamicHeightViewController
