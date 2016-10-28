@@ -43,6 +43,10 @@ static  NSString * const ReuseIdentifier = @"CollectionViewCell";
                                   @"title" : @"DynamicTextViewHeightViewController",
                                   @"className": @"DynamicTextViewHeightViewController"
                                   },
+                              @{
+                                  @"title" : @"ADK Image Color",
+                                  @"className": @"ADKImageColorViewController"
+                                  },
                               ],
                       },
 
