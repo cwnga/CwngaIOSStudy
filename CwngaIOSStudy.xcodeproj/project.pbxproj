@@ -35,6 +35,8 @@
 		F79D31F81DBB69E400C63FF5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F79D31F61DBB69E400C63FF5 /* Main.storyboard */; };
 		F79D31FA1DBB69E400C63FF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F79D31F91DBB69E400C63FF5 /* Assets.xcassets */; };
 		F79D31FD1DBB69E400C63FF5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F79D31FB1DBB69E400C63FF5 /* LaunchScreen.storyboard */; };
+		F7BCA7621DC2EA6B00404F8E /* Ch3CombineLatestViewControlller.m in Sources */ = {isa = PBXBuildFile; fileRef = F7BCA7601DC2EA6B00404F8E /* Ch3CombineLatestViewControlller.m */; };
+		F7BCA7631DC2EA6B00404F8E /* Ch3CombineLatestViewControlller.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7BCA7611DC2EA6B00404F8E /* Ch3CombineLatestViewControlller.xib */; };
 		F7F21CCE1DC24E2000E94E8B /* ADKImageColorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7F21CCC1DC24E2000E94E8B /* ADKImageColorViewController.m */; };
 		F7F21CCF1DC24E2000E94E8B /* ADKImageColorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7F21CCD1DC24E2000E94E8B /* ADKImageColorViewController.xib */; };
 /* End PBXBuildFile section */
@@ -84,6 +86,9 @@
 		F79D31F91DBB69E400C63FF5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F79D31FC1DBB69E400C63FF5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F79D31FE1DBB69E400C63FF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7BCA75F1DC2EA6B00404F8E /* Ch3CombineLatestViewControlller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ch3CombineLatestViewControlller.h; sourceTree = "<group>"; };
+		F7BCA7601DC2EA6B00404F8E /* Ch3CombineLatestViewControlller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ch3CombineLatestViewControlller.m; sourceTree = "<group>"; };
+		F7BCA7611DC2EA6B00404F8E /* Ch3CombineLatestViewControlller.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Ch3CombineLatestViewControlller.xib; sourceTree = "<group>"; };
 		F7F21CCB1DC24E2000E94E8B /* ADKImageColorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADKImageColorViewController.h; sourceTree = "<group>"; };
 		F7F21CCC1DC24E2000E94E8B /* ADKImageColorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADKImageColorViewController.m; sourceTree = "<group>"; };
 		F7F21CCD1DC24E2000E94E8B /* ADKImageColorViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ADKImageColorViewController.xib; sourceTree = "<group>"; };
@@ -159,6 +164,7 @@
 		F705E07D1DBB715F0081CEED /* ReactiveCocoa */ = {
 			isa = PBXGroup;
 			children = (
+				F7BCA75E1DC2EA5C00404F8E /* Ch3-CombineLatest */,
 				F705E07E1DBB715F0081CEED /* Ch1 */,
 				F705E0821DBB715F0081CEED /* Ch2 */,
 			);
@@ -280,6 +286,16 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		F7BCA75E1DC2EA5C00404F8E /* Ch3-CombineLatest */ = {
+			isa = PBXGroup;
+			children = (
+				F7BCA75F1DC2EA6B00404F8E /* Ch3CombineLatestViewControlller.h */,
+				F7BCA7601DC2EA6B00404F8E /* Ch3CombineLatestViewControlller.m */,
+				F7BCA7611DC2EA6B00404F8E /* Ch3CombineLatestViewControlller.xib */,
+			);
+			path = "Ch3-CombineLatest";
+			sourceTree = "<group>";
+		};
 		F7F21CCA1DC24E0E00E94E8B /* Ch3-ADKImageColorViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -364,6 +380,7 @@
 				F79D31FA1DBB69E400C63FF5 /* Assets.xcassets in Resources */,
 				F705E0AC1DBB97090081CEED /* BinaryTreeViewController.xib in Resources */,
 				F7F21CCF1DC24E2000E94E8B /* ADKImageColorViewController.xib in Resources */,
+				F7BCA7631DC2EA6B00404F8E /* Ch3CombineLatestViewControlller.xib in Resources */,
 				F705E06C1DBB6B800081CEED /* CollectionViewCell.xib in Resources */,
 				F79D31F81DBB69E400C63FF5 /* Main.storyboard in Resources */,
 			);
@@ -427,6 +444,7 @@
 				F79D31F51DBB69E400C63FF5 /* ViewController.m in Sources */,
 				F79D31F21DBB69E400C63FF5 /* AppDelegate.m in Sources */,
 				F705E09E1DBB86C90081CEED /* DynamicHeightViewController.m in Sources */,
+				F7BCA7621DC2EA6B00404F8E /* Ch3CombineLatestViewControlller.m in Sources */,
 				F705E06D1DBB6B800081CEED /* ListingCollectionViewCell.m in Sources */,
 				F705E08B1DBB715F0081CEED /* Ch2DetailViewController.m in Sources */,
 				F7F21CCE1DC24E2000E94E8B /* ADKImageColorViewController.m in Sources */,

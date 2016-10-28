@@ -61,6 +61,11 @@ static  NSString * const ReuseIdentifier = @"CollectionViewCell";
                                   @"title" : @"CH2",
                                   @"className": @"Ch2ViewController"
                                   },
+                              //Ch3CombineLatest
+                              @{
+                                  @"title" : @"Ch3 - CombineLatest",
+                                  @"className": @"Ch3CombineLatestViewControlller"
+                                  },
 
                               ]
 
