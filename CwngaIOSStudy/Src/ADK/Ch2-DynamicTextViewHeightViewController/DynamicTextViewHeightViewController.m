@@ -67,6 +67,9 @@
         [string appendString:@"1234567890\n"];
     }
     [string appendString:@"----end----"];
+    if (multi == 0) {
+        string = [NSMutableString string];
+    }
     return [string copy];
 }
 @end

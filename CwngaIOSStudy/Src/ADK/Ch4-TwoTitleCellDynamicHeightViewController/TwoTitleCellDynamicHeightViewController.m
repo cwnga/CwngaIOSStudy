@@ -1,21 +1,20 @@
 //
-//  DynamicHeightViewController.m
+//  TwoTitleCellDynamicHeightViewController.m
 //  CwngaIOSStudy
 //
-//  Created by Anson Ng on 10/22/16.
+//  Created by Anson Ng on 10/31/16.
 //  Copyright © 2016 Yahoo! Inc. All rights reserved.
 //
 
-#import "DynamicHeightViewController.h"
-#import "CollectionViewCell.h"
+#import "TwoTitleCellDynamicHeightViewController.h"
 #import <AppDevKit.h>
-@interface DynamicHeightViewController () <UICollectionViewDelegate, UICollectionViewDataSource>
-
+#import "TwoLabelCollectionViewCell.h"
+@interface TwoTitleCellDynamicHeightViewController ()
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 
 @end
 
-@implementation DynamicHeightViewController
+@implementation TwoTitleCellDynamicHeightViewController
 
 - (void)viewDidLoad
 {
@@ -25,7 +24,7 @@
 }
 - (void)setupCollectionView
 {
-    [self.collectionView registerNib:[UINib nibWithNibName:CollectionViewCellIdentifier bundle:nil] forCellWithReuseIdentifier:CollectionViewCellIdentifier];
+    [self.collectionView registerNib:[UINib nibWithNibName:TwoLabelCollectionViewCellIdentifier bundle:nil] forCellWithReuseIdentifier:TwoLabelCollectionViewCellIdentifier];
 }
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
@@ -40,16 +39,18 @@
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    CollectionViewCell *cell = [self.collectionView dequeueReusableCellWithReuseIdentifier:CollectionViewCellIdentifier forIndexPath:indexPath];
+    TwoLabelCollectionViewCell *cell = [self.collectionView dequeueReusableCellWithReuseIdentifier:TwoLabelCollectionViewCellIdentifier forIndexPath:indexPath];
     cell.titleLabel.text = [self stringWithMulti:indexPath.row];
+    cell.subTitleLabel.text = [self stringWithMulti:indexPath.row -1];
     return cell;
 }
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     CGSize preferredSize = CGSizeMake(self.collectionView.bounds.size.width, 0.0f);
-    CollectionViewCell *cell = (CollectionViewCell *)[[ADKNibCacheManager sharedInstance] instanceForNibNamed:CollectionViewCellIdentifier];
+    TwoLabelCollectionViewCell *cell = (TwoLabelCollectionViewCell *)[[ADKNibCacheManager sharedInstance] instanceForNibNamed:TwoLabelCollectionViewCellIdentifier];
     cell.titleLabel.text = [self stringWithMulti:indexPath.row];
+    cell.subTitleLabel.text = [self stringWithMulti:indexPath.row -1];
     CGSize size = [[ADKCellDynamicSizeCalculator sharedInstance] sizeForDynamicHeightCellInstance:cell preferredSize:preferredSize];
     return size;
 }
@@ -57,7 +58,7 @@
 - (NSString *)stringWithMulti:(NSInteger)multi
 {
     NSMutableString *string = [NSMutableString string];
-    if (multi > 1) {
+    if (multi > 0) {
         [string appendString:@"----start---\n"];
         for (NSInteger i = 1; i <= multi; i++) {
             [string appendString:@"1234567890\n"];
@@ -66,4 +67,6 @@
     }
     return [string copy];
 }
+
+
 @end
