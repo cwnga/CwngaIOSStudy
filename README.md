@@ -75,8 +75,11 @@ inorder, preorder, postorder
 
 ## ADK
 ### DynamicHeight Cell(label)
+- NEED add view width constraint 
+    
 DynamicHeightViewController
 
+    cell.cellWidth.constant = collectionView.bounds.size.width; //width constraint
     CGSize preferredSize = CGSizeMake(self.collectionView.bounds.size.width, 0.0f);
     CollectionViewCell *cell = (CollectionViewCell *)[[ADKNibCacheManager sharedInstance] instanceForNibNamed:CollectionViewCellIdentifier];
     cell.titleLabel.text = [self stringWithMulti:indexPath.row];

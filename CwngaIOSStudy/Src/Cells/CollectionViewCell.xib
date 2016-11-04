@@ -15,6 +15,12 @@
                 <rect key="frame" x="0.0" y="0.0" width="288" height="50"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5fU-dk-6OS">
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="288" id="bnE-PB-2y7"/>
+                        </constraints>
+                    </view>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="74u-tQ-DXB">
                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                         <nil key="textColor"/>
@@ -25,12 +31,17 @@
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="74u-tQ-DXB" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="BtH-Y8-Hxo"/>
+                <constraint firstItem="5fU-dk-6OS" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="MG7-mh-NpS"/>
                 <constraint firstAttribute="trailing" secondItem="74u-tQ-DXB" secondAttribute="trailing" constant="10" id="Oun-1c-5Vv"/>
+                <constraint firstAttribute="trailing" secondItem="5fU-dk-6OS" secondAttribute="trailing" id="S5P-sO-OnU"/>
+                <constraint firstItem="5fU-dk-6OS" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="amm-xQ-xQB"/>
                 <constraint firstItem="74u-tQ-DXB" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="y6v-P0-D8s"/>
+                <constraint firstAttribute="bottom" secondItem="5fU-dk-6OS" secondAttribute="bottom" id="yqW-im-QLo"/>
                 <constraint firstAttribute="bottom" secondItem="74u-tQ-DXB" secondAttribute="bottom" id="z8T-IT-3ei"/>
             </constraints>
             <size key="customSize" width="288" height="50"/>
             <connections>
+                <outlet property="cellWidth" destination="bnE-PB-2y7" id="wej-Ed-BAw"/>
                 <outlet property="titleLabel" destination="74u-tQ-DXB" id="232-4H-Q1W"/>
             </connections>
             <point key="canvasLocation" x="153" y="141"/>

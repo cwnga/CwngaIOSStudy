@@ -10,5 +10,6 @@
 static NSString * const CollectionViewCellIdentifier = @"CollectionViewCell";
 @interface CollectionViewCell : UICollectionViewCell
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *cellWidth;
 
 @end

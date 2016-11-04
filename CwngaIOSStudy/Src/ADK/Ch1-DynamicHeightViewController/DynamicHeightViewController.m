@@ -49,6 +49,7 @@
 {
     CGSize preferredSize = CGSizeMake(self.collectionView.bounds.size.width, 0.0f);
     CollectionViewCell *cell = (CollectionViewCell *)[[ADKNibCacheManager sharedInstance] instanceForNibNamed:CollectionViewCellIdentifier];
+    cell.cellWidth.constant = collectionView.bounds.size.width;
     cell.titleLabel.text = [self stringWithMulti:indexPath.row];
     CGSize size = [[ADKCellDynamicSizeCalculator sharedInstance] sizeForDynamicHeightCellInstance:cell preferredSize:preferredSize];
     return size;
@@ -57,13 +58,13 @@
 - (NSString *)stringWithMulti:(NSInteger)multi
 {
     NSMutableString *string = [NSMutableString string];
-    if (multi > 1) {
-        [string appendString:@"----start---\n"];
+
+        [string appendString:@"----start---"];
         for (NSInteger i = 1; i <= multi; i++) {
-            [string appendString:@"1234567890\n"];
+            [string appendString:@"1234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890"];
         }
         [string appendString:@"----end----"];
-    }
+
     return [string copy];
 }
 @end
