@@ -34,6 +34,9 @@ https://leetcode.com/problems/decode-ways/
 ### Contains Duplicate III
 https://leetcode.com/problems/contains-duplicate-iii/
 
+### 3Sum
+https://leetcode.com/problems/3sum/
+
 
 
 
