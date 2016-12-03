@@ -36,7 +36,9 @@
 		F711934E1DC7300500683697 /* TwoTitleCellDynamicHeightViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F711934C1DC7300500683697 /* TwoTitleCellDynamicHeightViewController.xib */; };
 		F7749DF71DF2C8A40065F2D2 /* CwngaNode.m in Sources */ = {isa = PBXBuildFile; fileRef = F7749DF61DF2C8A40065F2D2 /* CwngaNode.m */; };
 		F7749DFB1DF2C9970065F2D2 /* ReverseWordsInAString.m in Sources */ = {isa = PBXBuildFile; fileRef = F7749DFA1DF2C9970065F2D2 /* ReverseWordsInAString.m */; };
-		F7749DFE1DF2CAA30065F2D2 /* ReverseWordsInAStringSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = F7749DFD1DF2CAA30065F2D2 /* ReverseWordsInAStringSpec.m */; };
+		F7749E011DF2D11D0065F2D2 /* DecodeWays.m in Sources */ = {isa = PBXBuildFile; fileRef = F7749E001DF2D11D0065F2D2 /* DecodeWays.m */; };
+		F7749E071DF2E3720065F2D2 /* DecodeWaysSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = F7749E051DF2E3720065F2D2 /* DecodeWaysSpec.m */; };
+		F7749E081DF2E3720065F2D2 /* ReverseWordsInAStringSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = F7749E061DF2E3720065F2D2 /* ReverseWordsInAStringSpec.m */; };
 		F782BE9D1DD9546600B6B63F /* ADKCollectionViewDynamicSizeSubCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F782BE9B1DD9546600B6B63F /* ADKCollectionViewDynamicSizeSubCell.m */; };
 		F782BE9E1DD9546600B6B63F /* ADKCollectionViewDynamicSizeSubCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F782BE9C1DD9546600B6B63F /* ADKCollectionViewDynamicSizeSubCell.xib */; };
 		F782BEA71DD9558500B6B63F /* DynamicLeftRightLabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F782BEA51DD9558500B6B63F /* DynamicLeftRightLabelViewController.m */; };
@@ -111,7 +113,10 @@
 		F7749DF61DF2C8A40065F2D2 /* CwngaNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CwngaNode.m; sourceTree = "<group>"; };
 		F7749DF91DF2C9970065F2D2 /* ReverseWordsInAString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReverseWordsInAString.h; sourceTree = "<group>"; };
 		F7749DFA1DF2C9970065F2D2 /* ReverseWordsInAString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReverseWordsInAString.m; sourceTree = "<group>"; };
-		F7749DFD1DF2CAA30065F2D2 /* ReverseWordsInAStringSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReverseWordsInAStringSpec.m; sourceTree = "<group>"; };
+		F7749DFF1DF2D11D0065F2D2 /* DecodeWays.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DecodeWays.h; sourceTree = "<group>"; };
+		F7749E001DF2D11D0065F2D2 /* DecodeWays.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DecodeWays.m; sourceTree = "<group>"; };
+		F7749E051DF2E3720065F2D2 /* DecodeWaysSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DecodeWaysSpec.m; sourceTree = "<group>"; };
+		F7749E061DF2E3720065F2D2 /* ReverseWordsInAStringSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReverseWordsInAStringSpec.m; sourceTree = "<group>"; };
 		F782BE9A1DD9546600B6B63F /* ADKCollectionViewDynamicSizeSubCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADKCollectionViewDynamicSizeSubCell.h; sourceTree = "<group>"; };
 		F782BE9B1DD9546600B6B63F /* ADKCollectionViewDynamicSizeSubCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADKCollectionViewDynamicSizeSubCell.m; sourceTree = "<group>"; };
 		F782BE9C1DD9546600B6B63F /* ADKCollectionViewDynamicSizeSubCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ADKCollectionViewDynamicSizeSubCell.xib; sourceTree = "<group>"; };
@@ -331,16 +336,19 @@
 			children = (
 				F7749DF91DF2C9970065F2D2 /* ReverseWordsInAString.h */,
 				F7749DFA1DF2C9970065F2D2 /* ReverseWordsInAString.m */,
+				F7749DFF1DF2D11D0065F2D2 /* DecodeWays.h */,
+				F7749E001DF2D11D0065F2D2 /* DecodeWays.m */,
 			);
 			path = Leetcode;
 			sourceTree = "<group>";
 		};
-		F7749DFC1DF2CA920065F2D2 /* Leecode */ = {
+		F7749E041DF2E3720065F2D2 /* Leetcode */ = {
 			isa = PBXGroup;
 			children = (
-				F7749DFD1DF2CAA30065F2D2 /* ReverseWordsInAStringSpec.m */,
+				F7749E051DF2E3720065F2D2 /* DecodeWaysSpec.m */,
+				F7749E061DF2E3720065F2D2 /* ReverseWordsInAStringSpec.m */,
 			);
-			path = Leecode;
+			path = Leetcode;
 			sourceTree = "<group>";
 		};
 		F782BEA31DD9555700B6B63F /* Ch5-TwoLabelLeftRight */ = {
@@ -412,7 +420,7 @@
 		F7C0F77E1DF2C79C007BBBC8 /* CwngaIOSStudyTests */ = {
 			isa = PBXGroup;
 			children = (
-				F7749DFC1DF2CA920065F2D2 /* Leecode */,
+				F7749E041DF2E3720065F2D2 /* Leetcode */,
 				F7C0F7811DF2C79C007BBBC8 /* Info.plist */,
 			);
 			path = CwngaIOSStudyTests;
@@ -649,6 +657,7 @@
 				F79D31F51DBB69E400C63FF5 /* ViewController.m in Sources */,
 				F79D31F21DBB69E400C63FF5 /* AppDelegate.m in Sources */,
 				F705E09E1DBB86C90081CEED /* DynamicHeightViewController.m in Sources */,
+				F7749E011DF2D11D0065F2D2 /* DecodeWays.m in Sources */,
 				F7BCA7621DC2EA6B00404F8E /* Ch3CombineLatestViewControlller.m in Sources */,
 				F705E06D1DBB6B800081CEED /* ListingCollectionViewCell.m in Sources */,
 				F782BE9D1DD9546600B6B63F /* ADKCollectionViewDynamicSizeSubCell.m in Sources */,
@@ -674,7 +683,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F7749DFE1DF2CAA30065F2D2 /* ReverseWordsInAStringSpec.m in Sources */,
+				F7749E071DF2E3720065F2D2 /* DecodeWaysSpec.m in Sources */,
+				F7749E081DF2E3720065F2D2 /* ReverseWordsInAStringSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
