@@ -7,24 +7,8 @@
 //
 
 #import "BinaryTreeViewController.h"
+#import "CwngaNode.h"
 
-@interface Node : NSObject
-
-@property (assign, nonatomic) CGFloat value;
-@property (strong, nonatomic) Node *leftNode;
-@property (strong, nonatomic) Node *rightNode;
-
-@end
-
-@implementation Node
-
-
-- (NSString *)description
-{
-    return [NSString stringWithFormat:@"%@ - %f", [super description], self.value];
-}
-
-@end
 
 @interface BinaryTreeViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *errorMessageLabel;
@@ -32,7 +16,7 @@
 @property (weak, nonatomic) IBOutlet UITextView *inOrderTextView;
 @property (weak, nonatomic) IBOutlet UITextView *preOrderTextView;
 @property (weak, nonatomic) IBOutlet UITextView *postOrderTextView;
-@property (strong, nonatomic) Node *tree;
+@property (strong, nonatomic) CwngaNode *tree;
 @end
 
 @implementation BinaryTreeViewController
@@ -47,7 +31,7 @@
     self.tree = nil;
     // NSArray *number = @[@(4),@(3), @(7),@(5),@(6),@(1),];
     [number enumerateObjectsUsingBlock:^(NSNumber *obj, NSUInteger idx, BOOL * _Nonnull stop) {
-        Node *node = [[Node alloc]init];
+        CwngaNode *node = [[CwngaNode alloc]init];
         node.value = [obj floatValue];
         self.tree = [self insertNewNode:node withParentNode:self.tree];
     }];
@@ -71,7 +55,7 @@
 
 }
 
-- (NSArray *)inOrder:(Node *)node array:(NSMutableArray *)array
+- (NSArray *)inOrder:(CwngaNode *)node array:(NSMutableArray *)array
 {
     if (node) {
         [self inOrder:node.leftNode array:array];
@@ -81,7 +65,7 @@
     return nil;
 }
 
-- (NSArray *)preOrder:(Node *)node array:(NSMutableArray *)array
+- (NSArray *)preOrder:(CwngaNode *)node array:(NSMutableArray *)array
 {
     if (node) {
         [array addObject:node];
@@ -90,7 +74,7 @@
     }
     return nil;
 }
-- (NSArray *)postOrder:(Node *)node array:(NSMutableArray *)array
+- (NSArray *)postOrder:(CwngaNode *)node array:(NSMutableArray *)array
 {
     if (node) {
         [self postOrder:node.leftNode array:array];
@@ -101,7 +85,7 @@
     return nil;
 }
 
-- (Node *)insertNewNode:(Node *)newNode withParentNode:(Node *)parentNode
+- (CwngaNode *)insertNewNode:(CwngaNode *)newNode withParentNode:(CwngaNode *)parentNode
 {
 
     if (!parentNode) {

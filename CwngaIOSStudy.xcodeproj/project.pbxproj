@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		17C2B9E06093B7005B4656C0 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 928F34318711190A14842958 /* libPods.a */; };
+		2ED15FBB09182ABF02FC50E2 /* libPods-CwngaIOSStudyTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 37FA2EED93120ECD742D6B86 /* libPods-CwngaIOSStudyTests.a */; };
+		76B15E85B58796B7AE7594EB /* libPods-CwngaIOSStudy.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 619274F30E1CBA450191D952 /* libPods-CwngaIOSStudy.a */; };
 		F705E06B1DBB6B800081CEED /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F705E05B1DBB6B800081CEED /* CollectionViewCell.m */; };
 		F705E06C1DBB6B800081CEED /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F705E05C1DBB6B800081CEED /* CollectionViewCell.xib */; };
 		F705E06D1DBB6B800081CEED /* ListingCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F705E05E1DBB6B800081CEED /* ListingCollectionViewCell.m */; };
@@ -33,6 +34,9 @@
 		F71193481DC72F4B00683697 /* TwoLabelCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F71193461DC72F4B00683697 /* TwoLabelCollectionViewCell.xib */; };
 		F711934D1DC7300500683697 /* TwoTitleCellDynamicHeightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F711934B1DC7300500683697 /* TwoTitleCellDynamicHeightViewController.m */; };
 		F711934E1DC7300500683697 /* TwoTitleCellDynamicHeightViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F711934C1DC7300500683697 /* TwoTitleCellDynamicHeightViewController.xib */; };
+		F7749DF71DF2C8A40065F2D2 /* CwngaNode.m in Sources */ = {isa = PBXBuildFile; fileRef = F7749DF61DF2C8A40065F2D2 /* CwngaNode.m */; };
+		F7749DFB1DF2C9970065F2D2 /* ReverseWordsInAString.m in Sources */ = {isa = PBXBuildFile; fileRef = F7749DFA1DF2C9970065F2D2 /* ReverseWordsInAString.m */; };
+		F7749DFE1DF2CAA30065F2D2 /* ReverseWordsInAStringSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = F7749DFD1DF2CAA30065F2D2 /* ReverseWordsInAStringSpec.m */; };
 		F782BE9D1DD9546600B6B63F /* ADKCollectionViewDynamicSizeSubCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F782BE9B1DD9546600B6B63F /* ADKCollectionViewDynamicSizeSubCell.m */; };
 		F782BE9E1DD9546600B6B63F /* ADKCollectionViewDynamicSizeSubCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F782BE9C1DD9546600B6B63F /* ADKCollectionViewDynamicSizeSubCell.xib */; };
 		F782BEA71DD9558500B6B63F /* DynamicLeftRightLabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F782BEA51DD9558500B6B63F /* DynamicLeftRightLabelViewController.m */; };
@@ -49,10 +53,23 @@
 		F7F21CCF1DC24E2000E94E8B /* ADKImageColorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7F21CCD1DC24E2000E94E8B /* ADKImageColorViewController.xib */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		F7C0F7821DF2C79C007BBBC8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F79D31E21DBB69E300C63FF5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F79D31E91DBB69E300C63FF5;
+			remoteInfo = CwngaIOSStudy;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		292BF013C3461472BFA1C204 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		928F34318711190A14842958 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		C59BBF7C4D93AB0781327BE5 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		37FA2EED93120ECD742D6B86 /* libPods-CwngaIOSStudyTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CwngaIOSStudyTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5ECF6443B5D7E4731FEFFD9C /* Pods-CwngaIOSStudyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CwngaIOSStudyTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CwngaIOSStudyTests/Pods-CwngaIOSStudyTests.debug.xcconfig"; sourceTree = "<group>"; };
+		619274F30E1CBA450191D952 /* libPods-CwngaIOSStudy.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CwngaIOSStudy.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		711D8E3BE2BF229B5C36D713 /* Pods-CwngaIOSStudyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CwngaIOSStudyTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CwngaIOSStudyTests/Pods-CwngaIOSStudyTests.release.xcconfig"; sourceTree = "<group>"; };
+		8732B80311E315747ECECC9E /* Pods-CwngaIOSStudy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CwngaIOSStudy.release.xcconfig"; path = "Pods/Target Support Files/Pods-CwngaIOSStudy/Pods-CwngaIOSStudy.release.xcconfig"; sourceTree = "<group>"; };
+		C6BAEF2EBC3BEA17943E82D9 /* Pods-CwngaIOSStudy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CwngaIOSStudy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CwngaIOSStudy/Pods-CwngaIOSStudy.debug.xcconfig"; sourceTree = "<group>"; };
 		F705E05A1DBB6B800081CEED /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
 		F705E05B1DBB6B800081CEED /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
 		F705E05C1DBB6B800081CEED /* CollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
@@ -90,6 +107,11 @@
 		F711934A1DC7300500683697 /* TwoTitleCellDynamicHeightViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoTitleCellDynamicHeightViewController.h; sourceTree = "<group>"; };
 		F711934B1DC7300500683697 /* TwoTitleCellDynamicHeightViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoTitleCellDynamicHeightViewController.m; sourceTree = "<group>"; };
 		F711934C1DC7300500683697 /* TwoTitleCellDynamicHeightViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TwoTitleCellDynamicHeightViewController.xib; sourceTree = "<group>"; };
+		F7749DF51DF2C8A40065F2D2 /* CwngaNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CwngaNode.h; sourceTree = "<group>"; };
+		F7749DF61DF2C8A40065F2D2 /* CwngaNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CwngaNode.m; sourceTree = "<group>"; };
+		F7749DF91DF2C9970065F2D2 /* ReverseWordsInAString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReverseWordsInAString.h; sourceTree = "<group>"; };
+		F7749DFA1DF2C9970065F2D2 /* ReverseWordsInAString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReverseWordsInAString.m; sourceTree = "<group>"; };
+		F7749DFD1DF2CAA30065F2D2 /* ReverseWordsInAStringSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReverseWordsInAStringSpec.m; sourceTree = "<group>"; };
 		F782BE9A1DD9546600B6B63F /* ADKCollectionViewDynamicSizeSubCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADKCollectionViewDynamicSizeSubCell.h; sourceTree = "<group>"; };
 		F782BE9B1DD9546600B6B63F /* ADKCollectionViewDynamicSizeSubCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADKCollectionViewDynamicSizeSubCell.m; sourceTree = "<group>"; };
 		F782BE9C1DD9546600B6B63F /* ADKCollectionViewDynamicSizeSubCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ADKCollectionViewDynamicSizeSubCell.xib; sourceTree = "<group>"; };
@@ -109,6 +131,8 @@
 		F7BCA75F1DC2EA6B00404F8E /* Ch3CombineLatestViewControlller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ch3CombineLatestViewControlller.h; sourceTree = "<group>"; };
 		F7BCA7601DC2EA6B00404F8E /* Ch3CombineLatestViewControlller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ch3CombineLatestViewControlller.m; sourceTree = "<group>"; };
 		F7BCA7611DC2EA6B00404F8E /* Ch3CombineLatestViewControlller.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Ch3CombineLatestViewControlller.xib; sourceTree = "<group>"; };
+		F7C0F77D1DF2C79B007BBBC8 /* CwngaIOSStudyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CwngaIOSStudyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7C0F7811DF2C79C007BBBC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F7F21CCB1DC24E2000E94E8B /* ADKImageColorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADKImageColorViewController.h; sourceTree = "<group>"; };
 		F7F21CCC1DC24E2000E94E8B /* ADKImageColorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADKImageColorViewController.m; sourceTree = "<group>"; };
 		F7F21CCD1DC24E2000E94E8B /* ADKImageColorViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ADKImageColorViewController.xib; sourceTree = "<group>"; };
@@ -119,33 +143,46 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				17C2B9E06093B7005B4656C0 /* libPods.a in Frameworks */,
+				76B15E85B58796B7AE7594EB /* libPods-CwngaIOSStudy.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7C0F77A1DF2C79B007BBBC8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2ED15FBB09182ABF02FC50E2 /* libPods-CwngaIOSStudyTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A0A7DC480401CFEEAAE0A1A4 /* Frameworks */ = {
+		3C6A586A8A2C0031992DA6C5 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				928F34318711190A14842958 /* libPods.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		A11FB3643665421AF2D14B41 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				C59BBF7C4D93AB0781327BE5 /* Pods.debug.xcconfig */,
-				292BF013C3461472BFA1C204 /* Pods.release.xcconfig */,
+				C6BAEF2EBC3BEA17943E82D9 /* Pods-CwngaIOSStudy.debug.xcconfig */,
+				8732B80311E315747ECECC9E /* Pods-CwngaIOSStudy.release.xcconfig */,
+				5ECF6443B5D7E4731FEFFD9C /* Pods-CwngaIOSStudyTests.debug.xcconfig */,
+				711D8E3BE2BF229B5C36D713 /* Pods-CwngaIOSStudyTests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		C03FB2DBF3016588F88F70A9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				619274F30E1CBA450191D952 /* libPods-CwngaIOSStudy.a */,
+				37FA2EED93120ECD742D6B86 /* libPods-CwngaIOSStudyTests.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		F705E0581DBB6B800081CEED /* Src */ = {
 			isa = PBXGroup;
 			children = (
+				F7749DF81DF2C95A0065F2D2 /* Leetcode */,
+				F7749DF41DF2C8810065F2D2 /* Classes */,
 				F705E0A61DBB96BD0081CEED /* Algorithm */,
 				F705E08F1DBB7CE60081CEED /* ADK */,
 				F705E07D1DBB715F0081CEED /* ReactiveCocoa */,
@@ -280,6 +317,32 @@
 			path = "Ch4-TwoTitleCellDynamicHeightViewController";
 			sourceTree = "<group>";
 		};
+		F7749DF41DF2C8810065F2D2 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F7749DF51DF2C8A40065F2D2 /* CwngaNode.h */,
+				F7749DF61DF2C8A40065F2D2 /* CwngaNode.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		F7749DF81DF2C95A0065F2D2 /* Leetcode */ = {
+			isa = PBXGroup;
+			children = (
+				F7749DF91DF2C9970065F2D2 /* ReverseWordsInAString.h */,
+				F7749DFA1DF2C9970065F2D2 /* ReverseWordsInAString.m */,
+			);
+			path = Leetcode;
+			sourceTree = "<group>";
+		};
+		F7749DFC1DF2CA920065F2D2 /* Leecode */ = {
+			isa = PBXGroup;
+			children = (
+				F7749DFD1DF2CAA30065F2D2 /* ReverseWordsInAStringSpec.m */,
+			);
+			path = Leecode;
+			sourceTree = "<group>";
+		};
 		F782BEA31DD9555700B6B63F /* Ch5-TwoLabelLeftRight */ = {
 			isa = PBXGroup;
 			children = (
@@ -294,9 +357,10 @@
 			isa = PBXGroup;
 			children = (
 				F79D31EC1DBB69E400C63FF5 /* CwngaIOSStudy */,
+				F7C0F77E1DF2C79C007BBBC8 /* CwngaIOSStudyTests */,
 				F79D31EB1DBB69E400C63FF5 /* Products */,
-				A11FB3643665421AF2D14B41 /* Pods */,
-				A0A7DC480401CFEEAAE0A1A4 /* Frameworks */,
+				3C6A586A8A2C0031992DA6C5 /* Pods */,
+				C03FB2DBF3016588F88F70A9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -304,6 +368,7 @@
 			isa = PBXGroup;
 			children = (
 				F79D31EA1DBB69E400C63FF5 /* CwngaIOSStudy.app */,
+				F7C0F77D1DF2C79B007BBBC8 /* CwngaIOSStudyTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -344,6 +409,15 @@
 			path = "Ch3-CombineLatest";
 			sourceTree = "<group>";
 		};
+		F7C0F77E1DF2C79C007BBBC8 /* CwngaIOSStudyTests */ = {
+			isa = PBXGroup;
+			children = (
+				F7749DFC1DF2CA920065F2D2 /* Leecode */,
+				F7C0F7811DF2C79C007BBBC8 /* Info.plist */,
+			);
+			path = CwngaIOSStudyTests;
+			sourceTree = "<group>";
+		};
 		F7F21CCA1DC24E0E00E94E8B /* Ch3-ADKImageColorViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -361,12 +435,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F79D32011DBB69E400C63FF5 /* Build configuration list for PBXNativeTarget "CwngaIOSStudy" */;
 			buildPhases = (
-				4B01BD232FC025F2F19BEEA0 /* Check Pods Manifest.lock */,
+				2378CFF2A921D9770BF6DBED /* [CP] Check Pods Manifest.lock */,
 				F79D31E61DBB69E300C63FF5 /* Sources */,
 				F79D31E71DBB69E300C63FF5 /* Frameworks */,
 				F79D31E81DBB69E300C63FF5 /* Resources */,
-				B65FF088562A25B1E92B44EE /* Embed Pods Frameworks */,
-				ACE1536D8B33ED393D8C9DA5 /* Copy Pods Resources */,
+				114865428C02D74CBCCB77FC /* [CP] Embed Pods Frameworks */,
+				7AA3ABFA36422F4CA8348F60 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -376,6 +450,27 @@
 			productName = CwngaIOSStudy;
 			productReference = F79D31EA1DBB69E400C63FF5 /* CwngaIOSStudy.app */;
 			productType = "com.apple.product-type.application";
+		};
+		F7C0F77C1DF2C79B007BBBC8 /* CwngaIOSStudyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F7C0F7861DF2C79C007BBBC8 /* Build configuration list for PBXNativeTarget "CwngaIOSStudyTests" */;
+			buildPhases = (
+				AAFDE4008017884DE0C922AF /* [CP] Check Pods Manifest.lock */,
+				F7C0F7791DF2C79B007BBBC8 /* Sources */,
+				F7C0F77A1DF2C79B007BBBC8 /* Frameworks */,
+				F7C0F77B1DF2C79B007BBBC8 /* Resources */,
+				4ED9F4CBB8880781E6C9CF8C /* [CP] Embed Pods Frameworks */,
+				598223487FBA7508E520F351 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F7C0F7831DF2C79C007BBBC8 /* PBXTargetDependency */,
+			);
+			name = CwngaIOSStudyTests;
+			productName = CwngaIOSStudyTests;
+			productReference = F7C0F77D1DF2C79B007BBBC8 /* CwngaIOSStudyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -389,6 +484,11 @@
 					F79D31E91DBB69E300C63FF5 = {
 						CreatedOnToolsVersion = 8.0;
 						ProvisioningStyle = Automatic;
+					};
+					F7C0F77C1DF2C79B007BBBC8 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F79D31E91DBB69E300C63FF5;
 					};
 				};
 			};
@@ -406,6 +506,7 @@
 			projectRoot = "";
 			targets = (
 				F79D31E91DBB69E300C63FF5 /* CwngaIOSStudy */,
+				F7C0F77C1DF2C79B007BBBC8 /* CwngaIOSStudyTests */,
 			);
 		};
 /* End PBXProject section */
@@ -438,52 +539,104 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F7C0F77B1DF2C79B007BBBC8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		4B01BD232FC025F2F19BEEA0 /* Check Pods Manifest.lock */ = {
+		114865428C02D74CBCCB77FC /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CwngaIOSStudy/Pods-CwngaIOSStudy-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		ACE1536D8B33ED393D8C9DA5 /* Copy Pods Resources */ = {
+		2378CFF2A921D9770BF6DBED /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		B65FF088562A25B1E92B44EE /* Embed Pods Frameworks */ = {
+		4ED9F4CBB8880781E6C9CF8C /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CwngaIOSStudyTests/Pods-CwngaIOSStudyTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		598223487FBA7508E520F351 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CwngaIOSStudyTests/Pods-CwngaIOSStudyTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7AA3ABFA36422F4CA8348F60 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CwngaIOSStudy/Pods-CwngaIOSStudy-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AAFDE4008017884DE0C922AF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -501,6 +654,7 @@
 				F782BE9D1DD9546600B6B63F /* ADKCollectionViewDynamicSizeSubCell.m in Sources */,
 				F705E08B1DBB715F0081CEED /* Ch2DetailViewController.m in Sources */,
 				F7F21CCE1DC24E2000E94E8B /* ADKImageColorViewController.m in Sources */,
+				F7749DF71DF2C8A40065F2D2 /* CwngaNode.m in Sources */,
 				F705E0AB1DBB97090081CEED /* BinaryTreeViewController.m in Sources */,
 				F71193471DC72F4B00683697 /* TwoLabelCollectionViewCell.m in Sources */,
 				F711934D1DC7300500683697 /* TwoTitleCellDynamicHeightViewController.m in Sources */,
@@ -510,12 +664,29 @@
 				F705E06B1DBB6B800081CEED /* CollectionViewCell.m in Sources */,
 				F705E0891DBB715F0081CEED /* Ch1ViewController.m in Sources */,
 				F705E07B1DBB6E870081CEED /* TitleCollectionReusableView.m in Sources */,
+				F7749DFB1DF2C9970065F2D2 /* ReverseWordsInAString.m in Sources */,
 				F79D31EF1DBB69E400C63FF5 /* main.m in Sources */,
 				F705E0981DBB86630081CEED /* TextViewCollectionViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F7C0F7791DF2C79B007BBBC8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7749DFE1DF2CAA30065F2D2 /* ReverseWordsInAStringSpec.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F7C0F7831DF2C79C007BBBC8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F79D31E91DBB69E300C63FF5 /* CwngaIOSStudy */;
+			targetProxy = F7C0F7821DF2C79C007BBBC8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		F79D31F61DBB69E400C63FF5 /* Main.storyboard */ = {
@@ -629,7 +800,7 @@
 		};
 		F79D32021DBB69E400C63FF5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C59BBF7C4D93AB0781327BE5 /* Pods.debug.xcconfig */;
+			baseConfigurationReference = C6BAEF2EBC3BEA17943E82D9 /* Pods-CwngaIOSStudy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CwngaIOSStudy/Info.plist;
@@ -641,13 +812,41 @@
 		};
 		F79D32031DBB69E400C63FF5 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 292BF013C3461472BFA1C204 /* Pods.release.xcconfig */;
+			baseConfigurationReference = 8732B80311E315747ECECC9E /* Pods-CwngaIOSStudy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CwngaIOSStudy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cwnga.CwngaIOSStudy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F7C0F7841DF2C79C007BBBC8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5ECF6443B5D7E4731FEFFD9C /* Pods-CwngaIOSStudyTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CwngaIOSStudyTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yahoo.CwngaIOSStudyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CwngaIOSStudy.app/CwngaIOSStudy";
+			};
+			name = Debug;
+		};
+		F7C0F7851DF2C79C007BBBC8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 711D8E3BE2BF229B5C36D713 /* Pods-CwngaIOSStudyTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CwngaIOSStudyTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yahoo.CwngaIOSStudyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CwngaIOSStudy.app/CwngaIOSStudy";
 			};
 			name = Release;
 		};
@@ -668,6 +867,15 @@
 			buildConfigurations = (
 				F79D32021DBB69E400C63FF5 /* Debug */,
 				F79D32031DBB69E400C63FF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F7C0F7861DF2C79C007BBBC8 /* Build configuration list for PBXNativeTarget "CwngaIOSStudyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7C0F7841DF2C79C007BBBC8 /* Debug */,
+				F7C0F7851DF2C79C007BBBC8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

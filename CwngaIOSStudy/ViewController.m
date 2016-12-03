@@ -8,8 +8,8 @@
 
 #import "ViewController.h"
 #import "TitleCollectionReusableView.h"
-
 #import "CollectionViewCell.h"
+#import "ReverseWordsInAString.h"
 static  NSString * const ReuseIdentifier = @"CollectionViewCell";
 @interface ViewController () <UICollectionViewDelegate, UICollectionViewDataSource>
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
@@ -22,6 +22,7 @@ static  NSString * const ReuseIdentifier = @"CollectionViewCell";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+
     self.data = @[
                   @{
                       @"title": @"Algorithm",
