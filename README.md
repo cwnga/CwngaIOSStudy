@@ -19,14 +19,18 @@ https://leetcode.com/problems/reverse-words-in-a-string/
 - normal case:
 think about 11 => to be 2(1+1, 11), will  be 2
 - edge case:
-* think about 01 => to be 0, can not begin with "0"
-* think about 01 => to be 0, can not begin with "0"
-* think about 10 => to be 1, can not 1=>A + 0=>?, will not be 2
-* think about 191 => 
-    > 1 => 1;
-    > 19 => 1+9, 19
-    > 191 => 1+9+1, 19+1, (can not i-2 result (1+91))
-* so answer to be 2
+think about 01 => to be 0, can not begin with "0"
+
+think about 01 => to be 0, can not begin with "0"
+
+think about 10 => to be 1, can not 1=>A + 0=>?, will not be 2
+
+think about 191 => 
+
+    1 => 1;
+    19 => 1+9, 19
+    191 => 1+9+1, 19+1, (can not i-2 result (1+91))
+    so answer to be 2
 
 
 https://leetcode.com/problems/decode-ways/
