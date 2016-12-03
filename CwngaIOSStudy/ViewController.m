@@ -51,9 +51,15 @@ static  NSString * const ReuseIdentifier = @"CollectionViewCell";
                                   @"title" : @"Two Title labels cell",
                                   @"className": @"TwoTitleCellDynamicHeightViewController"
                                   },
+                              //DynamicLeftRightLabelViewController
+
+                              @{
+                                  @"title" : @"Two Title labels (left, right) cell",
+                                  @"className": @"DynamicLeftRightLabelViewController"
+                                  },
                               ],
                       //TwoTitleCellDynamicHeightViewController
-                      
+
                       },
 
                   @{

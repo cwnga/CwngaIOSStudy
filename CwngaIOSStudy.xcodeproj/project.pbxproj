@@ -33,6 +33,10 @@
 		F71193481DC72F4B00683697 /* TwoLabelCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F71193461DC72F4B00683697 /* TwoLabelCollectionViewCell.xib */; };
 		F711934D1DC7300500683697 /* TwoTitleCellDynamicHeightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F711934B1DC7300500683697 /* TwoTitleCellDynamicHeightViewController.m */; };
 		F711934E1DC7300500683697 /* TwoTitleCellDynamicHeightViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F711934C1DC7300500683697 /* TwoTitleCellDynamicHeightViewController.xib */; };
+		F782BE9D1DD9546600B6B63F /* ADKCollectionViewDynamicSizeSubCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F782BE9B1DD9546600B6B63F /* ADKCollectionViewDynamicSizeSubCell.m */; };
+		F782BE9E1DD9546600B6B63F /* ADKCollectionViewDynamicSizeSubCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F782BE9C1DD9546600B6B63F /* ADKCollectionViewDynamicSizeSubCell.xib */; };
+		F782BEA71DD9558500B6B63F /* DynamicLeftRightLabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F782BEA51DD9558500B6B63F /* DynamicLeftRightLabelViewController.m */; };
+		F782BEA81DD9558500B6B63F /* DynamicLeftRightLabelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F782BEA61DD9558500B6B63F /* DynamicLeftRightLabelViewController.xib */; };
 		F79D31EF1DBB69E400C63FF5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F79D31EE1DBB69E400C63FF5 /* main.m */; };
 		F79D31F21DBB69E400C63FF5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F79D31F11DBB69E400C63FF5 /* AppDelegate.m */; };
 		F79D31F51DBB69E400C63FF5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F79D31F41DBB69E400C63FF5 /* ViewController.m */; };
@@ -86,6 +90,12 @@
 		F711934A1DC7300500683697 /* TwoTitleCellDynamicHeightViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoTitleCellDynamicHeightViewController.h; sourceTree = "<group>"; };
 		F711934B1DC7300500683697 /* TwoTitleCellDynamicHeightViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoTitleCellDynamicHeightViewController.m; sourceTree = "<group>"; };
 		F711934C1DC7300500683697 /* TwoTitleCellDynamicHeightViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TwoTitleCellDynamicHeightViewController.xib; sourceTree = "<group>"; };
+		F782BE9A1DD9546600B6B63F /* ADKCollectionViewDynamicSizeSubCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADKCollectionViewDynamicSizeSubCell.h; sourceTree = "<group>"; };
+		F782BE9B1DD9546600B6B63F /* ADKCollectionViewDynamicSizeSubCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADKCollectionViewDynamicSizeSubCell.m; sourceTree = "<group>"; };
+		F782BE9C1DD9546600B6B63F /* ADKCollectionViewDynamicSizeSubCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ADKCollectionViewDynamicSizeSubCell.xib; sourceTree = "<group>"; };
+		F782BEA41DD9558500B6B63F /* DynamicLeftRightLabelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicLeftRightLabelViewController.h; sourceTree = "<group>"; };
+		F782BEA51DD9558500B6B63F /* DynamicLeftRightLabelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicLeftRightLabelViewController.m; sourceTree = "<group>"; };
+		F782BEA61DD9558500B6B63F /* DynamicLeftRightLabelViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DynamicLeftRightLabelViewController.xib; sourceTree = "<group>"; };
 		F79D31EA1DBB69E400C63FF5 /* CwngaIOSStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CwngaIOSStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F79D31EE1DBB69E400C63FF5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F79D31F01DBB69E400C63FF5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -160,6 +170,9 @@
 				F71193441DC72F4B00683697 /* TwoLabelCollectionViewCell.h */,
 				F71193451DC72F4B00683697 /* TwoLabelCollectionViewCell.m */,
 				F71193461DC72F4B00683697 /* TwoLabelCollectionViewCell.xib */,
+				F782BE9A1DD9546600B6B63F /* ADKCollectionViewDynamicSizeSubCell.h */,
+				F782BE9B1DD9546600B6B63F /* ADKCollectionViewDynamicSizeSubCell.m */,
+				F782BE9C1DD9546600B6B63F /* ADKCollectionViewDynamicSizeSubCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -210,6 +223,7 @@
 		F705E08F1DBB7CE60081CEED /* ADK */ = {
 			isa = PBXGroup;
 			children = (
+				F782BEA31DD9555700B6B63F /* Ch5-TwoLabelLeftRight */,
 				F71193491DC72FF700683697 /* Ch4-TwoTitleCellDynamicHeightViewController */,
 				F7F21CCA1DC24E0E00E94E8B /* Ch3-ADKImageColorViewController */,
 				F705E09A1DBB86C90081CEED /* Ch1-DynamicHeightViewController */,
@@ -264,6 +278,16 @@
 				F711934C1DC7300500683697 /* TwoTitleCellDynamicHeightViewController.xib */,
 			);
 			path = "Ch4-TwoTitleCellDynamicHeightViewController";
+			sourceTree = "<group>";
+		};
+		F782BEA31DD9555700B6B63F /* Ch5-TwoLabelLeftRight */ = {
+			isa = PBXGroup;
+			children = (
+				F782BEA41DD9558500B6B63F /* DynamicLeftRightLabelViewController.h */,
+				F782BEA51DD9558500B6B63F /* DynamicLeftRightLabelViewController.m */,
+				F782BEA61DD9558500B6B63F /* DynamicLeftRightLabelViewController.xib */,
+			);
+			path = "Ch5-TwoLabelLeftRight";
 			sourceTree = "<group>";
 		};
 		F79D31E11DBB69E300C63FF5 = {
@@ -394,7 +418,9 @@
 				F705E07C1DBB6E870081CEED /* TitleCollectionReusableView.xib in Resources */,
 				F711934E1DC7300500683697 /* TwoTitleCellDynamicHeightViewController.xib in Resources */,
 				F705E09F1DBB86C90081CEED /* DynamicHeightViewController.xib in Resources */,
+				F782BE9E1DD9546600B6B63F /* ADKCollectionViewDynamicSizeSubCell.xib in Resources */,
 				F705E08A1DBB715F0081CEED /* Ch1ViewController.xib in Resources */,
+				F782BEA81DD9558500B6B63F /* DynamicLeftRightLabelViewController.xib in Resources */,
 				F705E08E1DBB715F0081CEED /* Ch2ViewController.xib in Resources */,
 				F79D31FD1DBB69E400C63FF5 /* LaunchScreen.storyboard in Resources */,
 				F705E0761DBB6BE90081CEED /* ViewController.xib in Resources */,
@@ -472,12 +498,14 @@
 				F705E09E1DBB86C90081CEED /* DynamicHeightViewController.m in Sources */,
 				F7BCA7621DC2EA6B00404F8E /* Ch3CombineLatestViewControlller.m in Sources */,
 				F705E06D1DBB6B800081CEED /* ListingCollectionViewCell.m in Sources */,
+				F782BE9D1DD9546600B6B63F /* ADKCollectionViewDynamicSizeSubCell.m in Sources */,
 				F705E08B1DBB715F0081CEED /* Ch2DetailViewController.m in Sources */,
 				F7F21CCE1DC24E2000E94E8B /* ADKImageColorViewController.m in Sources */,
 				F705E0AB1DBB97090081CEED /* BinaryTreeViewController.m in Sources */,
 				F71193471DC72F4B00683697 /* TwoLabelCollectionViewCell.m in Sources */,
 				F711934D1DC7300500683697 /* TwoTitleCellDynamicHeightViewController.m in Sources */,
 				F705E0A41DBB86F90081CEED /* DynamicTextViewHeightViewController.m in Sources */,
+				F782BEA71DD9558500B6B63F /* DynamicLeftRightLabelViewController.m in Sources */,
 				F705E08D1DBB715F0081CEED /* Ch2ViewController.m in Sources */,
 				F705E06B1DBB6B800081CEED /* CollectionViewCell.m in Sources */,
 				F705E0891DBB715F0081CEED /* Ch1ViewController.m in Sources */,
