@@ -44,7 +44,7 @@ https://leetcode.com/problems/largest-number/
 https://leetcode.com/problems/palindrome-partitioning-ii/
 - hint: 
 
-    //check aba, abba,
+//check aba, abba,
 
     for (NSInteger i = 0; i < string.length; i++) {
         for (NSInteger j=0;
