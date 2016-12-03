@@ -1,6 +1,6 @@
 # CwngaIOSStudy
 
-## Leecode 
+## Leetcode 
 ### ReverseWordsInAString
 
 ## Algorithm
