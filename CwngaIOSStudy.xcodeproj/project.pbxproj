@@ -39,6 +39,8 @@
 		F7749E011DF2D11D0065F2D2 /* DecodeWays.m in Sources */ = {isa = PBXBuildFile; fileRef = F7749E001DF2D11D0065F2D2 /* DecodeWays.m */; };
 		F7749E071DF2E3720065F2D2 /* DecodeWaysSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = F7749E051DF2E3720065F2D2 /* DecodeWaysSpec.m */; };
 		F7749E081DF2E3720065F2D2 /* ReverseWordsInAStringSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = F7749E061DF2E3720065F2D2 /* ReverseWordsInAStringSpec.m */; };
+		F7749E0B1DF2EB0C0065F2D2 /* ContainsDuplicateIII.m in Sources */ = {isa = PBXBuildFile; fileRef = F7749E0A1DF2EB0C0065F2D2 /* ContainsDuplicateIII.m */; };
+		F7749E0D1DF2F1B10065F2D2 /* ContainsDuplicateIIISpec.m in Sources */ = {isa = PBXBuildFile; fileRef = F7749E0C1DF2F1B10065F2D2 /* ContainsDuplicateIIISpec.m */; };
 		F782BE9D1DD9546600B6B63F /* ADKCollectionViewDynamicSizeSubCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F782BE9B1DD9546600B6B63F /* ADKCollectionViewDynamicSizeSubCell.m */; };
 		F782BE9E1DD9546600B6B63F /* ADKCollectionViewDynamicSizeSubCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F782BE9C1DD9546600B6B63F /* ADKCollectionViewDynamicSizeSubCell.xib */; };
 		F782BEA71DD9558500B6B63F /* DynamicLeftRightLabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F782BEA51DD9558500B6B63F /* DynamicLeftRightLabelViewController.m */; };
@@ -117,6 +119,9 @@
 		F7749E001DF2D11D0065F2D2 /* DecodeWays.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DecodeWays.m; sourceTree = "<group>"; };
 		F7749E051DF2E3720065F2D2 /* DecodeWaysSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DecodeWaysSpec.m; sourceTree = "<group>"; };
 		F7749E061DF2E3720065F2D2 /* ReverseWordsInAStringSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReverseWordsInAStringSpec.m; sourceTree = "<group>"; };
+		F7749E091DF2EB0C0065F2D2 /* ContainsDuplicateIII.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContainsDuplicateIII.h; sourceTree = "<group>"; };
+		F7749E0A1DF2EB0C0065F2D2 /* ContainsDuplicateIII.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContainsDuplicateIII.m; sourceTree = "<group>"; };
+		F7749E0C1DF2F1B10065F2D2 /* ContainsDuplicateIIISpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContainsDuplicateIIISpec.m; sourceTree = "<group>"; };
 		F782BE9A1DD9546600B6B63F /* ADKCollectionViewDynamicSizeSubCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADKCollectionViewDynamicSizeSubCell.h; sourceTree = "<group>"; };
 		F782BE9B1DD9546600B6B63F /* ADKCollectionViewDynamicSizeSubCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADKCollectionViewDynamicSizeSubCell.m; sourceTree = "<group>"; };
 		F782BE9C1DD9546600B6B63F /* ADKCollectionViewDynamicSizeSubCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ADKCollectionViewDynamicSizeSubCell.xib; sourceTree = "<group>"; };
@@ -338,6 +343,8 @@
 				F7749DFA1DF2C9970065F2D2 /* ReverseWordsInAString.m */,
 				F7749DFF1DF2D11D0065F2D2 /* DecodeWays.h */,
 				F7749E001DF2D11D0065F2D2 /* DecodeWays.m */,
+				F7749E091DF2EB0C0065F2D2 /* ContainsDuplicateIII.h */,
+				F7749E0A1DF2EB0C0065F2D2 /* ContainsDuplicateIII.m */,
 			);
 			path = Leetcode;
 			sourceTree = "<group>";
@@ -347,6 +354,7 @@
 			children = (
 				F7749E051DF2E3720065F2D2 /* DecodeWaysSpec.m */,
 				F7749E061DF2E3720065F2D2 /* ReverseWordsInAStringSpec.m */,
+				F7749E0C1DF2F1B10065F2D2 /* ContainsDuplicateIIISpec.m */,
 			);
 			path = Leetcode;
 			sourceTree = "<group>";
@@ -675,6 +683,7 @@
 				F705E07B1DBB6E870081CEED /* TitleCollectionReusableView.m in Sources */,
 				F7749DFB1DF2C9970065F2D2 /* ReverseWordsInAString.m in Sources */,
 				F79D31EF1DBB69E400C63FF5 /* main.m in Sources */,
+				F7749E0B1DF2EB0C0065F2D2 /* ContainsDuplicateIII.m in Sources */,
 				F705E0981DBB86630081CEED /* TextViewCollectionViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -685,6 +694,7 @@
 			files = (
 				F7749E071DF2E3720065F2D2 /* DecodeWaysSpec.m in Sources */,
 				F7749E081DF2E3720065F2D2 /* ReverseWordsInAStringSpec.m in Sources */,
+				F7749E0D1DF2F1B10065F2D2 /* ContainsDuplicateIIISpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

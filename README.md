@@ -31,6 +31,9 @@ think about 11 => to be 2(1+1, 11), will  be 2
 
 https://leetcode.com/problems/decode-ways/
 
+### Contains Duplicate III
+https://leetcode.com/problems/contains-duplicate-iii/
+
 
 
 

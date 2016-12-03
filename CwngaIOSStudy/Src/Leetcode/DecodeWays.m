@@ -35,6 +35,8 @@
 
 -(NSInteger)numDecodings:(NSString *)string
 {
+    NSTimeInterval startTime  = [[NSDate date] timeIntervalSince1970];
+
 
     NSInteger result = 0;
     NSArray *stringArray = [string componentsSeparatedByString:@""];
@@ -86,6 +88,9 @@
 
         }
     }
+
+    NSTimeInterval endTime  = [[NSDate date] timeIntervalSince1970];
+    NSLog(@"%@::%@ dur:%f sec",NSStringFromClass([self class]), NSStringFromSelector(@selector(numDecodings:)), endTime - startTime);
 
     return [dp[stringArray.count - 1] integerValue];
 
