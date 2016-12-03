@@ -47,12 +47,12 @@ https://leetcode.com/problems/palindrome-partitioning-ii/
     //check aba, abba,
 
     for (NSInteger i = 0; i < string.length; i++) {
-       for (NSInteger j=0;
-            i-j>=0 && i+j <= string.length -1 && [string characterAtIndex:i-j] ==[string characterAtIndex:i+j];
-            j++) {
-           //for aba
-           NSInteger min = MIN([minCutDic[@(i-j-1)] integerValue] + 1, [minCutDic[@(i+j)] integerValue]) ;
-           minCutDic[@(i+j)] = @(min);
+        for (NSInteger j=0;
+             i-j>=0 && i+j <= string.length -1 && [string characterAtIndex:i-j] ==[string characterAtIndex:i+j];
+             j++) {
+            //for aba
+            NSInteger min = MIN([minCutDic[@(i-j-1)] integerValue] + 1, [minCutDic[@(i+j)] integerValue]) ;
+            minCutDic[@(i+j)] = @(min);
         }
         for (NSInteger j=0;
              i-j>=0 && i+j <= string.length -1 && [string characterAtIndex:i-j-1] == [string characterAtIndex:i+j];
@@ -63,10 +63,6 @@ https://leetcode.com/problems/palindrome-partitioning-ii/
             minCutDic[@(i+j)] = @(min);
         }
     }
-
-
-
-
 
 ## Algorithm
 ### Binary Tree Ordering
