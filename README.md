@@ -170,6 +170,14 @@ https://leetcode.com/problems/longest-substring-without-repeating-characters/
     }
     2016-12-04 17:57:21.562 CwngaIOSStudy[91415:1579478] max:3
 
+### Simplify Path
+(TODO)https://leetcode.com/problems/simplify-path/
+### Maximum Product Subarray
+https://leetcode.com/problems/maximum-product-subarray/
+- dp {min: max:}
+    
+    NSInteger min = MIN(MIN(tmp1, tmp2), [nums[i] integerValue]); //最小和自己比一次
+    NSInteger max = MAX(MAX(tmp1, tmp2), [nums[i] integerValue]); //最大和自己比一次
 
 
 ## Algorithm

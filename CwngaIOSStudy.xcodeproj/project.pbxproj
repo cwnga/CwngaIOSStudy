@@ -38,6 +38,8 @@
 		F7075A5F1DF313C100DFC083 /* PalindromePartitioningIISpec.m in Sources */ = {isa = PBXBuildFile; fileRef = F7075A5E1DF313C100DFC083 /* PalindromePartitioningIISpec.m */; };
 		F7075A621DF4191000DFC083 /* LongestSubstringWithoutRepeatingCharacters.m in Sources */ = {isa = PBXBuildFile; fileRef = F7075A611DF4191000DFC083 /* LongestSubstringWithoutRepeatingCharacters.m */; };
 		F7075A651DF41AC700DFC083 /* LongestSubstringWithoutRepeatingCharactersSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = F7075A641DF41AC700DFC083 /* LongestSubstringWithoutRepeatingCharactersSpec.m */; };
+		F7075A681DF428B900DFC083 /* MaximumProductSubarray.m in Sources */ = {isa = PBXBuildFile; fileRef = F7075A671DF428B900DFC083 /* MaximumProductSubarray.m */; };
+		F7075A6A1DF42A7600DFC083 /* MaximumProductSubarraySpec.m in Sources */ = {isa = PBXBuildFile; fileRef = F7075A691DF42A7600DFC083 /* MaximumProductSubarraySpec.m */; };
 		F71193471DC72F4B00683697 /* TwoLabelCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F71193451DC72F4B00683697 /* TwoLabelCollectionViewCell.m */; };
 		F71193481DC72F4B00683697 /* TwoLabelCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F71193461DC72F4B00683697 /* TwoLabelCollectionViewCell.xib */; };
 		F711934D1DC7300500683697 /* TwoTitleCellDynamicHeightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F711934B1DC7300500683697 /* TwoTitleCellDynamicHeightViewController.m */; };
@@ -125,6 +127,9 @@
 		F7075A601DF4191000DFC083 /* LongestSubstringWithoutRepeatingCharacters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LongestSubstringWithoutRepeatingCharacters.h; sourceTree = "<group>"; };
 		F7075A611DF4191000DFC083 /* LongestSubstringWithoutRepeatingCharacters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LongestSubstringWithoutRepeatingCharacters.m; sourceTree = "<group>"; };
 		F7075A641DF41AC700DFC083 /* LongestSubstringWithoutRepeatingCharactersSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LongestSubstringWithoutRepeatingCharactersSpec.m; sourceTree = "<group>"; };
+		F7075A661DF428B900DFC083 /* MaximumProductSubarray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MaximumProductSubarray.h; sourceTree = "<group>"; };
+		F7075A671DF428B900DFC083 /* MaximumProductSubarray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MaximumProductSubarray.m; sourceTree = "<group>"; };
+		F7075A691DF42A7600DFC083 /* MaximumProductSubarraySpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MaximumProductSubarraySpec.m; sourceTree = "<group>"; };
 		F71193441DC72F4B00683697 /* TwoLabelCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoLabelCollectionViewCell.h; sourceTree = "<group>"; };
 		F71193451DC72F4B00683697 /* TwoLabelCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoLabelCollectionViewCell.m; sourceTree = "<group>"; };
 		F71193461DC72F4B00683697 /* TwoLabelCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TwoLabelCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -373,6 +378,8 @@
 				F7075A5B1DF3102000DFC083 /* PalindromePartitioningII.m */,
 				F7075A601DF4191000DFC083 /* LongestSubstringWithoutRepeatingCharacters.h */,
 				F7075A611DF4191000DFC083 /* LongestSubstringWithoutRepeatingCharacters.m */,
+				F7075A661DF428B900DFC083 /* MaximumProductSubarray.h */,
+				F7075A671DF428B900DFC083 /* MaximumProductSubarray.m */,
 			);
 			path = Leetcode;
 			sourceTree = "<group>";
@@ -387,6 +394,7 @@
 				F7075A581DF30DA400DFC083 /* LargestNumberSpec.m */,
 				F7075A5E1DF313C100DFC083 /* PalindromePartitioningIISpec.m */,
 				F7075A641DF41AC700DFC083 /* LongestSubstringWithoutRepeatingCharactersSpec.m */,
+				F7075A691DF42A7600DFC083 /* MaximumProductSubarraySpec.m */,
 			);
 			path = Leetcode;
 			sourceTree = "<group>";
@@ -709,6 +717,7 @@
 				F71193471DC72F4B00683697 /* TwoLabelCollectionViewCell.m in Sources */,
 				F711934D1DC7300500683697 /* TwoTitleCellDynamicHeightViewController.m in Sources */,
 				F705E0A41DBB86F90081CEED /* DynamicTextViewHeightViewController.m in Sources */,
+				F7075A681DF428B900DFC083 /* MaximumProductSubarray.m in Sources */,
 				F782BEA71DD9558500B6B63F /* DynamicLeftRightLabelViewController.m in Sources */,
 				F705E08D1DBB715F0081CEED /* Ch2ViewController.m in Sources */,
 				F705E06B1DBB6B800081CEED /* CollectionViewCell.m in Sources */,
@@ -730,6 +739,7 @@
 			files = (
 				F7749E071DF2E3720065F2D2 /* DecodeWaysSpec.m in Sources */,
 				F7075A651DF41AC700DFC083 /* LongestSubstringWithoutRepeatingCharactersSpec.m in Sources */,
+				F7075A6A1DF42A7600DFC083 /* MaximumProductSubarraySpec.m in Sources */,
 				F7075A5F1DF313C100DFC083 /* PalindromePartitioningIISpec.m in Sources */,
 				F7075A591DF30DA400DFC083 /* LargestNumberSpec.m in Sources */,
 				F7075A541DF307DB00DFC083 /* ThreeSumSpec.m in Sources */,
