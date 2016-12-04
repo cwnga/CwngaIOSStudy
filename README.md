@@ -67,6 +67,110 @@ https://leetcode.com/problems/palindrome-partitioning-ii/
             minCutDic[@(i+j)] = @(min);
         }
     }
+### Longest Substring Without Repeating Characters
+https://leetcode.com/problems/longest-substring-without-repeating-characters/
+
+    -> abcabcbb
+    NSInteger max = 0;
+    NSMutableDictionary *charLastIndexMap = [NSMutableDictionary dictionary];///map to record char last index.
+    for (NSInteger i = 0, j = 0; i < string.length; i++) {
+        NSString *chart = [string substringWithRange:NSMakeRange(i, 1)];
+        if (charLastIndexMap[chart]) {
+            j = MAX(j, [charLastIndexMap[chart] integerValue] + 1); ///< abba, i=2, j befor:0, after:b:1+1=>2,get string:b | i=3, j:2, a:0+1=1 < j(2), no update j, will get substring: ba
+        }
+        charLastIndexMap[chart] = @(i); 
+        max = MAX(max, i - j + 1);      
+
+    }
+    return max;
+    ///input: abcabcbb
+    Test Case '-[LongestSubstringWithoutRepeatingCharactersSpec TestLongestSubstringWithoutRepeatingCharacters_Test_2]' started.
+    2016-12-04 17:57:21.523 CwngaIOSStudy[91415:1579478] charLastIndexMap:{
+    }
+    2016-12-04 17:57:21.523 CwngaIOSStudy[91415:1579478] ===Loop=i:(0),j,(0)==
+    2016-12-04 17:57:21.523 CwngaIOSStudy[91415:1579478] substring:start:[i(0)-j(0)], length:(1), text:(a)
+    2016-12-04 17:57:21.524 CwngaIOSStudy[91415:1579478] new max:1
+    2016-12-04 17:57:21.524 CwngaIOSStudy[91415:1579478] charLastIndexMap:{
+        a = 0;
+    }
+    2016-12-04 17:57:21.524 CwngaIOSStudy[91415:1579478] ===Loop=i:(1),j,(0)==
+    2016-12-04 17:57:21.524 CwngaIOSStudy[91415:1579478] substring:start:[i(1)-j(0)], length:(2), text:(ab)
+    2016-12-04 17:57:21.525 CwngaIOSStudy[91415:1579478] new max:2
+    2016-12-04 17:57:21.525 CwngaIOSStudy[91415:1579478] charLastIndexMap:{
+        a = 0;
+        b = 1;
+    }
+    2016-12-04 17:57:21.533 CwngaIOSStudy[91415:1579478] ===Loop=i:(2),j,(0)==
+    2016-12-04 17:57:21.533 CwngaIOSStudy[91415:1579478] substring:start:[i(2)-j(0)], length:(3), text:(abc)
+    2016-12-04 17:57:21.533 CwngaIOSStudy[91415:1579478] new max:3
+    2016-12-04 17:57:21.533 CwngaIOSStudy[91415:1579478] charLastIndexMap:{
+        a = 0;
+        b = 1;
+        c = 2;
+    }
+    2016-12-04 17:57:21.533 CwngaIOSStudy[91415:1579478] ===Loop=i:(3),j,(0)==
+    2016-12-04 17:57:21.534 CwngaIOSStudy[91415:1579478] ===MAPPED===
+    2016-12-04 17:57:21.534 CwngaIOSStudy[91415:1579478] charLastIndexMap[chart]{a} => 0
+    2016-12-04 17:57:21.534 CwngaIOSStudy[91415:1579478] j:0
+    2016-12-04 17:57:21.534 CwngaIOSStudy[91415:1579478] substring:start:[i(3)-j(1)], length:(3), text:(bca)
+    2016-12-04 17:57:21.534 CwngaIOSStudy[91415:1579478] new max:3
+    2016-12-04 17:57:21.534 CwngaIOSStudy[91415:1579478] charLastIndexMap:{
+        a = 3;
+        b = 1;
+        c = 2;
+    }
+    2016-12-04 17:57:21.535 CwngaIOSStudy[91415:1579478] ===Loop=i:(4),j,(1)==
+    2016-12-04 17:57:21.535 CwngaIOSStudy[91415:1579478] ===MAPPED===
+    2016-12-04 17:57:21.535 CwngaIOSStudy[91415:1579478] charLastIndexMap[chart]{b} => 1
+    2016-12-04 17:57:21.558 CwngaIOSStudy[91415:1579478] j:1
+    2016-12-04 17:57:21.558 CwngaIOSStudy[91415:1579478] substring:start:[i(4)-j(2)], length:(3), text:(cab)
+    2016-12-04 17:57:21.558 CwngaIOSStudy[91415:1579478] new max:3
+    2016-12-04 17:57:21.559 CwngaIOSStudy[91415:1579478] charLastIndexMap:{
+        a = 3;
+        b = 4;
+        c = 2;
+    }
+    2016-12-04 17:57:21.559 CwngaIOSStudy[91415:1579478] ===Loop=i:(5),j,(2)==
+    2016-12-04 17:57:21.559 CwngaIOSStudy[91415:1579478] ===MAPPED===
+    2016-12-04 17:57:21.559 CwngaIOSStudy[91415:1579478] charLastIndexMap[chart]{c} => 2
+    2016-12-04 17:57:21.559 CwngaIOSStudy[91415:1579478] j:2
+    2016-12-04 17:57:21.559 CwngaIOSStudy[91415:1579478] substring:start:[i(5)-j(3)], length:(3), text:(abc)
+    2016-12-04 17:57:21.559 CwngaIOSStudy[91415:1579478] new max:3
+    2016-12-04 17:57:21.560 CwngaIOSStudy[91415:1579478] charLastIndexMap:{
+        a = 3;
+        b = 4;
+        c = 5;
+    }
+    2016-12-04 17:57:21.560 CwngaIOSStudy[91415:1579478] ===Loop=i:(6),j,(3)==
+    2016-12-04 17:57:21.560 CwngaIOSStudy[91415:1579478] ===MAPPED===
+    2016-12-04 17:57:21.560 CwngaIOSStudy[91415:1579478] charLastIndexMap[chart]{b} => 4
+    2016-12-04 17:57:21.560 CwngaIOSStudy[91415:1579478] j:3
+    2016-12-04 17:57:21.560 CwngaIOSStudy[91415:1579478] substring:start:[i(6)-j(5)], length:(2), text:(cb)
+    2016-12-04 17:57:21.560 CwngaIOSStudy[91415:1579478] new max:3
+    2016-12-04 17:57:21.561 CwngaIOSStudy[91415:1579478] charLastIndexMap:{
+        a = 3;
+        b = 6;
+        c = 5;
+    }
+    2016-12-04 17:57:21.561 CwngaIOSStudy[91415:1579478] ===Loop=i:(7),j,(5)==
+    2016-12-04 17:57:21.561 CwngaIOSStudy[91415:1579478] ===MAPPED===
+    2016-12-04 17:57:21.561 CwngaIOSStudy[91415:1579478] charLastIndexMap[chart]{b} => 6
+    2016-12-04 17:57:21.561 CwngaIOSStudy[91415:1579478] j:5
+    2016-12-04 17:57:21.561 CwngaIOSStudy[91415:1579478] substring:start:[i(7)-j(7)], length:(1), text:(b)
+    2016-12-04 17:57:21.562 CwngaIOSStudy[91415:1579478] new max:3
+    2016-12-04 17:57:21.562 CwngaIOSStudy[91415:1579478] charLastIndexMap:{
+        a = 3;
+        b = 7;
+        c = 5;
+    }
+    2016-12-04 17:57:21.562 CwngaIOSStudy[91415:1579478] charLastIndexMap:{
+        a = 3;
+        b = 7;
+        c = 5;
+    }
+    2016-12-04 17:57:21.562 CwngaIOSStudy[91415:1579478] max:3
+
+
 
 ## Algorithm
 ### Binary Tree Ordering
