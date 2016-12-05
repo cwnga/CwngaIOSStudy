@@ -179,6 +179,10 @@ https://leetcode.com/problems/maximum-product-subarray/
     NSInteger min = MIN(MIN(tmp1, tmp2), [nums[i] integerValue]); //最小和自己比一次
     NSInteger max = MAX(MAX(tmp1, tmp2), [nums[i] integerValue]); //最大和自己比一次
 
+### Longest Palindromic Substring
+https://leetcode.com/problems/longest-palindromic-substring/
+-> aa
+-> aba
 
 ## Algorithm
 ### Binary Tree Ordering

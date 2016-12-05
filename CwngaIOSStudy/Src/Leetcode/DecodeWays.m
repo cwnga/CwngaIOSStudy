@@ -31,7 +31,12 @@
 //example: "01" -> 0, can not decode
 //example: "10" -> 1, only j
 //example: "11" -> 2, "AA" or "K"
-
+//hint:
+//default: dp[i] = 0;
+//¨
+//if ((pre * 10+current) >=10 || <=26) {
+//   dp[i] = dp[i] + dp[i-2];
+//}
 
 -(NSInteger)numDecodings:(NSString *)string
 {
@@ -39,7 +44,7 @@
 
 
     NSInteger result = 0;
-    NSArray *stringArray = [string componentsSeparatedByString:@""];
+    NSArray *stringArray;
     NSMutableArray *arr = [[NSMutableArray alloc]init];
     for (int i=0; i < string.length; i++) {
         NSString *tmp_str = [string substringWithRange:NSMakeRange(i, 1)];
@@ -76,7 +81,8 @@
             if (iInteger != 0) {
                 //for 112 -> last resut:  (1)+(1),  (11):
                 //current: (1)+(1) + (2) and (11) + (2), same dp count
-
+                //for 110 -> last resut: (1)+(1),  (11):
+                //current: (1)+(1) + (0):X and (11) + (0):X //can not 0 :(
                 dp[i] = dp[i-1];
             }
             if (x >= 10 && x <=26) {
