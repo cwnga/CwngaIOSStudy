@@ -17,14 +17,10 @@
 
 - (BOOL)containsNearbyAlmostDuplicate:(NSArray *)nums k:(NSInteger)k t:(NSInteger)t
 {
-    NSTimeInterval startTime  = [[NSDate date] timeIntervalSince1970];
-
     // i - j < k
     // nums[i] - nums[j] < t
 
     if (!nums || [nums count] < 2) {
-        NSTimeInterval endTime  = [[NSDate date] timeIntervalSince1970];
-        NSLog(@"%@::%@ dur:%f sec",NSStringFromClass([self class]), NSStringFromSelector(@selector(containsNearbyAlmostDuplicate:k:t:)), endTime - startTime);
         return NO;
 
     }
@@ -32,18 +28,11 @@
 
         for (NSInteger j = i + 1; labs(j - i) <= k && j < nums.count; j++) {
              if (labs([nums[i] integerValue] - [nums[j] integerValue]) <= t) {
-                 NSTimeInterval endTime  = [[NSDate date] timeIntervalSince1970];
-                 NSLog(@"%@::%@ dur:%f sec",NSStringFromClass([self class]), NSStringFromSelector(@selector(containsNearbyAlmostDuplicate:k:t:)), endTime - startTime);
                 return YES;
             }
-
-            
         }
         
     }
-    NSTimeInterval endTime  = [[NSDate date] timeIntervalSince1970];
-    NSLog(@"%@::%@ dur:%f sec",NSStringFromClass([self class]), NSStringFromSelector(@selector(containsNearbyAlmostDuplicate:k:t:)), endTime - startTime);
-    
     return NO;
 }
 
