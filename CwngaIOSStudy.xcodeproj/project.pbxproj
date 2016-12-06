@@ -21,6 +21,9 @@
 		F70255CC1DF6E5CD000DECA0 /* WordBreakSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = F70255CB1DF6E5CD000DECA0 /* WordBreakSpec.m */; };
 		F70255CF1DF6EE29000DECA0 /* MinimumSizeSubarraySum.m in Sources */ = {isa = PBXBuildFile; fileRef = F70255CE1DF6EE29000DECA0 /* MinimumSizeSubarraySum.m */; };
 		F70255D11DF6F122000DECA0 /* MinimumSizeSubarraySumSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = F70255D01DF6F122000DECA0 /* MinimumSizeSubarraySumSpec.m */; };
+		F70255D41DF6FF23000DECA0 /* MaximumDepthofBinaryTree.m in Sources */ = {isa = PBXBuildFile; fileRef = F70255D31DF6FF23000DECA0 /* MaximumDepthofBinaryTree.m */; };
+		F70255D71DF701CC000DECA0 /* MaximumProductofWordLengths.m in Sources */ = {isa = PBXBuildFile; fileRef = F70255D61DF701CC000DECA0 /* MaximumProductofWordLengths.m */; };
+		F70255D91DF703BA000DECA0 /* MaximumProductofWordLengthsSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = F70255D81DF703BA000DECA0 /* MaximumProductofWordLengthsSpec.m */; };
 		F705E06B1DBB6B800081CEED /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F705E05B1DBB6B800081CEED /* CollectionViewCell.m */; };
 		F705E06C1DBB6B800081CEED /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F705E05C1DBB6B800081CEED /* CollectionViewCell.xib */; };
 		F705E06D1DBB6B800081CEED /* ListingCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F705E05E1DBB6B800081CEED /* ListingCollectionViewCell.m */; };
@@ -117,6 +120,11 @@
 		F70255CD1DF6EE29000DECA0 /* MinimumSizeSubarraySum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MinimumSizeSubarraySum.h; sourceTree = "<group>"; };
 		F70255CE1DF6EE29000DECA0 /* MinimumSizeSubarraySum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MinimumSizeSubarraySum.m; sourceTree = "<group>"; };
 		F70255D01DF6F122000DECA0 /* MinimumSizeSubarraySumSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MinimumSizeSubarraySumSpec.m; sourceTree = "<group>"; };
+		F70255D21DF6FF23000DECA0 /* MaximumDepthofBinaryTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MaximumDepthofBinaryTree.h; sourceTree = "<group>"; };
+		F70255D31DF6FF23000DECA0 /* MaximumDepthofBinaryTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MaximumDepthofBinaryTree.m; sourceTree = "<group>"; };
+		F70255D51DF701CC000DECA0 /* MaximumProductofWordLengths.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MaximumProductofWordLengths.h; sourceTree = "<group>"; };
+		F70255D61DF701CC000DECA0 /* MaximumProductofWordLengths.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MaximumProductofWordLengths.m; sourceTree = "<group>"; };
+		F70255D81DF703BA000DECA0 /* MaximumProductofWordLengthsSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MaximumProductofWordLengthsSpec.m; sourceTree = "<group>"; };
 		F705E05A1DBB6B800081CEED /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
 		F705E05B1DBB6B800081CEED /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
 		F705E05C1DBB6B800081CEED /* CollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
@@ -432,6 +440,10 @@
 				F70255C91DF6D5EC000DECA0 /* WordBreak.m */,
 				F70255CD1DF6EE29000DECA0 /* MinimumSizeSubarraySum.h */,
 				F70255CE1DF6EE29000DECA0 /* MinimumSizeSubarraySum.m */,
+				F70255D21DF6FF23000DECA0 /* MaximumDepthofBinaryTree.h */,
+				F70255D31DF6FF23000DECA0 /* MaximumDepthofBinaryTree.m */,
+				F70255D51DF701CC000DECA0 /* MaximumProductofWordLengths.h */,
+				F70255D61DF701CC000DECA0 /* MaximumProductofWordLengths.m */,
 			);
 			path = Leetcode;
 			sourceTree = "<group>";
@@ -453,6 +465,7 @@
 				F70255C61DF67379000DECA0 /* MaxSequenceSubArrayCountSpec.m */,
 				F70255CB1DF6E5CD000DECA0 /* WordBreakSpec.m */,
 				F70255D01DF6F122000DECA0 /* MinimumSizeSubarraySumSpec.m */,
+				F70255D81DF703BA000DECA0 /* MaximumProductofWordLengthsSpec.m */,
 			);
 			path = Leetcode;
 			sourceTree = "<group>";
@@ -769,6 +782,7 @@
 				F705E06D1DBB6B800081CEED /* ListingCollectionViewCell.m in Sources */,
 				F782BE9D1DD9546600B6B63F /* ADKCollectionViewDynamicSizeSubCell.m in Sources */,
 				F705E08B1DBB715F0081CEED /* Ch2DetailViewController.m in Sources */,
+				F70255D71DF701CC000DECA0 /* MaximumProductofWordLengths.m in Sources */,
 				F7F21CCE1DC24E2000E94E8B /* ADKImageColorViewController.m in Sources */,
 				F7749DF71DF2C8A40065F2D2 /* CwngaNode.m in Sources */,
 				F705E0AB1DBB97090081CEED /* BinaryTreeViewController.m in Sources */,
@@ -795,6 +809,7 @@
 				F705E0981DBB86630081CEED /* TextViewCollectionViewCell.m in Sources */,
 				F70255BD1DF5A2E3000DECA0 /* CountCompleteTreeNodes.m in Sources */,
 				F70255C51DF64C60000DECA0 /* MaxSequenceSubArrayCount.m in Sources */,
+				F70255D41DF6FF23000DECA0 /* MaximumDepthofBinaryTree.m in Sources */,
 				F7075A571DF30BC700DFC083 /* LargestNumber.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -815,6 +830,7 @@
 				F7075A591DF30DA400DFC083 /* LargestNumberSpec.m in Sources */,
 				F7075A541DF307DB00DFC083 /* ThreeSumSpec.m in Sources */,
 				F7749E081DF2E3720065F2D2 /* ReverseWordsInAStringSpec.m in Sources */,
+				F70255D91DF703BA000DECA0 /* MaximumProductofWordLengthsSpec.m in Sources */,
 				F70255C21DF5B16D000DECA0 /* TwoSumSpecSpec.m in Sources */,
 				F7749E0D1DF2F1B10065F2D2 /* ContainsDuplicateIIISpec.m in Sources */,
 			);
