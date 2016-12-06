@@ -38,14 +38,16 @@
     if (!array || array.count <= 0) {
         return result;
     }
-   array =  [array sortedArrayUsingSelector:@selector(compare:)];
+   
     for (NSInteger i =0;i < array.count -1;i++) {
         NSInteger leave = target - [array[i] integerValue];
-        result = [array containsObject:@(leave)];
+        NSMutableArray *tmpArray = [NSMutableArray arrayWithArray:array];
+        [tmpArray removeObjectAtIndex:i];
+        result = [tmpArray containsObject:@(leave)];
         if (result) {
             break;
         }
-        /*
+/*
         NSArray *tmpArray = array;
         while(true) {
             if ([tmpArray.firstObject integerValue] != leave) {
@@ -69,8 +71,8 @@
         if (result == YES) {
             break;
         }
-        */
-
+        
+*/
     }
 
     return result;

@@ -29,6 +29,13 @@ describe(@"test TwoSum", ^{
         // (2 -> 4 -> 3) + (5 -> 6 -> 4)
 
     });
+    it(@"test", ^{
+        TwoSum *test = [[TwoSum alloc] init];
+        BOOL is = [test numsO1:@[@(2),@(1),@(4)] target:4];
+        [[theValue(is) should] equal:theValue(NO)];
+        // (2 -> 4 -> 3) + (5 -> 6 -> 4)
+
+    });
 
 
 
