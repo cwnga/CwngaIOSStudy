@@ -195,6 +195,14 @@ https://leetcode.com/problems/count-complete-tree-nodes/
 
 ### MaxSequenceSubArrayCount
 
+### Word Break
+https://leetcode.com/problems/word-break/
+
+### Minimum Size Subarray Sum
+https://leetcode.com/problems/minimum-size-subarray-sum/
+
+
+
 
 
 ## Algorithm

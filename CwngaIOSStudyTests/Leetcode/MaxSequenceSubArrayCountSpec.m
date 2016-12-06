@@ -42,8 +42,6 @@ describe(@"test TwoSum", ^{
     });
 
 
-
-
 });
 
 SPEC_END
