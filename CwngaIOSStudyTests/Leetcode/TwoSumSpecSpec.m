@@ -5,9 +5,6 @@
 //  Created by Anson Ng on 12/5/16.
 //  Copyright © 2016 Yahoo! Inc. All rights reserved.
 //
-
-#import <Foundation/Foundation.h>
-
 #import <Foundation/Foundation.h>
 #import <Kiwi/Kiwi.h>
 #import "TwoSum.h"

@@ -15,6 +15,8 @@
 		F70255BD1DF5A2E3000DECA0 /* CountCompleteTreeNodes.m in Sources */ = {isa = PBXBuildFile; fileRef = F70255BC1DF5A2E3000DECA0 /* CountCompleteTreeNodes.m */; };
 		F70255C01DF5AD92000DECA0 /* TwoSum.m in Sources */ = {isa = PBXBuildFile; fileRef = F70255BF1DF5AD92000DECA0 /* TwoSum.m */; };
 		F70255C21DF5B16D000DECA0 /* TwoSumSpecSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = F70255C11DF5B16D000DECA0 /* TwoSumSpecSpec.m */; };
+		F70255C51DF64C60000DECA0 /* MaxSequenceSubArrayCount.m in Sources */ = {isa = PBXBuildFile; fileRef = F70255C41DF64C60000DECA0 /* MaxSequenceSubArrayCount.m */; };
+		F70255C71DF67379000DECA0 /* MaxSequenceSubArrayCountSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = F70255C61DF67379000DECA0 /* MaxSequenceSubArrayCountSpec.m */; };
 		F705E06B1DBB6B800081CEED /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F705E05B1DBB6B800081CEED /* CollectionViewCell.m */; };
 		F705E06C1DBB6B800081CEED /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F705E05C1DBB6B800081CEED /* CollectionViewCell.xib */; };
 		F705E06D1DBB6B800081CEED /* ListingCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F705E05E1DBB6B800081CEED /* ListingCollectionViewCell.m */; };
@@ -102,6 +104,9 @@
 		F70255BE1DF5AD92000DECA0 /* TwoSum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoSum.h; sourceTree = "<group>"; };
 		F70255BF1DF5AD92000DECA0 /* TwoSum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoSum.m; sourceTree = "<group>"; };
 		F70255C11DF5B16D000DECA0 /* TwoSumSpecSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoSumSpecSpec.m; sourceTree = "<group>"; };
+		F70255C31DF64C60000DECA0 /* MaxSequenceSubArrayCount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MaxSequenceSubArrayCount.h; sourceTree = "<group>"; };
+		F70255C41DF64C60000DECA0 /* MaxSequenceSubArrayCount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MaxSequenceSubArrayCount.m; sourceTree = "<group>"; };
+		F70255C61DF67379000DECA0 /* MaxSequenceSubArrayCountSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MaxSequenceSubArrayCountSpec.m; sourceTree = "<group>"; };
 		F705E05A1DBB6B800081CEED /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
 		F705E05B1DBB6B800081CEED /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
 		F705E05C1DBB6B800081CEED /* CollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
@@ -411,6 +416,8 @@
 				F70255BC1DF5A2E3000DECA0 /* CountCompleteTreeNodes.m */,
 				F70255BE1DF5AD92000DECA0 /* TwoSum.h */,
 				F70255BF1DF5AD92000DECA0 /* TwoSum.m */,
+				F70255C31DF64C60000DECA0 /* MaxSequenceSubArrayCount.h */,
+				F70255C41DF64C60000DECA0 /* MaxSequenceSubArrayCount.m */,
 			);
 			path = Leetcode;
 			sourceTree = "<group>";
@@ -429,6 +436,7 @@
 				F7075A6E1DF4636600DFC083 /* LongestPalindromicSubstringSpec.m */,
 				F70255B91DF59894000DECA0 /* AddTwoNumbersSpec.m */,
 				F70255C11DF5B16D000DECA0 /* TwoSumSpecSpec.m */,
+				F70255C61DF67379000DECA0 /* MaxSequenceSubArrayCountSpec.m */,
 			);
 			path = Leetcode;
 			sourceTree = "<group>";
@@ -768,6 +776,7 @@
 				F7749E0B1DF2EB0C0065F2D2 /* ContainsDuplicateIII.m in Sources */,
 				F705E0981DBB86630081CEED /* TextViewCollectionViewCell.m in Sources */,
 				F70255BD1DF5A2E3000DECA0 /* CountCompleteTreeNodes.m in Sources */,
+				F70255C51DF64C60000DECA0 /* MaxSequenceSubArrayCount.m in Sources */,
 				F7075A571DF30BC700DFC083 /* LargestNumber.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -781,6 +790,7 @@
 				F7075A651DF41AC700DFC083 /* LongestSubstringWithoutRepeatingCharactersSpec.m in Sources */,
 				F7075A6A1DF42A7600DFC083 /* MaximumProductSubarraySpec.m in Sources */,
 				F7075A6F1DF4636600DFC083 /* LongestPalindromicSubstringSpec.m in Sources */,
+				F70255C71DF67379000DECA0 /* MaxSequenceSubArrayCountSpec.m in Sources */,
 				F7075A5F1DF313C100DFC083 /* PalindromePartitioningIISpec.m in Sources */,
 				F7075A591DF30DA400DFC083 /* LargestNumberSpec.m in Sources */,
 				F7075A541DF307DB00DFC083 /* ThreeSumSpec.m in Sources */,
