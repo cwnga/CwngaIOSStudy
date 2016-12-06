@@ -7,7 +7,7 @@
 //
 
 #import "TwoSum.h"
-
+#import <UIKit/UIKit.h>
 @implementation TwoSum
 - (BOOL)nums:(NSArray *)array target:(NSInteger)target
 {
@@ -31,14 +31,13 @@
 
     return result;
 }
-
+//fail if :@[@(NSIntegerMax),@(NSIntegerMax),@(99)] target:-2]; 
 - (BOOL)numsO1:(NSArray *)array target:(NSInteger)target
 {
     BOOL result = NO;
     if (!array || array.count <= 0) {
         return result;
     }
-   
     for (NSInteger i =0;i < array.count -1;i++) {
         NSInteger leave = target - [array[i] integerValue];
         NSMutableArray *tmpArray = [NSMutableArray arrayWithArray:array];
@@ -74,6 +73,40 @@
         
 */
     }
+
+    return result;
+}
+- (BOOL)numsOfloat:(NSArray *)array target:(NSInteger)target
+{
+    BOOL result = NO;
+    if (!array || array.count <= 0) {
+        return result;
+    }
+    array = [array sortedArrayUsingSelector:@selector(compare:)];//O(nlog(n))
+    NSInteger start = 0;
+    NSInteger end = array.count - 1;
+
+
+    while (true) { //O(n)
+        if (start == end) {
+            break;
+        }
+
+        if (target != [array[start] floatValue] + [array[end] floatValue]) {
+            if (target <[array[start] floatValue] + [array[end] floatValue]) {
+                end --;
+            } else {
+                start++;
+            }
+
+        } else {
+
+            result = YES;
+            break;
+        }
+
+    }
+
 
     return result;
 }

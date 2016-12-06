@@ -15,29 +15,32 @@ describe(@"test TwoSum", ^{
 
     it(@"test", ^{
         TwoSum *test = [[TwoSum alloc] init];
-        BOOL is = [test numsO1:@[@(1),@(2),@(3)] target:3];
+        BOOL is = [test numsOfloat:@[@(1),@(2),@(3)] target:3];
         [[theValue(is) should] equal:theValue(YES)];
-        // (2 -> 4 -> 3) + (5 -> 6 -> 4)
-
     });
-
 
     it(@"test", ^{
         TwoSum *test = [[TwoSum alloc] init];
-        BOOL is = [test numsO1:@[@(1),@(1),@(3)] target:3];
+        BOOL is = [test numsOfloat:@[@(1),@(1),@(3)] target:3];
         [[theValue(is) should] equal:theValue(NO)];
-        // (2 -> 4 -> 3) + (5 -> 6 -> 4)
 
+    });
+
+    it(@"test", ^{
+        TwoSum *test = [[TwoSum alloc] init];
+        BOOL is = [test numsOfloat:@[@(2),@(1),@(4)] target:4];
+        [[theValue(is) should] equal:theValue(NO)];
     });
     it(@"test", ^{
         TwoSum *test = [[TwoSum alloc] init];
-        BOOL is = [test numsO1:@[@(2),@(1),@(4)] target:4];
+        BOOL is = [test numsOfloat:@[@(NSIntegerMax),@(NSIntegerMax),@(99)] target:-2];
         [[theValue(is) should] equal:theValue(NO)];
-        // (2 -> 4 -> 3) + (5 -> 6 -> 4)
-
     });
-
-
+//    it(@"test", ^{
+//        TwoSum *test = [[TwoSum alloc] init];
+//        BOOL is = [test numsO1:@[@(NSIntegerMax),@(NSIntegerMax),@(99)] target:-2]; //will fail@@
+//        [[theValue(is) should] equal:theValue(NO)];
+//    });
 
 });
 
