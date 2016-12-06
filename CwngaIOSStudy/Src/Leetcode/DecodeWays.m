@@ -45,7 +45,7 @@
     NSMutableArray *arr = [[NSMutableArray alloc]init];
     for (int i=0; i < string.length; i++) {
         NSString *tmp_str = [string substringWithRange:NSMakeRange(i, 1)];
-        [arr addObject:[tmp_str stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
+        [arr addObject:tmp_str];
     }
     stringArray = [arr copy];
     NSMutableArray *dp = [NSMutableArray array];
