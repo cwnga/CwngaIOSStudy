@@ -28,8 +28,7 @@
             //input: [-4, -1, -1, 0, 1, 2]
             //result:[[-1, -1, 2]
             //[-1, 0, 1]
-            //[-1, 0, 1]//dep , nums[i] == nums[i-1]]
-
+            //[-1, 0, 1]//dedup , nums[i] == nums[i-1]]
 
 
             NSInteger start = i+1;

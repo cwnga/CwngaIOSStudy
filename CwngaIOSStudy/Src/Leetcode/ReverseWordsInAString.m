@@ -13,7 +13,9 @@
 - (NSString *)reverseWords:(NSString *)string
 {
     NSPredicate *predicateName = [NSPredicate predicateWithFormat:@"length > 0"];
-    NSString *result =  [[[[[string componentsSeparatedByString:@" "] reverseObjectEnumerator] allObjects] filteredArrayUsingPredicate:predicateName] componentsJoinedByString:@" "];
+    NSString *result =  [[[[[string componentsSeparatedByString:@" "]
+                            reverseObjectEnumerator] allObjects]
+                          filteredArrayUsingPredicate:predicateName] componentsJoinedByString:@" "];
    
     return result;
 }

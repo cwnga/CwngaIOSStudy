@@ -35,27 +35,6 @@
 
 
     }
-//    if (node1) {
-//        result.val += node1.val;
-//    }
-//    if (node2) {
-//        result.val += node2.val;
-//    }
-//    nextNumber =  result.val / 10;
-//    result.val =  result.val % 10;
-//    fakeNode.next = result;
-//    //// (2 -> 4 -> 3) + (5 -> 6 -> 4)
-//    while (node1.next || node2.next || nextNumber > 0) {
-//        CwngaListNode *currentNode = [[CwngaListNode alloc] init];
-//        currentNode.val = (node1.val + node2.val + nextNumber) % 10;
-//        nextNumber = (node1.val + node2.val + nextNumber) / 10;
-//        result.next = currentNode;
-//        node1 = node1.next;
-//        node2 = node2.next;
-//        result = currentNode;
-//    }
-
-
     return totalResult;
 }
 + (CwngaListNode *)genNodesWithArray:(NSArray *)nodesValues

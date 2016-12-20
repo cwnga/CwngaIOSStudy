@@ -76,8 +76,10 @@
 
     return result;
 }
+
 - (BOOL)numsOfloat:(NSArray *)array target:(NSInteger)target
 {
+    
     BOOL result = NO;
     if (!array || array.count <= 0) {
         return result;
@@ -98,15 +100,13 @@
             } else {
                 start++;
             }
-
         } else {
-
             result = YES;
             break;
         }
 
     }
-
+    
 
     return result;
 }
