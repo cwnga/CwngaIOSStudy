@@ -80,6 +80,9 @@
 		F79D31FD1DBB69E400C63FF5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F79D31FB1DBB69E400C63FF5 /* LaunchScreen.storyboard */; };
 		F7BCA7621DC2EA6B00404F8E /* Ch3CombineLatestViewControlller.m in Sources */ = {isa = PBXBuildFile; fileRef = F7BCA7601DC2EA6B00404F8E /* Ch3CombineLatestViewControlller.m */; };
 		F7BCA7631DC2EA6B00404F8E /* Ch3CombineLatestViewControlller.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7BCA7611DC2EA6B00404F8E /* Ch3CombineLatestViewControlller.xib */; };
+		F7D5354B1E2F708700D2C35E /* SKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7D535491E2F708700D2C35E /* SKViewController.m */; };
+		F7D5354C1E2F708700D2C35E /* SKViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7D5354A1E2F708700D2C35E /* SKViewController.xib */; };
+		F7D5354F1E2F70B000D2C35E /* SKImageLikeAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = F7D5354E1E2F70B000D2C35E /* SKImageLikeAnimationView.m */; };
 		F7F21CCE1DC24E2000E94E8B /* ADKImageColorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7F21CCC1DC24E2000E94E8B /* ADKImageColorViewController.m */; };
 		F7F21CCF1DC24E2000E94E8B /* ADKImageColorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7F21CCD1DC24E2000E94E8B /* ADKImageColorViewController.xib */; };
 /* End PBXBuildFile section */
@@ -212,6 +215,11 @@
 		F7BCA7611DC2EA6B00404F8E /* Ch3CombineLatestViewControlller.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Ch3CombineLatestViewControlller.xib; sourceTree = "<group>"; };
 		F7C0F77D1DF2C79B007BBBC8 /* CwngaIOSStudyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CwngaIOSStudyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7C0F7811DF2C79C007BBBC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7D535481E2F708700D2C35E /* SKViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKViewController.h; sourceTree = "<group>"; };
+		F7D535491E2F708700D2C35E /* SKViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKViewController.m; sourceTree = "<group>"; };
+		F7D5354A1E2F708700D2C35E /* SKViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SKViewController.xib; sourceTree = "<group>"; };
+		F7D5354D1E2F70B000D2C35E /* SKImageLikeAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKImageLikeAnimationView.h; sourceTree = "<group>"; };
+		F7D5354E1E2F70B000D2C35E /* SKImageLikeAnimationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKImageLikeAnimationView.m; sourceTree = "<group>"; };
 		F7F21CCB1DC24E2000E94E8B /* ADKImageColorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADKImageColorViewController.h; sourceTree = "<group>"; };
 		F7F21CCC1DC24E2000E94E8B /* ADKImageColorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADKImageColorViewController.m; sourceTree = "<group>"; };
 		F7F21CCD1DC24E2000E94E8B /* ADKImageColorViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ADKImageColorViewController.xib; sourceTree = "<group>"; };
@@ -260,6 +268,7 @@
 		F705E0581DBB6B800081CEED /* Src */ = {
 			isa = PBXGroup;
 			children = (
+				F7D535471E2F706400D2C35E /* SK */,
 				F7749DF81DF2C95A0065F2D2 /* Leetcode */,
 				F7749DF41DF2C8810065F2D2 /* Classes */,
 				F705E0A61DBB96BD0081CEED /* Algorithm */,
@@ -299,6 +308,8 @@
 				F705E0781DBB6E870081CEED /* TitleCollectionReusableView.h */,
 				F705E0791DBB6E870081CEED /* TitleCollectionReusableView.m */,
 				F705E07A1DBB6E870081CEED /* TitleCollectionReusableView.xib */,
+				F7D5354D1E2F70B000D2C35E /* SKImageLikeAnimationView.h */,
+				F7D5354E1E2F70B000D2C35E /* SKImageLikeAnimationView.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -545,6 +556,16 @@
 			path = CwngaIOSStudyTests;
 			sourceTree = "<group>";
 		};
+		F7D535471E2F706400D2C35E /* SK */ = {
+			isa = PBXGroup;
+			children = (
+				F7D535481E2F708700D2C35E /* SKViewController.h */,
+				F7D535491E2F708700D2C35E /* SKViewController.m */,
+				F7D5354A1E2F708700D2C35E /* SKViewController.xib */,
+			);
+			path = SK;
+			sourceTree = "<group>";
+		};
 		F7F21CCA1DC24E0E00E94E8B /* Ch3-ADKImageColorViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -662,6 +683,7 @@
 				F7F21CCF1DC24E2000E94E8B /* ADKImageColorViewController.xib in Resources */,
 				F7BCA7631DC2EA6B00404F8E /* Ch3CombineLatestViewControlller.xib in Resources */,
 				F705E06C1DBB6B800081CEED /* CollectionViewCell.xib in Resources */,
+				F7D5354C1E2F708700D2C35E /* SKViewController.xib in Resources */,
 				F79D31F81DBB69E400C63FF5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -795,9 +817,11 @@
 				F705E0A41DBB86F90081CEED /* DynamicTextViewHeightViewController.m in Sources */,
 				F7075A681DF428B900DFC083 /* MaximumProductSubarray.m in Sources */,
 				F782BEA71DD9558500B6B63F /* DynamicLeftRightLabelViewController.m in Sources */,
+				F7D5354F1E2F70B000D2C35E /* SKImageLikeAnimationView.m in Sources */,
 				F70255B51DF59569000DECA0 /* CwngaListNode.m in Sources */,
 				F70255B81DF595CA000DECA0 /* AddTwoNumbers.m in Sources */,
 				F705E08D1DBB715F0081CEED /* Ch2ViewController.m in Sources */,
+				F7D5354B1E2F708700D2C35E /* SKViewController.m in Sources */,
 				F705E06B1DBB6B800081CEED /* CollectionViewCell.m in Sources */,
 				F705E0891DBB715F0081CEED /* Ch1ViewController.m in Sources */,
 				F7075A521DF3053600DFC083 /* ThreeSum.m in Sources */,

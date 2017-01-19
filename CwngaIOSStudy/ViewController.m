@@ -24,6 +24,17 @@ static  NSString * const ReuseIdentifier = @"CollectionViewCell";
     [super viewDidLoad];
 
     self.data = @[
+
+                  @{
+                      @"title": @"SKViewController",
+                      @"cells": @[
+                              @{
+                                  @"title" : @"SKViewController",
+                                  @"className": @"SKViewController"
+                                  },
+                              ],
+                      },
+
                   @{
                       @"title": @"Algorithm",
                       @"cells": @[
@@ -130,7 +141,7 @@ static  NSString * const ReuseIdentifier = @"CollectionViewCell";
 - (UICollectionReusableView *)collectionView: (UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath  {
     TitleCollectionReusableView *titleView = [self.collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:TitleCollectionReusableViewIdentifier forIndexPath:indexPath];
 
-    titleView.titleLabel.text = self.data[indexPath.row][@"title"];
+    titleView.titleLabel.text = self.data[indexPath.section][@"title"];
     return titleView;
 }
 
