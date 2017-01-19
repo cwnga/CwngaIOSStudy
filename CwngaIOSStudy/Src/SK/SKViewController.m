@@ -33,13 +33,15 @@
     [super viewDidAppear:animated];
 
     __weak typeof(self) weakSelf = self;
-    for (int i = 0; i < 200; i++) {
-        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.1f * NSEC_PER_SEC)), dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        for (int i = 0; i < 100000; i++) {
+
             [weakSelf.skImageLikeAnimationView fireImage:[UIImage imageNamed:@"Image-Smile"] size:CGSizeMake(30.0f, 30.0f) duration:1.5f scale:1.5f alpha:0.2f];
-        });
 
-    }
 
+        }
+    });
+    
 }
 -(void)handleTap
 {

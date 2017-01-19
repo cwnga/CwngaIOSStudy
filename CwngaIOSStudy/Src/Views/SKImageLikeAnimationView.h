@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface SKImageLikeAnimationView : UIView
-
+@property (assign, nonatomic) NSUInteger maxFireImageCount;
 -(void)fireImage:(UIImage *)image size:(CGSize)size duration:(CGFloat)duration scale:(CGFloat)scale alpha:(CGFloat)alpha;
 
 @end
