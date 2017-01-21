@@ -53,19 +53,10 @@
 {
     CGPoint point =  [tapGestureRecognizer locationInView:self.view];
     if (CGRectContainsPoint(self.skImageLikeAnimationView.frame, point)) {
-        for (int i = 0; i < 100; i++) {
-            dispatch_async(dispatch_get_main_queue(), ^{
-                [self.skImageLikeAnimationView fireImage:[UIImage imageNamed:@"Image-Smile"] size:CGSizeMake(30.0f, 30.0f) duration:1.5f scale:1.5f alpha:0.2f];
-            });
-        }
+        [self.skImageLikeAnimationView fireImage:[UIImage imageNamed:@"Image-Smile"] size:CGSizeMake(30.0f, 30.0f) duration:1.5f scale:1.5f alpha:0.2f];
     }
     if (CGRectContainsPoint(self.uiImageLikeAnimationView.frame, point)) {
-        for (int i = 0; i < 100; i++) {
-            dispatch_async(dispatch_get_main_queue(), ^{
-                [self.uiImageLikeAnimationView fireImage:[UIImage imageNamed:@"Image-Smile"] size:CGSizeMake(30.0f, 30.0f) duration:1.5f scale:1.5f alpha:0.2f];
-            });
-        }
-
+        [self.uiImageLikeAnimationView fireImage:[UIImage imageNamed:@"Image-Smile"] size:CGSizeMake(30.0f, 30.0f) duration:1.5f scale:1.5f alpha:0.2f];
     }
 }
 /*
