@@ -5,7 +5,7 @@
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11762"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -30,6 +30,18 @@
                     <rect key="frame" x="188" y="0.0" width="187" height="667"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SKTextures" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="47N-fj-ncu">
+                    <rect key="frame" x="50.5" y="323" width="87" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UIImageViews" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="amQ-Bc-FSt">
+                    <rect key="frame" x="227.5" y="323" width="108" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
@@ -37,10 +49,14 @@
                 <constraint firstItem="0tk-gL-Ar4" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="9V7-hn-6lz"/>
                 <constraint firstItem="0tk-gL-Ar4" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.5" id="BUc-xC-3sr"/>
                 <constraint firstAttribute="trailing" secondItem="WEP-QZ-81c" secondAttribute="trailing" id="QlX-8C-EzP"/>
+                <constraint firstItem="amQ-Bc-FSt" firstAttribute="centerX" secondItem="WEP-QZ-81c" secondAttribute="centerX" id="SQT-l8-KOW"/>
                 <constraint firstItem="WEP-QZ-81c" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Un9-F3-rEr"/>
                 <constraint firstItem="0tk-gL-Ar4" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="eMX-Xa-BsW"/>
                 <constraint firstAttribute="bottom" secondItem="0tk-gL-Ar4" secondAttribute="bottom" id="kXd-aO-HUz"/>
+                <constraint firstItem="amQ-Bc-FSt" firstAttribute="centerY" secondItem="WEP-QZ-81c" secondAttribute="centerY" id="lYD-Ck-vcx"/>
                 <constraint firstAttribute="bottom" secondItem="WEP-QZ-81c" secondAttribute="bottom" id="onH-4h-B5t"/>
+                <constraint firstItem="47N-fj-ncu" firstAttribute="centerY" secondItem="0tk-gL-Ar4" secondAttribute="centerY" id="pH3-cA-7F7"/>
+                <constraint firstItem="47N-fj-ncu" firstAttribute="centerX" secondItem="0tk-gL-Ar4" secondAttribute="centerX" id="yqf-Rz-Ac7"/>
             </constraints>
             <point key="canvasLocation" x="35.5" y="134.5"/>
         </view>
