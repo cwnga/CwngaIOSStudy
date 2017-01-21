@@ -1,5 +1,8 @@
 # CwngaIOSStudy
 
+## SKImageLikeAnimationView and UIImageLikeAnimationView
+![SKImageLikeAnimationView And UIImageLikeAnimationView](/images/SKImageLikeAnimationView_And_UIImageLikeAnimationView.gif)
+
 ## Leetcode 
 ### ReverseWordsInAString
 - hint: string -> array -> revert -> join
