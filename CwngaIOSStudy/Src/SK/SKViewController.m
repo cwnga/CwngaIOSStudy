@@ -8,9 +8,11 @@
 
 #import "SKViewController.h"
 #import "SKImageLikeAnimationView.h"
+#import "UIImageLikeAnimationView.h"
 
 @interface SKViewController ()
 @property (weak, nonatomic) IBOutlet SKImageLikeAnimationView *skImageLikeAnimationView;
+@property (weak, nonatomic) IBOutlet UIImageLikeAnimationView *uiImageLikeAnimationView;
 
 @end
 
@@ -18,7 +20,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    UITapGestureRecognizer *tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleTap)];
+    UITapGestureRecognizer *tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleTap:)];
     tapGestureRecognizer.numberOfTapsRequired = 1;
     [self.view addGestureRecognizer:tapGestureRecognizer];
     // Do any additional setup after loading the view from its nib.
@@ -32,20 +34,39 @@
 {
     [super viewDidAppear:animated];
 
-    __weak typeof(self) weakSelf = self;
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.1f * NSEC_PER_SEC)), dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+//    __weak typeof(self) weakSelf = self;
+/*    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.1f * NSEC_PER_SEC)), dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         for (int i = 0; i < 100000; i++) {
 
-            [weakSelf.skImageLikeAnimationView fireImage:[UIImage imageNamed:@"Image-Smile"] size:CGSizeMake(30.0f, 30.0f) duration:1.5f scale:1.5f alpha:0.2f];
+         //   [weakSelf.skImageLikeAnimationView fireImage:[UIImage imageNamed:@"Image-Smile"] size:CGSizeMake(30.0f, 30.0f) duration:1.5f scale:1.5f alpha:0.2f];
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [weakSelf.skImageLikeAnimationView fireImage:[UIImage imageNamed:@"Image-Smile"] size:CGSizeMake(30.0f, 30.0f) duration:1.5f scale:1.5f alpha:0.2f];
+       [weakSelf.uiImageLikeAnimationView fireImage:[UIImage imageNamed:@"Image-Smile"] size:CGSizeMake(30.0f, 30.0f) duration:1.5f scale:1.5f alpha:0.2f];
+            });
 
 
         }
     });
-    
+  */
 }
--(void)handleTap
+-(void)handleTap:(UITapGestureRecognizer *)tapGestureRecognizer
 {
-    [self.skImageLikeAnimationView fireImage:[UIImage imageNamed:@"Image-Smile"] size:CGSizeMake(30.0f, 30.0f) duration:1.5f scale:1.5f alpha:0.2f];
+    CGPoint point =  [tapGestureRecognizer locationInView:self.view];
+    if (CGRectContainsPoint(self.skImageLikeAnimationView.frame, point)) {
+           for (int i = 0; i < 1000; i++) {
+                               dispatch_async(dispatch_get_main_queue(), ^{
+        [self.skImageLikeAnimationView fireImage:[UIImage imageNamed:@"Image-Smile"] size:CGSizeMake(30.0f, 30.0f) duration:1.5f scale:1.5f alpha:0.2f];
+                               });
+           }
+    }
+    if (CGRectContainsPoint(self.uiImageLikeAnimationView.frame, point)) {
+             for (int i = 0; i < 1000; i++) {
+                  dispatch_async(dispatch_get_main_queue(), ^{
+        [self.uiImageLikeAnimationView fireImage:[UIImage imageNamed:@"Image-Smile"] size:CGSizeMake(30.0f, 30.0f) duration:1.5f scale:1.5f alpha:0.2f];
+                  });
+             }
+
+    }
 }
 /*
  #pragma mark - Navigation

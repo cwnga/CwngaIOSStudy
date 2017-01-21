@@ -38,7 +38,7 @@
 
 - (void)setup
 {
-    self.maxFireImageCount = 100;
+    self.maxFireImageCount = 10000;
     [self setAutoresizesSubviews:YES];
     self.backgroundColor = [UIColor clearColor];
     self.skView = [[SKView alloc] initWithFrame:self.bounds];
@@ -48,7 +48,8 @@
     self.skScene = [SKScene sceneWithSize:self.skView.bounds.size];
     self.skScene.scaleMode = SKSceneScaleModeAspectFill;
     [self.skView presentScene:self.skScene];
-
+    self.skView.showsFPS = YES;
+    self.skView.showsFields = YES;
 }
 
 - (void)layoutSubviews

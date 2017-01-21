@@ -78,6 +78,7 @@
 		F79D31F81DBB69E400C63FF5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F79D31F61DBB69E400C63FF5 /* Main.storyboard */; };
 		F79D31FA1DBB69E400C63FF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F79D31F91DBB69E400C63FF5 /* Assets.xcassets */; };
 		F79D31FD1DBB69E400C63FF5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F79D31FB1DBB69E400C63FF5 /* LaunchScreen.storyboard */; };
+		F7B443C61E3337A400F330DC /* UIImageLikeAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = F7B443C51E3337A400F330DC /* UIImageLikeAnimationView.m */; };
 		F7BCA7621DC2EA6B00404F8E /* Ch3CombineLatestViewControlller.m in Sources */ = {isa = PBXBuildFile; fileRef = F7BCA7601DC2EA6B00404F8E /* Ch3CombineLatestViewControlller.m */; };
 		F7BCA7631DC2EA6B00404F8E /* Ch3CombineLatestViewControlller.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7BCA7611DC2EA6B00404F8E /* Ch3CombineLatestViewControlller.xib */; };
 		F7D5354B1E2F708700D2C35E /* SKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7D535491E2F708700D2C35E /* SKViewController.m */; };
@@ -210,6 +211,8 @@
 		F79D31F91DBB69E400C63FF5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F79D31FC1DBB69E400C63FF5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F79D31FE1DBB69E400C63FF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7B443C41E3337A400F330DC /* UIImageLikeAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImageLikeAnimationView.h; sourceTree = "<group>"; };
+		F7B443C51E3337A400F330DC /* UIImageLikeAnimationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIImageLikeAnimationView.m; sourceTree = "<group>"; };
 		F7BCA75F1DC2EA6B00404F8E /* Ch3CombineLatestViewControlller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ch3CombineLatestViewControlller.h; sourceTree = "<group>"; };
 		F7BCA7601DC2EA6B00404F8E /* Ch3CombineLatestViewControlller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ch3CombineLatestViewControlller.m; sourceTree = "<group>"; };
 		F7BCA7611DC2EA6B00404F8E /* Ch3CombineLatestViewControlller.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Ch3CombineLatestViewControlller.xib; sourceTree = "<group>"; };
@@ -310,6 +313,8 @@
 				F705E07A1DBB6E870081CEED /* TitleCollectionReusableView.xib */,
 				F7D5354D1E2F70B000D2C35E /* SKImageLikeAnimationView.h */,
 				F7D5354E1E2F70B000D2C35E /* SKImageLikeAnimationView.m */,
+				F7B443C41E3337A400F330DC /* UIImageLikeAnimationView.h */,
+				F7B443C51E3337A400F330DC /* UIImageLikeAnimationView.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -800,6 +805,7 @@
 				F7075A5C1DF3102000DFC083 /* PalindromePartitioningII.m in Sources */,
 				F705E09E1DBB86C90081CEED /* DynamicHeightViewController.m in Sources */,
 				F7749E011DF2D11D0065F2D2 /* DecodeWays.m in Sources */,
+				F7B443C61E3337A400F330DC /* UIImageLikeAnimationView.m in Sources */,
 				F7BCA7621DC2EA6B00404F8E /* Ch3CombineLatestViewControlller.m in Sources */,
 				F705E06D1DBB6B800081CEED /* ListingCollectionViewCell.m in Sources */,
 				F782BE9D1DD9546600B6B63F /* ADKCollectionViewDynamicSizeSubCell.m in Sources */,
@@ -985,6 +991,7 @@
 			baseConfigurationReference = C6BAEF2EBC3BEA17943E82D9 /* Pods-CwngaIOSStudy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = CwngaIOSStudy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cwnga.CwngaIOSStudy;
@@ -997,6 +1004,7 @@
 			baseConfigurationReference = 8732B80311E315747ECECC9E /* Pods-CwngaIOSStudy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = CwngaIOSStudy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cwnga.CwngaIOSStudy;
@@ -1009,6 +1017,7 @@
 			baseConfigurationReference = 5ECF6443B5D7E4731FEFFD9C /* Pods-CwngaIOSStudyTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = CwngaIOSStudyTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -1023,6 +1032,7 @@
 			baseConfigurationReference = 711D8E3BE2BF229B5C36D713 /* Pods-CwngaIOSStudyTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = CwngaIOSStudyTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
