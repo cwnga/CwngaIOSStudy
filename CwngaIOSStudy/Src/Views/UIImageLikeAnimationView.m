@@ -30,7 +30,7 @@
 
 - (void)setup
 {
-    self.maxFireImageCount = 10000;
+    self.maxFireImageCount = 100;
 
 }
 -(void)fireImage:(UIImage *)image size:(CGSize)size duration:(CGFloat)duration scale:(CGFloat)scale alpha:(CGFloat)alpha

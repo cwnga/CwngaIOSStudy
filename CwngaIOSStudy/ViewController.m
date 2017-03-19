@@ -24,7 +24,16 @@ static  NSString * const ReuseIdentifier = @"CollectionViewCell";
     [super viewDidLoad];
 
     self.data = @[
-
+                  //UIVisualEffectViewTestController
+                  @{
+                      @"title": @"UIVisualEffectViewTestController",
+                      @"cells": @[
+                              @{
+                                  @"title" : @"TestBurViewController",
+                                  @"className": @"TestBurViewController"
+                                  },
+                              ],
+                      },
                   @{
                       @"title": @"SKViewController",
                       @"cells": @[

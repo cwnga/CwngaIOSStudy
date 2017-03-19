@@ -72,6 +72,8 @@
 		F782BE9E1DD9546600B6B63F /* ADKCollectionViewDynamicSizeSubCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F782BE9C1DD9546600B6B63F /* ADKCollectionViewDynamicSizeSubCell.xib */; };
 		F782BEA71DD9558500B6B63F /* DynamicLeftRightLabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F782BEA51DD9558500B6B63F /* DynamicLeftRightLabelViewController.m */; };
 		F782BEA81DD9558500B6B63F /* DynamicLeftRightLabelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F782BEA61DD9558500B6B63F /* DynamicLeftRightLabelViewController.xib */; };
+		F79544AC1E7BC32E00223550 /* TestBurViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F79544AA1E7BC32E00223550 /* TestBurViewController.m */; };
+		F79544AD1E7BC32E00223550 /* TestBurViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F79544AB1E7BC32E00223550 /* TestBurViewController.xib */; };
 		F79D31EF1DBB69E400C63FF5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F79D31EE1DBB69E400C63FF5 /* main.m */; };
 		F79D31F21DBB69E400C63FF5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F79D31F11DBB69E400C63FF5 /* AppDelegate.m */; };
 		F79D31F51DBB69E400C63FF5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F79D31F41DBB69E400C63FF5 /* ViewController.m */; };
@@ -201,6 +203,9 @@
 		F782BEA41DD9558500B6B63F /* DynamicLeftRightLabelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicLeftRightLabelViewController.h; sourceTree = "<group>"; };
 		F782BEA51DD9558500B6B63F /* DynamicLeftRightLabelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicLeftRightLabelViewController.m; sourceTree = "<group>"; };
 		F782BEA61DD9558500B6B63F /* DynamicLeftRightLabelViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DynamicLeftRightLabelViewController.xib; sourceTree = "<group>"; };
+		F79544A91E7BC32E00223550 /* TestBurViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestBurViewController.h; sourceTree = "<group>"; };
+		F79544AA1E7BC32E00223550 /* TestBurViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestBurViewController.m; sourceTree = "<group>"; };
+		F79544AB1E7BC32E00223550 /* TestBurViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestBurViewController.xib; sourceTree = "<group>"; };
 		F79D31EA1DBB69E400C63FF5 /* CwngaIOSStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CwngaIOSStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F79D31EE1DBB69E400C63FF5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F79D31F01DBB69E400C63FF5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -271,6 +276,7 @@
 		F705E0581DBB6B800081CEED /* Src */ = {
 			isa = PBXGroup;
 			children = (
+				F79544A31E7BC13C00223550 /* UIVisualEffectView */,
 				F7D535471E2F706400D2C35E /* SK */,
 				F7749DF81DF2C95A0065F2D2 /* Leetcode */,
 				F7749DF41DF2C8810065F2D2 /* Classes */,
@@ -496,6 +502,16 @@
 			path = "Ch5-TwoLabelLeftRight";
 			sourceTree = "<group>";
 		};
+		F79544A31E7BC13C00223550 /* UIVisualEffectView */ = {
+			isa = PBXGroup;
+			children = (
+				F79544A91E7BC32E00223550 /* TestBurViewController.h */,
+				F79544AA1E7BC32E00223550 /* TestBurViewController.m */,
+				F79544AB1E7BC32E00223550 /* TestBurViewController.xib */,
+			);
+			path = UIVisualEffectView;
+			sourceTree = "<group>";
+		};
 		F79D31E11DBB69E300C63FF5 = {
 			isa = PBXGroup;
 			children = (
@@ -687,6 +703,7 @@
 				F705E0AC1DBB97090081CEED /* BinaryTreeViewController.xib in Resources */,
 				F7F21CCF1DC24E2000E94E8B /* ADKImageColorViewController.xib in Resources */,
 				F7BCA7631DC2EA6B00404F8E /* Ch3CombineLatestViewControlller.xib in Resources */,
+				F79544AD1E7BC32E00223550 /* TestBurViewController.xib in Resources */,
 				F705E06C1DBB6B800081CEED /* CollectionViewCell.xib in Resources */,
 				F7D5354C1E2F708700D2C35E /* SKViewController.xib in Resources */,
 				F79D31F81DBB69E400C63FF5 /* Main.storyboard in Resources */,
@@ -830,6 +847,7 @@
 				F7D5354B1E2F708700D2C35E /* SKViewController.m in Sources */,
 				F705E06B1DBB6B800081CEED /* CollectionViewCell.m in Sources */,
 				F705E0891DBB715F0081CEED /* Ch1ViewController.m in Sources */,
+				F79544AC1E7BC32E00223550 /* TestBurViewController.m in Sources */,
 				F7075A521DF3053600DFC083 /* ThreeSum.m in Sources */,
 				F705E07B1DBB6E870081CEED /* TitleCollectionReusableView.m in Sources */,
 				F7749DFB1DF2C9970065F2D2 /* ReverseWordsInAString.m in Sources */,

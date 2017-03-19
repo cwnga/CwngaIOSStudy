@@ -38,7 +38,7 @@
 
 - (void)setup
 {
-    self.maxFireImageCount = 10000;
+    self.maxFireImageCount = 100;
     [self setAutoresizesSubviews:YES];
     self.backgroundColor = [UIColor clearColor];
     self.skView = [[SKView alloc] initWithFrame:self.bounds];
