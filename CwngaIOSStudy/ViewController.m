@@ -19,12 +19,34 @@ static  NSString * const ReuseIdentifier = @"CollectionViewCell";
 @end
 
 @implementation ViewController
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    NSHTTPCookieStorage *storage = [NSHTTPCookieStorage sharedHTTPCookieStorage];
+    [storage.cookies enumerateObjectsUsingBlock:^(NSHTTPCookie * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        NSLog(@"cookie:%@", obj);
+    }];
 
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
 
+
     self.data = @[
                   //UIVisualEffectViewTestController
+                  @{
+                      @"title": @"CwngaWKWebViewController",
+                      @"cells": @[
+                              @{
+                                  @"title" : @"CwngaWKWebViewController",
+                                  @"className": @"CwngaWKWebViewController"
+                                  },
+                              @{
+                                  @"title" : @"CwngaCh2WKWebViewController",
+                                  @"className": @"CwngaCh2WKWebViewController"
+                                  },
+                              ],
+                      },
                   @{
                       @"title": @"UIVisualEffectViewTestController",
                       @"cells": @[

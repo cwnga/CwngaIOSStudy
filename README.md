@@ -4,6 +4,68 @@
     -(void)fireImage:(UIImage *)image size:(CGSize)size duration:(CGFloat)duration scale:(CGFloat)scale alpha:(CGFloat)alpha
 ![SKImageLikeAnimationView And UIImageLikeAnimationView](/images/SKImageLikeAnimationView_And_UIImageLikeAnimationView.gif)
 
+## WKWebView
+### Ch1
+- intro WKUserScript, it can injection at begin or end time
+
+    WKWebViewConfiguration *config = [[WKWebViewConfiguration alloc] init];
+    NSString *myScriptSource = @"document.body.style.background = \"#777\";";
+    WKUserScript *myUserScript = [[WKUserScript alloc] initWithSource:myScriptSource
+                                                        injectionTime:WKUserScriptInjectionTimeAtDocumentEnd
+                                                     forMainFrameOnly:NO];
+    WKUserContentController *userContentController = [[WKUserContentController alloc] init];
+    [userContentController addUserScript:myUserScript];
+    config.userContentController = userContentController;
+    self.wkWekView = [[WKWebView alloc] initWithFrame:self.view.bounds configuration:config];
+
+- intro javascript post message and Objective c code can communicate with it
+
+    WKWebViewConfiguration *config = [[WKWebViewConfiguration alloc] init];
+    WKUserContentController *userContentController = [[WKUserContentController alloc] init];
+    config.userContentController = userContentController;
+    ...
+    //this is test code to simulate javascript set message, you also implement on HTML
+    NSString *myScriptSource1 = @"\
+    function postMyMessage()  {\
+    var message = { 'message' : 'Hello, World!', 'numbers' : [ 1, 2, 3 ] };\
+    window.webkit.messageHandlers.myName.postMessage(message);  \
+    }\
+    postMyMessage();\
+    ";
+
+    WKUserScript *myUserScript1 = [[WKUserScript alloc] initWithSource:myScriptSource1
+                                                         injectionTime:WKUserScriptInjectionTimeAtDocumentEnd
+                                                      forMainFrameOnly:YES];
+    [userContentController addUserScript:myUserScript1];
+    [userContentController addScriptMessageHandler:self name:@"myName"];//self need implemnt - (void)userContentController:(WKUserContentController *)userContentController didReceiveScriptMessage:(WKScriptMessage *)message
+    ...
+    self.wkWekView = [[WKWebView alloc] initWithFrame:self.view.bounds configuration:config];
+
+
+### Ch2
+- intro different WK store
+
+    WKWebViewConfiguration *config = [[WKWebViewConfiguration alloc] init];
+    config.processPool = [[WKProcessPool alloc] init];
+    config.websiteDataStore = [WKWebsiteDataStore nonPersistentDataStore]; //if you do not set data store, they will use default data store
+    self.wkWekView1 = [[WKWebView alloc] initWithFrame:self.view1.bounds configuration:config];
+    self.wkWekView1.autoresizingMask = UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight;
+    self.wkWekView1.frame = self.view1.bounds;
+    [self.view1 addSubview:self.wkWekView1];
+
+    [self.wkWekView1 loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"https://tw.yahoo.com"]]];
+
+    WKWebViewConfiguration *config2 = [[WKWebViewConfiguration alloc] init];
+    config2.processPool = [[WKProcessPool alloc] init];
+    config2.websiteDataStore = [WKWebsiteDataStore nonPersistentDataStore]; //NOTE: different cookie store, if no set this, will use same store, for all wkwebview
+    self.wkWekView2 = [[WKWebView alloc] initWithFrame:self.view2.bounds configuration:config2];
+    self.wkWekView2.autoresizingMask = UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight;
+    self.wkWekView2.frame = self.view2.bounds;
+    [self.view2 addSubview:self.wkWekView2];
+    [self.wkWekView2 loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"https://tw.yahoo.com"]]];
+
+
+
 ## Leetcode 
 ### ReverseWordsInAString
 - hint: string -> array -> revert -> join

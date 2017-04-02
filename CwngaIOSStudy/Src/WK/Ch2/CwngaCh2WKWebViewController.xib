@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11762"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CwngaCh2WKWebViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="view1" destination="dDF-U4-CkT" id="Kcg-D0-0Od"/>
+                <outlet property="view2" destination="NOr-9P-ehE" id="0wA-fp-TDV"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dDF-U4-CkT">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="333.5"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NOr-9P-ehE">
+                    <rect key="frame" x="0.0" y="333.5" width="375" height="333.5"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="dDF-U4-CkT" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="0CE-Kc-bb3"/>
+                <constraint firstItem="NOr-9P-ehE" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="1:2" id="aHt-Ft-9jG"/>
+                <constraint firstItem="NOr-9P-ehE" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="axK-ZO-bFs"/>
+                <constraint firstAttribute="trailing" secondItem="NOr-9P-ehE" secondAttribute="trailing" id="bpU-kI-RhU"/>
+                <constraint firstAttribute="bottom" secondItem="NOr-9P-ehE" secondAttribute="bottom" id="gdI-vJ-hLh"/>
+                <constraint firstItem="dDF-U4-CkT" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="1:2" id="jf7-56-Y1N"/>
+                <constraint firstAttribute="trailing" secondItem="dDF-U4-CkT" secondAttribute="trailing" id="oZX-0s-tkm"/>
+                <constraint firstItem="dDF-U4-CkT" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="xob-zL-dUJ"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
