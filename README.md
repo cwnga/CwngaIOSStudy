@@ -1,5 +1,7 @@
 # CwngaIOSStudy
 
+## Dismiss multi modal view controller
+
 ## SKImageLikeAnimationView and UIImageLikeAnimationView
     -(void)fireImage:(UIImage *)image size:(CGSize)size duration:(CGFloat)duration scale:(CGFloat)scale alpha:(CGFloat)alpha
 ![SKImageLikeAnimationView And UIImageLikeAnimationView](/images/SKImageLikeAnimationView_And_UIImageLikeAnimationView.gif)

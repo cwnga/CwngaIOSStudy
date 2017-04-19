@@ -35,6 +35,16 @@ static  NSString * const ReuseIdentifier = @"CollectionViewCell";
     self.data = @[
                   //UIVisualEffectViewTestController
                   @{
+                      @"title": @"Dismss",
+                      @"cells": @[
+                              @{
+                                  @"title" : @"CwngaDismissViewController",
+                                  @"className": @"CwngaDismissViewController"
+                                  },
+                        
+                              ],
+                      },
+                  @{
                       @"title": @"CwngaWKWebViewController",
                       @"cells": @[
                               @{
@@ -47,6 +57,17 @@ static  NSString * const ReuseIdentifier = @"CollectionViewCell";
                                   },
                               ],
                       },
+                  @{
+                      @"title": @"Collection View",
+                      @"cells": @[
+                              @{
+                                  @"title" : @"CollectionView Insert Performance",
+                                  @"className": @"CollectionViewInsertPerformanceViewController"
+                                  },
+
+                              ],
+                      },
+
                   @{
                       @"title": @"UIVisualEffectViewTestController",
                       @"cells": @[

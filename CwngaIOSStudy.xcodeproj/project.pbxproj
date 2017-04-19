@@ -87,11 +87,17 @@
 		F7B443C61E3337A400F330DC /* UIImageLikeAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = F7B443C51E3337A400F330DC /* UIImageLikeAnimationView.m */; };
 		F7BCA7621DC2EA6B00404F8E /* Ch3CombineLatestViewControlller.m in Sources */ = {isa = PBXBuildFile; fileRef = F7BCA7601DC2EA6B00404F8E /* Ch3CombineLatestViewControlller.m */; };
 		F7BCA7631DC2EA6B00404F8E /* Ch3CombineLatestViewControlller.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7BCA7611DC2EA6B00404F8E /* Ch3CombineLatestViewControlller.xib */; };
+		F7BDDA4A1E924D6300F93C56 /* CollectionViewInsertPerformanceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7BDDA481E924D6300F93C56 /* CollectionViewInsertPerformanceViewController.m */; };
+		F7BDDA4B1E924D6300F93C56 /* CollectionViewInsertPerformanceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7BDDA491E924D6300F93C56 /* CollectionViewInsertPerformanceViewController.xib */; };
 		F7D5354B1E2F708700D2C35E /* SKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7D535491E2F708700D2C35E /* SKViewController.m */; };
 		F7D5354C1E2F708700D2C35E /* SKViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7D5354A1E2F708700D2C35E /* SKViewController.xib */; };
 		F7D5354F1E2F70B000D2C35E /* SKImageLikeAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = F7D5354E1E2F70B000D2C35E /* SKImageLikeAnimationView.m */; };
 		F7F21CCE1DC24E2000E94E8B /* ADKImageColorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7F21CCC1DC24E2000E94E8B /* ADKImageColorViewController.m */; };
 		F7F21CCF1DC24E2000E94E8B /* ADKImageColorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7F21CCD1DC24E2000E94E8B /* ADKImageColorViewController.xib */; };
+		F7FDE6381EA6FFD40036E885 /* CwngaDismissViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7FDE6361EA6FFD40036E885 /* CwngaDismissViewController.m */; };
+		F7FDE6391EA6FFD40036E885 /* CwngaDismissViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7FDE6371EA6FFD40036E885 /* CwngaDismissViewController.xib */; };
+		F7FDE63D1EA6FFF40036E885 /* CwngaPresentedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7FDE63B1EA6FFF40036E885 /* CwngaPresentedViewController.m */; };
+		F7FDE63E1EA6FFF40036E885 /* CwngaPresentedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7FDE63C1EA6FFF40036E885 /* CwngaPresentedViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -231,6 +237,9 @@
 		F7BCA75F1DC2EA6B00404F8E /* Ch3CombineLatestViewControlller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ch3CombineLatestViewControlller.h; sourceTree = "<group>"; };
 		F7BCA7601DC2EA6B00404F8E /* Ch3CombineLatestViewControlller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ch3CombineLatestViewControlller.m; sourceTree = "<group>"; };
 		F7BCA7611DC2EA6B00404F8E /* Ch3CombineLatestViewControlller.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Ch3CombineLatestViewControlller.xib; sourceTree = "<group>"; };
+		F7BDDA471E924D6300F93C56 /* CollectionViewInsertPerformanceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewInsertPerformanceViewController.h; sourceTree = "<group>"; };
+		F7BDDA481E924D6300F93C56 /* CollectionViewInsertPerformanceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewInsertPerformanceViewController.m; sourceTree = "<group>"; };
+		F7BDDA491E924D6300F93C56 /* CollectionViewInsertPerformanceViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionViewInsertPerformanceViewController.xib; sourceTree = "<group>"; };
 		F7C0F77D1DF2C79B007BBBC8 /* CwngaIOSStudyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CwngaIOSStudyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7C0F7811DF2C79C007BBBC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F7D535481E2F708700D2C35E /* SKViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKViewController.h; sourceTree = "<group>"; };
@@ -241,6 +250,12 @@
 		F7F21CCB1DC24E2000E94E8B /* ADKImageColorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADKImageColorViewController.h; sourceTree = "<group>"; };
 		F7F21CCC1DC24E2000E94E8B /* ADKImageColorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADKImageColorViewController.m; sourceTree = "<group>"; };
 		F7F21CCD1DC24E2000E94E8B /* ADKImageColorViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ADKImageColorViewController.xib; sourceTree = "<group>"; };
+		F7FDE6351EA6FFD40036E885 /* CwngaDismissViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CwngaDismissViewController.h; sourceTree = "<group>"; };
+		F7FDE6361EA6FFD40036E885 /* CwngaDismissViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CwngaDismissViewController.m; sourceTree = "<group>"; };
+		F7FDE6371EA6FFD40036E885 /* CwngaDismissViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CwngaDismissViewController.xib; sourceTree = "<group>"; };
+		F7FDE63A1EA6FFF40036E885 /* CwngaPresentedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CwngaPresentedViewController.h; sourceTree = "<group>"; };
+		F7FDE63B1EA6FFF40036E885 /* CwngaPresentedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CwngaPresentedViewController.m; sourceTree = "<group>"; };
+		F7FDE63C1EA6FFF40036E885 /* CwngaPresentedViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CwngaPresentedViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -286,6 +301,8 @@
 		F705E0581DBB6B800081CEED /* Src */ = {
 			isa = PBXGroup;
 			children = (
+				F7FDE6341EA6FFA70036E885 /* Dimiss */,
+				F7BDDA451E924D3400F93C56 /* CollectionView */,
 				F73576231E7ECAC1002BC9D7 /* WK */,
 				F79544A31E7BC13C00223550 /* UIVisualEffectView */,
 				F7D535471E2F706400D2C35E /* SK */,
@@ -608,6 +625,24 @@
 			path = "Ch3-CombineLatest";
 			sourceTree = "<group>";
 		};
+		F7BDDA451E924D3400F93C56 /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				F7BDDA461E924D3400F93C56 /* Ch1_InsertPerformance */,
+			);
+			path = CollectionView;
+			sourceTree = "<group>";
+		};
+		F7BDDA461E924D3400F93C56 /* Ch1_InsertPerformance */ = {
+			isa = PBXGroup;
+			children = (
+				F7BDDA471E924D6300F93C56 /* CollectionViewInsertPerformanceViewController.h */,
+				F7BDDA481E924D6300F93C56 /* CollectionViewInsertPerformanceViewController.m */,
+				F7BDDA491E924D6300F93C56 /* CollectionViewInsertPerformanceViewController.xib */,
+			);
+			path = Ch1_InsertPerformance;
+			sourceTree = "<group>";
+		};
 		F7C0F77E1DF2C79C007BBBC8 /* CwngaIOSStudyTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -635,6 +670,19 @@
 				F7F21CCD1DC24E2000E94E8B /* ADKImageColorViewController.xib */,
 			);
 			path = "Ch3-ADKImageColorViewController";
+			sourceTree = "<group>";
+		};
+		F7FDE6341EA6FFA70036E885 /* Dimiss */ = {
+			isa = PBXGroup;
+			children = (
+				F7FDE6351EA6FFD40036E885 /* CwngaDismissViewController.h */,
+				F7FDE6361EA6FFD40036E885 /* CwngaDismissViewController.m */,
+				F7FDE6371EA6FFD40036E885 /* CwngaDismissViewController.xib */,
+				F7FDE63A1EA6FFF40036E885 /* CwngaPresentedViewController.h */,
+				F7FDE63B1EA6FFF40036E885 /* CwngaPresentedViewController.m */,
+				F7FDE63C1EA6FFF40036E885 /* CwngaPresentedViewController.xib */,
+			);
+			path = Dimiss;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -725,6 +773,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7FDE6391EA6FFD40036E885 /* CwngaDismissViewController.xib in Resources */,
+				F7FDE63E1EA6FFF40036E885 /* CwngaPresentedViewController.xib in Resources */,
 				F705E07C1DBB6E870081CEED /* TitleCollectionReusableView.xib in Resources */,
 				F711934E1DC7300500683697 /* TwoTitleCellDynamicHeightViewController.xib in Resources */,
 				F705E09F1DBB86C90081CEED /* DynamicHeightViewController.xib in Resources */,
@@ -741,6 +791,7 @@
 				F735762E1E7ED46C002BC9D7 /* CwngaWKWebViewController.xib in Resources */,
 				F705E06E1DBB6B800081CEED /* ListingCollectionViewCell.xib in Resources */,
 				F705E08C1DBB715F0081CEED /* Ch2DetailViewController.xib in Resources */,
+				F7BDDA4B1E924D6300F93C56 /* CollectionViewInsertPerformanceViewController.xib in Resources */,
 				F79D31FA1DBB69E400C63FF5 /* Assets.xcassets in Resources */,
 				F705E0AC1DBB97090081CEED /* BinaryTreeViewController.xib in Resources */,
 				F7F21CCF1DC24E2000E94E8B /* ADKImageColorViewController.xib in Resources */,
@@ -869,6 +920,7 @@
 				F705E06D1DBB6B800081CEED /* ListingCollectionViewCell.m in Sources */,
 				F782BE9D1DD9546600B6B63F /* ADKCollectionViewDynamicSizeSubCell.m in Sources */,
 				F705E08B1DBB715F0081CEED /* Ch2DetailViewController.m in Sources */,
+				F7FDE6381EA6FFD40036E885 /* CwngaDismissViewController.m in Sources */,
 				F70255D71DF701CC000DECA0 /* MaximumProductofWordLengths.m in Sources */,
 				F7F21CCE1DC24E2000E94E8B /* ADKImageColorViewController.m in Sources */,
 				F7749DF71DF2C8A40065F2D2 /* CwngaNode.m in Sources */,
@@ -886,6 +938,7 @@
 				F70255B51DF59569000DECA0 /* CwngaListNode.m in Sources */,
 				F70255B81DF595CA000DECA0 /* AddTwoNumbers.m in Sources */,
 				F705E08D1DBB715F0081CEED /* Ch2ViewController.m in Sources */,
+				F7BDDA4A1E924D6300F93C56 /* CollectionViewInsertPerformanceViewController.m in Sources */,
 				F7D5354B1E2F708700D2C35E /* SKViewController.m in Sources */,
 				F705E06B1DBB6B800081CEED /* CollectionViewCell.m in Sources */,
 				F705E0891DBB715F0081CEED /* Ch1ViewController.m in Sources */,
@@ -899,6 +952,7 @@
 				F7749E0B1DF2EB0C0065F2D2 /* ContainsDuplicateIII.m in Sources */,
 				F705E0981DBB86630081CEED /* TextViewCollectionViewCell.m in Sources */,
 				F70255BD1DF5A2E3000DECA0 /* CountCompleteTreeNodes.m in Sources */,
+				F7FDE63D1EA6FFF40036E885 /* CwngaPresentedViewController.m in Sources */,
 				F73576331E7ED4CB002BC9D7 /* CwngaCh2WKWebViewController.m in Sources */,
 				F70255C51DF64C60000DECA0 /* MaxSequenceSubArrayCount.m in Sources */,
 				F70255D41DF6FF23000DECA0 /* MaximumDepthofBinaryTree.m in Sources */,
