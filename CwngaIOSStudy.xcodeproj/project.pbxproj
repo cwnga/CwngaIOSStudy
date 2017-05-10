@@ -65,6 +65,8 @@
 		F735762E1E7ED46C002BC9D7 /* CwngaWKWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F735762C1E7ED46C002BC9D7 /* CwngaWKWebViewController.xib */; };
 		F73576331E7ED4CB002BC9D7 /* CwngaCh2WKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F73576311E7ED4CB002BC9D7 /* CwngaCh2WKWebViewController.m */; };
 		F73576341E7ED4CB002BC9D7 /* CwngaCh2WKWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F73576321E7ED4CB002BC9D7 /* CwngaCh2WKWebViewController.xib */; };
+		F74397E11EAC4A5E0051A8A6 /* CwngaCh3WKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F74397DF1EAC4A5E0051A8A6 /* CwngaCh3WKWebViewController.m */; };
+		F74397E21EAC4A5E0051A8A6 /* CwngaCh3WKWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F74397E01EAC4A5E0051A8A6 /* CwngaCh3WKWebViewController.xib */; };
 		F7749DF71DF2C8A40065F2D2 /* CwngaNode.m in Sources */ = {isa = PBXBuildFile; fileRef = F7749DF61DF2C8A40065F2D2 /* CwngaNode.m */; };
 		F7749DFB1DF2C9970065F2D2 /* ReverseWordsInAString.m in Sources */ = {isa = PBXBuildFile; fileRef = F7749DFA1DF2C9970065F2D2 /* ReverseWordsInAString.m */; };
 		F7749E011DF2D11D0065F2D2 /* DecodeWays.m in Sources */ = {isa = PBXBuildFile; fileRef = F7749E001DF2D11D0065F2D2 /* DecodeWays.m */; };
@@ -202,6 +204,9 @@
 		F73576301E7ED4CB002BC9D7 /* CwngaCh2WKWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CwngaCh2WKWebViewController.h; sourceTree = "<group>"; };
 		F73576311E7ED4CB002BC9D7 /* CwngaCh2WKWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CwngaCh2WKWebViewController.m; sourceTree = "<group>"; };
 		F73576321E7ED4CB002BC9D7 /* CwngaCh2WKWebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CwngaCh2WKWebViewController.xib; sourceTree = "<group>"; };
+		F74397DE1EAC4A5E0051A8A6 /* CwngaCh3WKWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CwngaCh3WKWebViewController.h; sourceTree = "<group>"; };
+		F74397DF1EAC4A5E0051A8A6 /* CwngaCh3WKWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CwngaCh3WKWebViewController.m; sourceTree = "<group>"; };
+		F74397E01EAC4A5E0051A8A6 /* CwngaCh3WKWebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CwngaCh3WKWebViewController.xib; sourceTree = "<group>"; };
 		F7749DF51DF2C8A40065F2D2 /* CwngaNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CwngaNode.h; sourceTree = "<group>"; };
 		F7749DF61DF2C8A40065F2D2 /* CwngaNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CwngaNode.m; sourceTree = "<group>"; };
 		F7749DF91DF2C9970065F2D2 /* ReverseWordsInAString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReverseWordsInAString.h; sourceTree = "<group>"; };
@@ -451,6 +456,7 @@
 			children = (
 				F73576291E7ED46C002BC9D7 /* Ch1 */,
 				F735762F1E7ED475002BC9D7 /* Ch2 */,
+				F74397DD1EAC4A3A0051A8A6 /* Ch3 */,
 			);
 			path = WK;
 			sourceTree = "<group>";
@@ -473,6 +479,16 @@
 				F73576321E7ED4CB002BC9D7 /* CwngaCh2WKWebViewController.xib */,
 			);
 			path = Ch2;
+			sourceTree = "<group>";
+		};
+		F74397DD1EAC4A3A0051A8A6 /* Ch3 */ = {
+			isa = PBXGroup;
+			children = (
+				F74397DE1EAC4A5E0051A8A6 /* CwngaCh3WKWebViewController.h */,
+				F74397DF1EAC4A5E0051A8A6 /* CwngaCh3WKWebViewController.m */,
+				F74397E01EAC4A5E0051A8A6 /* CwngaCh3WKWebViewController.xib */,
+			);
+			path = Ch3;
 			sourceTree = "<group>";
 		};
 		F7749DF41DF2C8810065F2D2 /* Classes */ = {
@@ -794,6 +810,7 @@
 				F7BDDA4B1E924D6300F93C56 /* CollectionViewInsertPerformanceViewController.xib in Resources */,
 				F79D31FA1DBB69E400C63FF5 /* Assets.xcassets in Resources */,
 				F705E0AC1DBB97090081CEED /* BinaryTreeViewController.xib in Resources */,
+				F74397E21EAC4A5E0051A8A6 /* CwngaCh3WKWebViewController.xib in Resources */,
 				F7F21CCF1DC24E2000E94E8B /* ADKImageColorViewController.xib in Resources */,
 				F7BCA7631DC2EA6B00404F8E /* Ch3CombineLatestViewControlller.xib in Resources */,
 				F79544AD1E7BC32E00223550 /* TestBurViewController.xib in Resources */,
@@ -931,6 +948,7 @@
 				F711934D1DC7300500683697 /* TwoTitleCellDynamicHeightViewController.m in Sources */,
 				F70255CF1DF6EE29000DECA0 /* MinimumSizeSubarraySum.m in Sources */,
 				F7075A6D1DF4327A00DFC083 /* LongestPalindromicSubstring.m in Sources */,
+				F74397E11EAC4A5E0051A8A6 /* CwngaCh3WKWebViewController.m in Sources */,
 				F705E0A41DBB86F90081CEED /* DynamicTextViewHeightViewController.m in Sources */,
 				F7075A681DF428B900DFC083 /* MaximumProductSubarray.m in Sources */,
 				F782BEA71DD9558500B6B63F /* DynamicLeftRightLabelViewController.m in Sources */,

@@ -24,7 +24,7 @@
     //FOR different data store (cookies..., etc.)
     WKWebViewConfiguration *config = [[WKWebViewConfiguration alloc] init];
     config.processPool = [[WKProcessPool alloc] init];
-    config.websiteDataStore = [WKWebsiteDataStore nonPersistentDataStore];
+    config.websiteDataStore = [WKWebsiteDataStore defaultDataStore];
     self.wkWekView1 = [[WKWebView alloc] initWithFrame:self.view1.bounds configuration:config];
     self.wkWekView1.autoresizingMask = UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight;
     self.wkWekView1.frame = self.view1.bounds;
@@ -34,7 +34,7 @@
 
     WKWebViewConfiguration *config2 = [[WKWebViewConfiguration alloc] init];
     config2.processPool = [[WKProcessPool alloc] init];
-    config2.websiteDataStore = [WKWebsiteDataStore nonPersistentDataStore]; //NOTE: different cookie store, if no set this, will use same store, for all wkwebview
+    config2.websiteDataStore = [WKWebsiteDataStore defaultDataStore]; //NOTE: different cookie store, if no set this, will use same store, for all wkwebview
     self.wkWekView2 = [[WKWebView alloc] initWithFrame:self.view2.bounds configuration:config2];
     self.wkWekView2.autoresizingMask = UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight;
     self.wkWekView2.frame = self.view2.bounds;

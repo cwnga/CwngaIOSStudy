@@ -41,7 +41,7 @@ static  NSString * const ReuseIdentifier = @"CollectionViewCell";
                                   @"title" : @"CwngaDismissViewController",
                                   @"className": @"CwngaDismissViewController"
                                   },
-                        
+
                               ],
                       },
                   @{
@@ -55,6 +55,11 @@ static  NSString * const ReuseIdentifier = @"CollectionViewCell";
                                   @"title" : @"CwngaCh2WKWebViewController",
                                   @"className": @"CwngaCh2WKWebViewController"
                                   },
+                              @{
+                                  @"title" : @"CwngaCh3WKWebViewController",
+                                  @"className": @"CwngaCh3WKWebViewController"
+                                  },
+
                               ],
                       },
                   @{
