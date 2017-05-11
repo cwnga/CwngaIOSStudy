@@ -66,6 +66,75 @@
     [self.view2 addSubview:self.wkWekView2];
     [self.wkWekView2 loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"https://tw.yahoo.com"]]];
 
+### Ch4 
+- js alert, confirm, prompt handle in WKWebView
+-- set WkView.UIDelegate
+
+    self.wkWekView.UIDelegate = self;
+
+-- implement UIDelegate function
+
+user UIAlertController to hanlde js interaction with user
+
+    //hanle JS alert
+    - (void)webView:(WKWebView *)webView runJavaScriptAlertPanelWithMessage:(NSString *)message initiatedByFrame:(WKFrameInfo *)frame completionHandler:(void (^)(void))completionHandler
+    {
+    
+        UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@""
+                                                                                 message:message
+                                                                          preferredStyle:UIAlertControllerStyleAlert];
+        [alertController addAction:[UIAlertAction actionWithTitle:@"確認"
+                                                            style:UIAlertActionStyleDefault
+                                                          handler:^(UIAlertAction *action) {
+                                                              completionHandler();
+                                                          }]];
+        [self presentViewController:alertController animated:YES completion:nil];
+    }
+    
+    //hanle JS confirm
+    - (void)webView:(WKWebView *)webView runJavaScriptConfirmPanelWithMessage:(NSString *)message initiatedByFrame:(WKFrameInfo *)frame completionHandler:(void (^)(BOOL result))completionHandler
+    {
+        UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@""
+                                                                                 message:message
+                                                                          preferredStyle:UIAlertControllerStyleAlert];
+        [alertController addAction:[UIAlertAction actionWithTitle:@"取消"
+                                                            style:UIAlertActionStyleCancel
+                                                          handler:^(UIAlertAction *action) {
+                                                              completionHandler(NO);
+                                                          }]];
+        [alertController addAction:[UIAlertAction actionWithTitle:@"確認"
+                                                            style:UIAlertActionStyleDefault
+                                                          handler:^(UIAlertAction *action) {
+                                                              completionHandler(YES);
+                                                          }]];
+        [self presentViewController:alertController animated:YES completion:nil];
+    
+    }
+
+    //handle JS prompt
+    - (void)webView:(WKWebView *)webView runJavaScriptTextInputPanelWithPrompt:(NSString *)prompt defaultText:(nullable NSString *)defaultText initiatedByFrame:(WKFrameInfo *)frame completionHandler:(void (^)(NSString * _Nullable result))completionHandler
+    {
+        UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@""
+                                                                                 message:prompt
+                                                                          preferredStyle:UIAlertControllerStyleAlert];
+        [alertController addAction:[UIAlertAction actionWithTitle:@"取消"
+                                                            style:UIAlertActionStyleCancel
+                                                          handler:^(UIAlertAction *action) {
+                                                              completionHandler(nil);
+                                                          }]];
+        [alertController addAction:[UIAlertAction actionWithTitle:@"確認"
+                                                            style:UIAlertActionStyleDefault
+                                                          handler:^(UIAlertAction *action) {
+                                                              NSString *text = [alertController.textFields firstObject].text.length > 0 ? [alertController.textFields firstObject].text : defaultText;
+                                                              completionHandler(text);
+                                                          }]];
+        [alertController addTextFieldWithConfigurationHandler:^(UITextField * _Nonnull textField) {
+    
+        }];
+        [self presentViewController:alertController animated:YES completion:nil];
+        
+    }
+
 
 
 ## Leetcode 

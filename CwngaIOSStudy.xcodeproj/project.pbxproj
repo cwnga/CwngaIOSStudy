@@ -78,6 +78,8 @@
 		F782BE9E1DD9546600B6B63F /* ADKCollectionViewDynamicSizeSubCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F782BE9C1DD9546600B6B63F /* ADKCollectionViewDynamicSizeSubCell.xib */; };
 		F782BEA71DD9558500B6B63F /* DynamicLeftRightLabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F782BEA51DD9558500B6B63F /* DynamicLeftRightLabelViewController.m */; };
 		F782BEA81DD9558500B6B63F /* DynamicLeftRightLabelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F782BEA61DD9558500B6B63F /* DynamicLeftRightLabelViewController.xib */; };
+		F7864CA01EC2D1C600CE55EA /* CwngaCh4AlertHandleWKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7864C9E1EC2D1C600CE55EA /* CwngaCh4AlertHandleWKWebViewController.m */; };
+		F7864CA11EC2D1C600CE55EA /* CwngaCh4AlertHandleWKWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7864C9F1EC2D1C600CE55EA /* CwngaCh4AlertHandleWKWebViewController.xib */; };
 		F79544AC1E7BC32E00223550 /* TestBurViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F79544AA1E7BC32E00223550 /* TestBurViewController.m */; };
 		F79544AD1E7BC32E00223550 /* TestBurViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F79544AB1E7BC32E00223550 /* TestBurViewController.xib */; };
 		F79D31EF1DBB69E400C63FF5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F79D31EE1DBB69E400C63FF5 /* main.m */; };
@@ -224,6 +226,9 @@
 		F782BEA41DD9558500B6B63F /* DynamicLeftRightLabelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicLeftRightLabelViewController.h; sourceTree = "<group>"; };
 		F782BEA51DD9558500B6B63F /* DynamicLeftRightLabelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicLeftRightLabelViewController.m; sourceTree = "<group>"; };
 		F782BEA61DD9558500B6B63F /* DynamicLeftRightLabelViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DynamicLeftRightLabelViewController.xib; sourceTree = "<group>"; };
+		F7864C9D1EC2D1C600CE55EA /* CwngaCh4AlertHandleWKWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CwngaCh4AlertHandleWKWebViewController.h; sourceTree = "<group>"; };
+		F7864C9E1EC2D1C600CE55EA /* CwngaCh4AlertHandleWKWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CwngaCh4AlertHandleWKWebViewController.m; sourceTree = "<group>"; };
+		F7864C9F1EC2D1C600CE55EA /* CwngaCh4AlertHandleWKWebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CwngaCh4AlertHandleWKWebViewController.xib; sourceTree = "<group>"; };
 		F79544A91E7BC32E00223550 /* TestBurViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestBurViewController.h; sourceTree = "<group>"; };
 		F79544AA1E7BC32E00223550 /* TestBurViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestBurViewController.m; sourceTree = "<group>"; };
 		F79544AB1E7BC32E00223550 /* TestBurViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestBurViewController.xib; sourceTree = "<group>"; };
@@ -454,6 +459,7 @@
 		F73576231E7ECAC1002BC9D7 /* WK */ = {
 			isa = PBXGroup;
 			children = (
+				F7864C9C1EC2D19C00CE55EA /* Ch4 */,
 				F73576291E7ED46C002BC9D7 /* Ch1 */,
 				F735762F1E7ED475002BC9D7 /* Ch2 */,
 				F74397DD1EAC4A3A0051A8A6 /* Ch3 */,
@@ -573,6 +579,16 @@
 				F782BEA61DD9558500B6B63F /* DynamicLeftRightLabelViewController.xib */,
 			);
 			path = "Ch5-TwoLabelLeftRight";
+			sourceTree = "<group>";
+		};
+		F7864C9C1EC2D19C00CE55EA /* Ch4 */ = {
+			isa = PBXGroup;
+			children = (
+				F7864C9D1EC2D1C600CE55EA /* CwngaCh4AlertHandleWKWebViewController.h */,
+				F7864C9E1EC2D1C600CE55EA /* CwngaCh4AlertHandleWKWebViewController.m */,
+				F7864C9F1EC2D1C600CE55EA /* CwngaCh4AlertHandleWKWebViewController.xib */,
+			);
+			path = Ch4;
 			sourceTree = "<group>";
 		};
 		F79544A31E7BC13C00223550 /* UIVisualEffectView */ = {
@@ -808,6 +824,7 @@
 				F705E06E1DBB6B800081CEED /* ListingCollectionViewCell.xib in Resources */,
 				F705E08C1DBB715F0081CEED /* Ch2DetailViewController.xib in Resources */,
 				F7BDDA4B1E924D6300F93C56 /* CollectionViewInsertPerformanceViewController.xib in Resources */,
+				F7864CA11EC2D1C600CE55EA /* CwngaCh4AlertHandleWKWebViewController.xib in Resources */,
 				F79D31FA1DBB69E400C63FF5 /* Assets.xcassets in Resources */,
 				F705E0AC1DBB97090081CEED /* BinaryTreeViewController.xib in Resources */,
 				F74397E21EAC4A5E0051A8A6 /* CwngaCh3WKWebViewController.xib in Resources */,
@@ -971,6 +988,7 @@
 				F705E0981DBB86630081CEED /* TextViewCollectionViewCell.m in Sources */,
 				F70255BD1DF5A2E3000DECA0 /* CountCompleteTreeNodes.m in Sources */,
 				F7FDE63D1EA6FFF40036E885 /* CwngaPresentedViewController.m in Sources */,
+				F7864CA01EC2D1C600CE55EA /* CwngaCh4AlertHandleWKWebViewController.m in Sources */,
 				F73576331E7ED4CB002BC9D7 /* CwngaCh2WKWebViewController.m in Sources */,
 				F70255C51DF64C60000DECA0 /* MaxSequenceSubArrayCount.m in Sources */,
 				F70255D41DF6FF23000DECA0 /* MaximumDepthofBinaryTree.m in Sources */,
@@ -1127,6 +1145,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = CwngaIOSStudy/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cwnga.CwngaIOSStudy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1140,6 +1159,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = CwngaIOSStudy/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cwnga.CwngaIOSStudy;
 				PRODUCT_NAME = "$(TARGET_NAME)";

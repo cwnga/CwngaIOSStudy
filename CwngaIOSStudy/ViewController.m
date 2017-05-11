@@ -58,8 +58,11 @@ static  NSString * const ReuseIdentifier = @"CollectionViewCell";
                               @{
                                   @"title" : @"CwngaCh3WKWebViewController",
                                   @"className": @"CwngaCh3WKWebViewController"
-                                  },
-
+                                  },//CwngaCh4AlertHandleWKWebViewController
+                              @{
+                                  @"title" : @"CwngaCh4AlertHandleWKWebViewController",
+                                  @"className": @"CwngaCh4AlertHandleWKWebViewController"
+                                  }
                               ],
                       },
                   @{
