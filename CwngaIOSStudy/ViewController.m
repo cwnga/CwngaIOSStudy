@@ -72,7 +72,11 @@ static  NSString * const ReuseIdentifier = @"CollectionViewCell";
                                   @"title" : @"CollectionView Insert Performance",
                                   @"className": @"CollectionViewInsertPerformanceViewController"
                                   },
-
+                              //Ch2CollectionViewReladViewController.h
+  @{
+                                  @"title" : @"CollectionView reload",
+                                  @"className": @"Ch2CollectionViewReladViewController"
+                                  }
                               ],
                       },
 

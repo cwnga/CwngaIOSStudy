@@ -74,6 +74,8 @@
 		F7749E081DF2E3720065F2D2 /* ReverseWordsInAStringSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = F7749E061DF2E3720065F2D2 /* ReverseWordsInAStringSpec.m */; };
 		F7749E0B1DF2EB0C0065F2D2 /* ContainsDuplicateIII.m in Sources */ = {isa = PBXBuildFile; fileRef = F7749E0A1DF2EB0C0065F2D2 /* ContainsDuplicateIII.m */; };
 		F7749E0D1DF2F1B10065F2D2 /* ContainsDuplicateIIISpec.m in Sources */ = {isa = PBXBuildFile; fileRef = F7749E0C1DF2F1B10065F2D2 /* ContainsDuplicateIIISpec.m */; };
+		F78079BA1ED187A7000B434F /* Ch2CollectionViewReladViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F78079B81ED187A7000B434F /* Ch2CollectionViewReladViewController.m */; };
+		F78079BB1ED187A7000B434F /* Ch2CollectionViewReladViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F78079B91ED187A7000B434F /* Ch2CollectionViewReladViewController.xib */; };
 		F782BE9D1DD9546600B6B63F /* ADKCollectionViewDynamicSizeSubCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F782BE9B1DD9546600B6B63F /* ADKCollectionViewDynamicSizeSubCell.m */; };
 		F782BE9E1DD9546600B6B63F /* ADKCollectionViewDynamicSizeSubCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F782BE9C1DD9546600B6B63F /* ADKCollectionViewDynamicSizeSubCell.xib */; };
 		F782BEA71DD9558500B6B63F /* DynamicLeftRightLabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F782BEA51DD9558500B6B63F /* DynamicLeftRightLabelViewController.m */; };
@@ -220,6 +222,9 @@
 		F7749E091DF2EB0C0065F2D2 /* ContainsDuplicateIII.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContainsDuplicateIII.h; sourceTree = "<group>"; };
 		F7749E0A1DF2EB0C0065F2D2 /* ContainsDuplicateIII.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContainsDuplicateIII.m; sourceTree = "<group>"; };
 		F7749E0C1DF2F1B10065F2D2 /* ContainsDuplicateIIISpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContainsDuplicateIIISpec.m; sourceTree = "<group>"; };
+		F78079B71ED187A7000B434F /* Ch2CollectionViewReladViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ch2CollectionViewReladViewController.h; sourceTree = "<group>"; };
+		F78079B81ED187A7000B434F /* Ch2CollectionViewReladViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ch2CollectionViewReladViewController.m; sourceTree = "<group>"; };
+		F78079B91ED187A7000B434F /* Ch2CollectionViewReladViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Ch2CollectionViewReladViewController.xib; sourceTree = "<group>"; };
 		F782BE9A1DD9546600B6B63F /* ADKCollectionViewDynamicSizeSubCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADKCollectionViewDynamicSizeSubCell.h; sourceTree = "<group>"; };
 		F782BE9B1DD9546600B6B63F /* ADKCollectionViewDynamicSizeSubCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADKCollectionViewDynamicSizeSubCell.m; sourceTree = "<group>"; };
 		F782BE9C1DD9546600B6B63F /* ADKCollectionViewDynamicSizeSubCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ADKCollectionViewDynamicSizeSubCell.xib; sourceTree = "<group>"; };
@@ -571,6 +576,16 @@
 			path = Leetcode;
 			sourceTree = "<group>";
 		};
+		F78079B61ED1876F000B434F /* Ch2_ReloadSectionAndReloadData */ = {
+			isa = PBXGroup;
+			children = (
+				F78079B71ED187A7000B434F /* Ch2CollectionViewReladViewController.h */,
+				F78079B81ED187A7000B434F /* Ch2CollectionViewReladViewController.m */,
+				F78079B91ED187A7000B434F /* Ch2CollectionViewReladViewController.xib */,
+			);
+			path = Ch2_ReloadSectionAndReloadData;
+			sourceTree = "<group>";
+		};
 		F782BEA31DD9555700B6B63F /* Ch5-TwoLabelLeftRight */ = {
 			isa = PBXGroup;
 			children = (
@@ -660,6 +675,7 @@
 		F7BDDA451E924D3400F93C56 /* CollectionView */ = {
 			isa = PBXGroup;
 			children = (
+				F78079B61ED1876F000B434F /* Ch2_ReloadSectionAndReloadData */,
 				F7BDDA461E924D3400F93C56 /* Ch1_InsertPerformance */,
 			);
 			path = CollectionView;
@@ -823,6 +839,7 @@
 				F735762E1E7ED46C002BC9D7 /* CwngaWKWebViewController.xib in Resources */,
 				F705E06E1DBB6B800081CEED /* ListingCollectionViewCell.xib in Resources */,
 				F705E08C1DBB715F0081CEED /* Ch2DetailViewController.xib in Resources */,
+				F78079BB1ED187A7000B434F /* Ch2CollectionViewReladViewController.xib in Resources */,
 				F7BDDA4B1E924D6300F93C56 /* CollectionViewInsertPerformanceViewController.xib in Resources */,
 				F7864CA11EC2D1C600CE55EA /* CwngaCh4AlertHandleWKWebViewController.xib in Resources */,
 				F79D31FA1DBB69E400C63FF5 /* Assets.xcassets in Resources */,
@@ -950,6 +967,7 @@
 				F705E09E1DBB86C90081CEED /* DynamicHeightViewController.m in Sources */,
 				F7749E011DF2D11D0065F2D2 /* DecodeWays.m in Sources */,
 				F7B443C61E3337A400F330DC /* UIImageLikeAnimationView.m in Sources */,
+				F78079BA1ED187A7000B434F /* Ch2CollectionViewReladViewController.m in Sources */,
 				F7BCA7621DC2EA6B00404F8E /* Ch3CombineLatestViewControlller.m in Sources */,
 				F705E06D1DBB6B800081CEED /* ListingCollectionViewCell.m in Sources */,
 				F782BE9D1DD9546600B6B63F /* ADKCollectionViewDynamicSizeSubCell.m in Sources */,

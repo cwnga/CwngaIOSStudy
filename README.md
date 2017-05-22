@@ -455,6 +455,16 @@ code:
 
     cell.textViewHeightConstraint.constant = textViewSize.height;
     CGSize size = [[ADKCellDynamicSizeCalculator sharedInstance] sizeForDynamicHeightCellInstance:cell preferredSize:preferredSize];
+## CollectionView
+
+### Ch2CollectionViewReladViewController
+
+if reload reloadItemsAtIndexPaths first, will block reloadData call cellForItemAtIndexPath:
+
+    [self.collectionView reloadItemsAtIndexPaths:self.collectionView.indexPathsForVisibleItems];//enableSetData = NO
+    self.enableSetData = YES;
+    [self.collectionView reloadData];//will only call size, will not call cellForItemAtIndexPath:
+
 
 ## ReactiveCocoaStudy
 ReactiveCocoaStudy
