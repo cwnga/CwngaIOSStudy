@@ -25,19 +25,35 @@ PODS:
   - SDWebImage (3.8.2):
     - SDWebImage/Core (= 3.8.2)
   - SDWebImage/Core (3.8.2)
+  - Socket.IO-Client-Swift (10.0.0)
+  - SocketRocket (0.5.1)
 
 DEPENDENCIES:
   - AppDevKit
   - Kiwi
   - ReactiveCocoa (~> 2.4)
   - SDWebImage (~> 3.8)
+  - Socket.IO-Client-Swift (from `https://github.com/socketio/socket.io-client-swift`, tag `v10.0.0`)
+  - SocketRocket
+
+EXTERNAL SOURCES:
+  Socket.IO-Client-Swift:
+    :git: https://github.com/socketio/socket.io-client-swift
+    :tag: v10.0.0
+
+CHECKOUT OPTIONS:
+  Socket.IO-Client-Swift:
+    :git: https://github.com/socketio/socket.io-client-swift
+    :tag: v10.0.0
 
 SPEC CHECKSUMS:
   AppDevKit: b357311b0a4bfd3b9d5ab268e62081998aec884f
   Kiwi: f49c9d54b28917df5928fe44968a39ed198cb8a8
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
+  Socket.IO-Client-Swift: 2684b0e3522169b2a62431d609db1a873ab4f1a7
+  SocketRocket: d57c7159b83c3c6655745cd15302aa24b6bae531
 
-PODFILE CHECKSUM: 11664c09f393c860715b6e43fe545252fcc5ad7c
+PODFILE CHECKSUM: ce9ddde57d3852ffc42fb617ed52b48e8ab39c5a
 
-COCOAPODS: 1.1.1
+COCOAPODS: 1.2.1

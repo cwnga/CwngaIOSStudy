@@ -7,7 +7,7 @@
 //
 
 #import "ADKImageColorViewController.h"
-#import <AppDevKit.h>
+#import <AppDevKit/AppDevKit.h>
 #import "UIImage+ADKColorReplacement.h"
 
 @interface ADKImageColorViewController ()

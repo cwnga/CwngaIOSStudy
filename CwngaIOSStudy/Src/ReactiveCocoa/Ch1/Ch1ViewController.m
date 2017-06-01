@@ -7,7 +7,7 @@
 //
 
 #import "Ch1ViewController.h"
-#import <ReactiveCocoa.h>
+#import <ReactiveCocoa/ReactiveCocoa.h>
 
 @interface Ch1ViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *textField;

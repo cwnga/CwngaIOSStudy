@@ -7,7 +7,7 @@
 //
 
 #import "Ch3CombineLatestViewControlller.h"
-#import <ReactiveCocoa.h>
+#import <ReactiveCocoa/ReactiveCocoa.h>
 @interface Ch3CombineLatestViewControlller ()
 @property (weak, nonatomic) IBOutlet UITextField *firstNameTextField;
 @property (weak, nonatomic) IBOutlet UITextField *lastNameTextField;

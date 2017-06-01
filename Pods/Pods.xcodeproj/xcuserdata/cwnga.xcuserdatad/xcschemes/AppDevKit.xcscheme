@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '87D9D82614831F712173691345CD720C'
+               BlueprintIdentifier = '291C719C640818F0F79E33E1CE267FCC'
                BlueprintName = 'AppDevKit'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libAppDevKit.a'>
+               BuildableName = 'AppDevKit.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

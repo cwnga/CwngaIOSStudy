@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <AppDevKit.h>
+#import <AppDevKit/AppDevKit.h>
 
 static NSString * const ADKCollectionViewDynamicSizeSubCellIdentifier = @"ADKCollectionViewDynamicSizeSubCell";
 

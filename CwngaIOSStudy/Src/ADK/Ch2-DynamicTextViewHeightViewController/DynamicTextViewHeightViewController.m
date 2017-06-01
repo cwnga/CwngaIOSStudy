@@ -8,7 +8,7 @@
 
 #import "DynamicTextViewHeightViewController.h"
 #import "TextViewCollectionViewCell.h"
-#import <AppDevKit.h>
+#import <AppDevKit/AppDevKit.h>
 @interface DynamicTextViewHeightViewController () <UICollectionViewDelegate, UICollectionViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;

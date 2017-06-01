@@ -7,7 +7,7 @@
 //
 
 #import "Ch2ViewController.h"
-#import <ReactiveCocoa.h>
+#import <ReactiveCocoa/ReactiveCocoa.h>
 #import <SDWebImage/UIImageView+WebCache.h>
 #import "Ch2DetailViewController.h"
 #import "ListingCollectionViewCell.h"

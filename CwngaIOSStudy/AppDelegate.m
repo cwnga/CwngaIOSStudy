@@ -8,8 +8,15 @@
 
 #import "AppDelegate.h"
 #import "ViewController.h"
-@interface AppDelegate ()
+#import "EALiveSocket.h"
 
+#import <SocketRocket/SocketRocket.h>
+
+@import SocketIO;
+
+@interface AppDelegate () <SRWebSocketDelegate>
+@property (strong, nonatomic) SocketIOClient *socket;
+@property (strong, nonatomic) EALiveSocket *webSocket;
 @end
 
 @implementation AppDelegate
@@ -17,10 +24,33 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+
+    NSMutableDictionary *tmp =  [NSMutableDictionary dictionaryWithDictionary:@{@"a":@"a1"}];
+    [tmp addEntriesFromDictionary:@{@"a":@"b2"}];
+    
     ViewController *vc = [[ViewController alloc] init];
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
     self.window.rootViewController = nav;
     [self.window makeKeyAndVisible];
+
+//    self.webSocket = [[SRWebSocket alloc] initWithURL:[NSURL URLWithString:@"ws://joiningcoining.corp.sg3.yahoo.com:4080/messages/v1/chatRooms"]];
+//    self.webSocket.delegate = self;
+//    /*
+//     {
+//     “action”: “join”,
+//     “chatRoom”: {
+//     “id”: “00001”
+//     }
+//     }
+//     */
+//
+//
+//    [self.webSocket open];
+    EALiveSocket *t = [[EALiveSocket alloc] initWithURL:nil];
+    [t open];
+    [t joinRoomWithId:@"31149433368770"];
+    t.delegate = self;
+    self.webSocket = t;
     return YES;
 }
 
@@ -49,6 +79,54 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+
+
+///--------------------------------------
+#pragma mark - SRWebSocketDelegate
+///--------------------------------------
+
+- (void)webSocketDidOpen:(SRWebSocket *)webSocket;
+{
+    NSLog(@"---------------->Websocket Connected");
+    //  [self.webSocket send:@"{\"action\":\"join\", \"chatRoom\":{\"id\":\"31149433368770\"}}"];
+
+    NSError *error;
+    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:   @{
+                                                                    @"action": @"join",
+                                                                    @"chatRoom": @{
+                                                                            @"id": @"31149433368770",
+                                                                            }
+                                                                    }
+                                                       options:0
+                                                         error:&error];
+   // [self.webSocket send:[[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding]];
+
+}
+
+// or NSData if the server is using binary.
+- (void)webSocket:(SRWebSocket *)webSocket didReceiveMessage:(id)message
+{
+
+    NSLog(@"---------------->%@", message);
+
+
+}
+
+- (void)webSocket:(SRWebSocket *)webSocket didFailWithError:(NSError *)error
+{
+    NSLog(@"---------------->%@", error);
+}
+
+- (void)webSocket:(SRWebSocket *)webSocket didCloseWithCode:(NSInteger)code reason:(NSString *)reason wasClean:(BOOL)wasClean
+{
+    NSLog(@"---------------->%@", reason);
+}
+
+- (void)webSocket:(SRWebSocket *)webSocket didReceivePong:(NSData *)pongPayload
+{
+    NSLog(@"---------------->%@", pongPayload);
 }
 
 

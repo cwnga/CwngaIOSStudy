@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2ED15FBB09182ABF02FC50E2 /* libPods-CwngaIOSStudyTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 37FA2EED93120ECD742D6B86 /* libPods-CwngaIOSStudyTests.a */; };
-		76B15E85B58796B7AE7594EB /* libPods-CwngaIOSStudy.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 619274F30E1CBA450191D952 /* libPods-CwngaIOSStudy.a */; };
+		206833E071EED383E53EC110 /* Pods_CwngaIOSStudy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70DC76D7B3601FC0E0EE446B /* Pods_CwngaIOSStudy.framework */; };
+		2D54BD97965B022FBE4D2B5F /* Pods_CwngaIOSStudyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5214B033683C6D6119D0B699 /* Pods_CwngaIOSStudyTests.framework */; };
 		F70255B51DF59569000DECA0 /* CwngaListNode.m in Sources */ = {isa = PBXBuildFile; fileRef = F70255B41DF59569000DECA0 /* CwngaListNode.m */; };
 		F70255B81DF595CA000DECA0 /* AddTwoNumbers.m in Sources */ = {isa = PBXBuildFile; fileRef = F70255B71DF595CA000DECA0 /* AddTwoNumbers.m */; };
 		F70255BA1DF59894000DECA0 /* AddTwoNumbersSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = F70255B91DF59894000DECA0 /* AddTwoNumbersSpec.m */; };
@@ -90,6 +90,7 @@
 		F79D31F81DBB69E400C63FF5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F79D31F61DBB69E400C63FF5 /* Main.storyboard */; };
 		F79D31FA1DBB69E400C63FF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F79D31F91DBB69E400C63FF5 /* Assets.xcassets */; };
 		F79D31FD1DBB69E400C63FF5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F79D31FB1DBB69E400C63FF5 /* LaunchScreen.storyboard */; };
+		F7A417F01ED6C7BF00386653 /* EALiveSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A417EF1ED6C7BF00386653 /* EALiveSocket.m */; };
 		F7B443C61E3337A400F330DC /* UIImageLikeAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = F7B443C51E3337A400F330DC /* UIImageLikeAnimationView.m */; };
 		F7BCA7621DC2EA6B00404F8E /* Ch3CombineLatestViewControlller.m in Sources */ = {isa = PBXBuildFile; fileRef = F7BCA7601DC2EA6B00404F8E /* Ch3CombineLatestViewControlller.m */; };
 		F7BCA7631DC2EA6B00404F8E /* Ch3CombineLatestViewControlller.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7BCA7611DC2EA6B00404F8E /* Ch3CombineLatestViewControlller.xib */; };
@@ -117,9 +118,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		37FA2EED93120ECD742D6B86 /* libPods-CwngaIOSStudyTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CwngaIOSStudyTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5214B033683C6D6119D0B699 /* Pods_CwngaIOSStudyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CwngaIOSStudyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5ECF6443B5D7E4731FEFFD9C /* Pods-CwngaIOSStudyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CwngaIOSStudyTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CwngaIOSStudyTests/Pods-CwngaIOSStudyTests.debug.xcconfig"; sourceTree = "<group>"; };
-		619274F30E1CBA450191D952 /* libPods-CwngaIOSStudy.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CwngaIOSStudy.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		70DC76D7B3601FC0E0EE446B /* Pods_CwngaIOSStudy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CwngaIOSStudy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		711D8E3BE2BF229B5C36D713 /* Pods-CwngaIOSStudyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CwngaIOSStudyTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CwngaIOSStudyTests/Pods-CwngaIOSStudyTests.release.xcconfig"; sourceTree = "<group>"; };
 		8732B80311E315747ECECC9E /* Pods-CwngaIOSStudy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CwngaIOSStudy.release.xcconfig"; path = "Pods/Target Support Files/Pods-CwngaIOSStudy/Pods-CwngaIOSStudy.release.xcconfig"; sourceTree = "<group>"; };
 		C6BAEF2EBC3BEA17943E82D9 /* Pods-CwngaIOSStudy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CwngaIOSStudy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CwngaIOSStudy/Pods-CwngaIOSStudy.debug.xcconfig"; sourceTree = "<group>"; };
@@ -247,6 +248,8 @@
 		F79D31F91DBB69E400C63FF5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F79D31FC1DBB69E400C63FF5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F79D31FE1DBB69E400C63FF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7A417EE1ED6C7BF00386653 /* EALiveSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EALiveSocket.h; sourceTree = "<group>"; };
+		F7A417EF1ED6C7BF00386653 /* EALiveSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EALiveSocket.m; sourceTree = "<group>"; };
 		F7B443C41E3337A400F330DC /* UIImageLikeAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImageLikeAnimationView.h; sourceTree = "<group>"; };
 		F7B443C51E3337A400F330DC /* UIImageLikeAnimationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIImageLikeAnimationView.m; sourceTree = "<group>"; };
 		F7BCA75F1DC2EA6B00404F8E /* Ch3CombineLatestViewControlller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ch3CombineLatestViewControlller.h; sourceTree = "<group>"; };
@@ -278,7 +281,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				76B15E85B58796B7AE7594EB /* libPods-CwngaIOSStudy.a in Frameworks */,
+				206833E071EED383E53EC110 /* Pods_CwngaIOSStudy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,7 +289,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2ED15FBB09182ABF02FC50E2 /* libPods-CwngaIOSStudyTests.a in Frameworks */,
+				2D54BD97965B022FBE4D2B5F /* Pods_CwngaIOSStudyTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,8 +310,8 @@
 		C03FB2DBF3016588F88F70A9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				619274F30E1CBA450191D952 /* libPods-CwngaIOSStudy.a */,
-				37FA2EED93120ECD742D6B86 /* libPods-CwngaIOSStudyTests.a */,
+				70DC76D7B3601FC0E0EE446B /* Pods_CwngaIOSStudy.framework */,
+				5214B033683C6D6119D0B699 /* Pods_CwngaIOSStudyTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -650,6 +653,8 @@
 				F79D31FB1DBB69E400C63FF5 /* LaunchScreen.storyboard */,
 				F79D31FE1DBB69E400C63FF5 /* Info.plist */,
 				F79D31ED1DBB69E400C63FF5 /* Supporting Files */,
+				F7A417EE1ED6C7BF00386653 /* EALiveSocket.h */,
+				F7A417EF1ED6C7BF00386653 /* EALiveSocket.m */,
 			);
 			path = CwngaIOSStudy;
 			sourceTree = "<group>";
@@ -891,7 +896,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		4ED9F4CBB8880781E6C9CF8C /* [CP] Embed Pods Frameworks */ = {
@@ -951,7 +956,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -1004,6 +1009,7 @@
 				F7075A621DF4191000DFC083 /* LongestSubstringWithoutRepeatingCharacters.m in Sources */,
 				F7749E0B1DF2EB0C0065F2D2 /* ContainsDuplicateIII.m in Sources */,
 				F705E0981DBB86630081CEED /* TextViewCollectionViewCell.m in Sources */,
+				F7A417F01ED6C7BF00386653 /* EALiveSocket.m in Sources */,
 				F70255BD1DF5A2E3000DECA0 /* CountCompleteTreeNodes.m in Sources */,
 				F7FDE63D1EA6FFF40036E885 /* CwngaPresentedViewController.m in Sources */,
 				F7864CA01EC2D1C600CE55EA /* CwngaCh4AlertHandleWKWebViewController.m in Sources */,

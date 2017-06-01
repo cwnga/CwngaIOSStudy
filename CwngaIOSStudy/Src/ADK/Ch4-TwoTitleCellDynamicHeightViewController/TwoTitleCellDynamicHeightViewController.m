@@ -7,7 +7,7 @@
 //
 
 #import "TwoTitleCellDynamicHeightViewController.h"
-#import <AppDevKit.h>
+#import <AppDevKit/AppDevKit.h>
 #import "TwoLabelCollectionViewCell.h"
 @interface TwoTitleCellDynamicHeightViewController ()
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;

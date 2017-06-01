@@ -7,7 +7,7 @@
 //
 
 #import "Ch2DetailViewController.h"
-#import <ReactiveCocoa.h>
+#import <ReactiveCocoa/ReactiveCocoa.h>
 @interface Ch2DetailViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *dissmissButton;
 
