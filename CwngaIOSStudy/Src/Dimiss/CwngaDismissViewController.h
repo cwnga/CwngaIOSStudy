@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface CwngaDismissViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UIView *testView;
 
 @end

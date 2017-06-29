@@ -10,6 +10,7 @@ target 'CwngaIOSStudy' do
     pod 'SDWebImage', '~>3.8'
     pod 'Socket.IO-Client-Swift', :git => 'https://github.com/socketio/socket.io-client-swift', :tag => 'v10.0.0'
     pod 'SocketRocket'
+    pod 'JSONModel'
 end
 
 target 'CwngaIOSStudyTests' do

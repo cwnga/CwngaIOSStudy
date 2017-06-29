@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CwngaDismissViewController">
             <connections>
+                <outlet property="testView" destination="jCl-oL-Ldn" id="0bV-N6-kBh"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -26,11 +26,21 @@
                         <action selector="presetNewController:" destination="-1" eventType="touchUpInside" id="ngS-L0-rYK"/>
                     </connections>
                 </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jCl-oL-Ldn">
+                    <rect key="frame" x="0.0" y="356" width="375" height="100"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="Nof-Qf-jG4"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="jCl-oL-Ldn" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="CYB-uI-4lc"/>
                 <constraint firstItem="Xig-ES-QcY" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="NxG-x5-JdJ"/>
+                <constraint firstItem="jCl-oL-Ldn" firstAttribute="top" secondItem="Xig-ES-QcY" secondAttribute="bottom" constant="7.5" id="bfP-ou-ogm"/>
                 <constraint firstItem="Xig-ES-QcY" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="izN-j3-rn6"/>
+                <constraint firstAttribute="trailing" secondItem="jCl-oL-Ldn" secondAttribute="trailing" id="mNS-Ba-tS9"/>
             </constraints>
         </view>
     </objects>
