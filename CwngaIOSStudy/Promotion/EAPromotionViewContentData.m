@@ -15,7 +15,7 @@
 
 ////PromotionViewTextData
 
-@implementation EAPromotionViewContextTextData
+@implementation EAPromotionViewContentTextData
 
 + (BOOL)propertyIsOptional:(NSString *)propertyName
 {

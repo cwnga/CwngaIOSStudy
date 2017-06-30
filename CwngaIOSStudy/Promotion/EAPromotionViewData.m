@@ -17,7 +17,7 @@
     self = [super initWithDictionary:dict error:err];
     EAPromotionViewContentData *contentData;
     if ([dict[@"type"] isEqualToString:@"text"]) {
-        contentData = [[EAPromotionViewContextTextData alloc] initWithDictionary:dict[@"contentData"] error:err];
+        contentData = [[EAPromotionViewContentTextData alloc] initWithDictionary:dict[@"contentData"] error:err];
     } else if ([dict[@"type"] isEqualToString:@"image"]) {
         contentData = [[EAPromotionViewContentImageData alloc] initWithDictionary:dict[@"contentData"] error:err];
     }

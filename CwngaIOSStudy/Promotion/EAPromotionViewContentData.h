@@ -14,7 +14,7 @@
 @end
 
 ////text data
-@interface EAPromotionViewContextTextData : EAPromotionViewContentData
+@interface EAPromotionViewContentTextData : EAPromotionViewContentData
 @property (strong, nonatomic) NSString *text;
 @property (assign, nonatomic) CGFloat fontSize;
 @property (assign, nonatomic) CGFloat borderWidth;

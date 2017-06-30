@@ -15,5 +15,7 @@
 @property (strong, nonatomic) NSString *cmsDataKey;
 @property (strong, nonatomic) NSString *service;
 @property (strong, nonatomic) NSString *property;
+@property (strong, nonatomic) NSString *keypath;
+@property (strong, nonatomic) NSString *keypathAdoptValue;
 
 @end

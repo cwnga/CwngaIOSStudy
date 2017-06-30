@@ -14,21 +14,9 @@
 ///manager
 @interface EAPromotionManager : NSObject
 
-+ (EAPromotionViewData *)dataWithDictionary:(NSDictionary *)dict;
-+ (NSArray <EAPromotionViewData *> *)dataWithDicts:(NSArray *)dataArray;
-+ (NSArray <UIView *> *)viewsWithViewDatas:(NSArray <EAPromotionViewData *>*)viewDatas;
-+ (UIImageView *)imageViewWithImageName:(NSString *)imageName
-                                   size:(CGSize)size
-                                leading:(CGFloat)leading;
-
-
-+ (UILabel *)promotionLabel:(NSString *)text
-                   fontSize:(NSInteger)fontSize
-            backgroundColor:(UIColor *)backgroundColor
-                borderColor:(UIColor *)borderColor
-                borderWidth:(CGFloat)borderWidth
-                  textColor:(UIColor *)textColor
-                       size:(CGSize)size
-                    leading:(CGFloat)leading;
++ (instancetype)shareInstance;
+- (instancetype)init NS_UNAVAILABLE;
+- (NSArray <UIView *> *)viewsWithPageId:(NSString *)pageId
+                        promotionViewId:(NSString *)promotionViewId;
 
 @end

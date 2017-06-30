@@ -12,7 +12,7 @@
 
 @interface EAPromotionPageData : JSONModel
 
-@property (strong, nonatomic) NSString *name; //ex: item page
+@property (strong, nonatomic) NSString *pageId; //ex: item page
 @property (strong, nonatomic) NSArray <EAPromotionViewData> *viewDatas;
 
 @end
