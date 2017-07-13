@@ -8,8 +8,6 @@
 
 #import "CwngaDismissViewController.h"
 #import "CwngaPresentedViewController.h"
-#import "EAPromotionData.h"
-#import "EAPromotionManager.h"
 
 @interface CwngaDismissViewController ()
 
@@ -21,12 +19,15 @@
     [super viewDidLoad];
 
 
-    NSArray *views = [[EAPromotionManager shareInstance] viewsWithPageId:@"listingPageView" promotionViewId:@"shippingFamilyPromotionView"];
-    [views enumerateObjectsUsingBlock:^(UIView *obj, NSUInteger idx, BOOL * _Nonnull stop) {
-        [self.testView addSubview:obj];
-        obj.center = CGPointMake(obj.center.x, self.testView.frame.size.height/2);
-        obj.autoresizingMask = UIViewAutoresizingFlexibleWidth;
-    }];
+
+}
+- (BOOL)isFamily
+{
+    return YES;
+}
+- (BOOL)isSeven
+{
+    return NO;
 }
 
 - (void)didReceiveMemoryWarning {

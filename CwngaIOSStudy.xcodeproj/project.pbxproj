@@ -24,7 +24,6 @@
 		F70255D41DF6FF23000DECA0 /* MaximumDepthofBinaryTree.m in Sources */ = {isa = PBXBuildFile; fileRef = F70255D31DF6FF23000DECA0 /* MaximumDepthofBinaryTree.m */; };
 		F70255D71DF701CC000DECA0 /* MaximumProductofWordLengths.m in Sources */ = {isa = PBXBuildFile; fileRef = F70255D61DF701CC000DECA0 /* MaximumProductofWordLengths.m */; };
 		F70255D91DF703BA000DECA0 /* MaximumProductofWordLengthsSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = F70255D81DF703BA000DECA0 /* MaximumProductofWordLengthsSpec.m */; };
-		F70257461F0390AF0081A539 /* EAPromotionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F70257451F0390AF0081A539 /* EAPromotionManager.m */; };
 		F705E06B1DBB6B800081CEED /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F705E05B1DBB6B800081CEED /* CollectionViewCell.m */; };
 		F705E06C1DBB6B800081CEED /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F705E05C1DBB6B800081CEED /* CollectionViewCell.xib */; };
 		F705E06D1DBB6B800081CEED /* ListingCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F705E05E1DBB6B800081CEED /* ListingCollectionViewCell.m */; };
@@ -68,11 +67,6 @@
 		F73576341E7ED4CB002BC9D7 /* CwngaCh2WKWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F73576321E7ED4CB002BC9D7 /* CwngaCh2WKWebViewController.xib */; };
 		F74397E11EAC4A5E0051A8A6 /* CwngaCh3WKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F74397DF1EAC4A5E0051A8A6 /* CwngaCh3WKWebViewController.m */; };
 		F74397E21EAC4A5E0051A8A6 /* CwngaCh3WKWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F74397E01EAC4A5E0051A8A6 /* CwngaCh3WKWebViewController.xib */; };
-		F7450FB61F04A527000A9282 /* EAPromotionData.m in Sources */ = {isa = PBXBuildFile; fileRef = F7450FB51F04A527000A9282 /* EAPromotionData.m */; };
-		F7450FB91F04A5D9000A9282 /* EAPromotionViewData.m in Sources */ = {isa = PBXBuildFile; fileRef = F7450FB81F04A5D9000A9282 /* EAPromotionViewData.m */; };
-		F7450FBC1F04A5F0000A9282 /* EAPromotionCMSParameterData.m in Sources */ = {isa = PBXBuildFile; fileRef = F7450FBB1F04A5F0000A9282 /* EAPromotionCMSParameterData.m */; };
-		F7450FBF1F04A72E000A9282 /* EAPromotionPageData.m in Sources */ = {isa = PBXBuildFile; fileRef = F7450FBE1F04A72E000A9282 /* EAPromotionPageData.m */; };
-		F7450FC21F04AAF2000A9282 /* EAPromotionViewContentData.m in Sources */ = {isa = PBXBuildFile; fileRef = F7450FC11F04AAF2000A9282 /* EAPromotionViewContentData.m */; };
 		F7749DF71DF2C8A40065F2D2 /* CwngaNode.m in Sources */ = {isa = PBXBuildFile; fileRef = F7749DF61DF2C8A40065F2D2 /* CwngaNode.m */; };
 		F7749DFB1DF2C9970065F2D2 /* ReverseWordsInAString.m in Sources */ = {isa = PBXBuildFile; fileRef = F7749DFA1DF2C9970065F2D2 /* ReverseWordsInAString.m */; };
 		F7749E011DF2D11D0065F2D2 /* DecodeWays.m in Sources */ = {isa = PBXBuildFile; fileRef = F7749E001DF2D11D0065F2D2 /* DecodeWays.m */; };
@@ -154,8 +148,6 @@
 		F70255D51DF701CC000DECA0 /* MaximumProductofWordLengths.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MaximumProductofWordLengths.h; sourceTree = "<group>"; };
 		F70255D61DF701CC000DECA0 /* MaximumProductofWordLengths.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MaximumProductofWordLengths.m; sourceTree = "<group>"; };
 		F70255D81DF703BA000DECA0 /* MaximumProductofWordLengthsSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MaximumProductofWordLengthsSpec.m; sourceTree = "<group>"; };
-		F70257441F0390AF0081A539 /* EAPromotionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAPromotionManager.h; sourceTree = "<group>"; };
-		F70257451F0390AF0081A539 /* EAPromotionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAPromotionManager.m; sourceTree = "<group>"; };
 		F705E05A1DBB6B800081CEED /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
 		F705E05B1DBB6B800081CEED /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
 		F705E05C1DBB6B800081CEED /* CollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
@@ -220,16 +212,6 @@
 		F74397DE1EAC4A5E0051A8A6 /* CwngaCh3WKWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CwngaCh3WKWebViewController.h; sourceTree = "<group>"; };
 		F74397DF1EAC4A5E0051A8A6 /* CwngaCh3WKWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CwngaCh3WKWebViewController.m; sourceTree = "<group>"; };
 		F74397E01EAC4A5E0051A8A6 /* CwngaCh3WKWebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CwngaCh3WKWebViewController.xib; sourceTree = "<group>"; };
-		F7450FB41F04A527000A9282 /* EAPromotionData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EAPromotionData.h; sourceTree = "<group>"; };
-		F7450FB51F04A527000A9282 /* EAPromotionData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EAPromotionData.m; sourceTree = "<group>"; };
-		F7450FB71F04A5D9000A9282 /* EAPromotionViewData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EAPromotionViewData.h; sourceTree = "<group>"; };
-		F7450FB81F04A5D9000A9282 /* EAPromotionViewData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EAPromotionViewData.m; sourceTree = "<group>"; };
-		F7450FBA1F04A5F0000A9282 /* EAPromotionCMSParameterData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EAPromotionCMSParameterData.h; sourceTree = "<group>"; };
-		F7450FBB1F04A5F0000A9282 /* EAPromotionCMSParameterData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EAPromotionCMSParameterData.m; sourceTree = "<group>"; };
-		F7450FBD1F04A72E000A9282 /* EAPromotionPageData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EAPromotionPageData.h; sourceTree = "<group>"; };
-		F7450FBE1F04A72E000A9282 /* EAPromotionPageData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EAPromotionPageData.m; sourceTree = "<group>"; };
-		F7450FC01F04AAF2000A9282 /* EAPromotionViewContentData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EAPromotionViewContentData.h; sourceTree = "<group>"; };
-		F7450FC11F04AAF2000A9282 /* EAPromotionViewContentData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EAPromotionViewContentData.m; sourceTree = "<group>"; };
 		F7749DF51DF2C8A40065F2D2 /* CwngaNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CwngaNode.h; sourceTree = "<group>"; };
 		F7749DF61DF2C8A40065F2D2 /* CwngaNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CwngaNode.m; sourceTree = "<group>"; };
 		F7749DF91DF2C9970065F2D2 /* ReverseWordsInAString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReverseWordsInAString.h; sourceTree = "<group>"; };
@@ -332,25 +314,6 @@
 				5214B033683C6D6119D0B699 /* Pods_CwngaIOSStudyTests.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		F70257431F038FA40081A539 /* Promotion */ = {
-			isa = PBXGroup;
-			children = (
-				F70257441F0390AF0081A539 /* EAPromotionManager.h */,
-				F70257451F0390AF0081A539 /* EAPromotionManager.m */,
-				F7450FB41F04A527000A9282 /* EAPromotionData.h */,
-				F7450FB51F04A527000A9282 /* EAPromotionData.m */,
-				F7450FBD1F04A72E000A9282 /* EAPromotionPageData.h */,
-				F7450FBE1F04A72E000A9282 /* EAPromotionPageData.m */,
-				F7450FB71F04A5D9000A9282 /* EAPromotionViewData.h */,
-				F7450FB81F04A5D9000A9282 /* EAPromotionViewData.m */,
-				F7450FC01F04AAF2000A9282 /* EAPromotionViewContentData.h */,
-				F7450FC11F04AAF2000A9282 /* EAPromotionViewContentData.m */,
-				F7450FBA1F04A5F0000A9282 /* EAPromotionCMSParameterData.h */,
-				F7450FBB1F04A5F0000A9282 /* EAPromotionCMSParameterData.m */,
-			);
-			path = Promotion;
 			sourceTree = "<group>";
 		};
 		F705E0581DBB6B800081CEED /* Src */ = {
@@ -679,7 +642,6 @@
 		F79D31EC1DBB69E400C63FF5 /* CwngaIOSStudy */ = {
 			isa = PBXGroup;
 			children = (
-				F70257431F038FA40081A539 /* Promotion */,
 				F705E0581DBB6B800081CEED /* Src */,
 				F79D31F01DBB69E400C63FF5 /* AppDelegate.h */,
 				F79D31F11DBB69E400C63FF5 /* AppDelegate.m */,
@@ -1004,12 +966,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F7450FB61F04A527000A9282 /* EAPromotionData.m in Sources */,
 				F79D31F51DBB69E400C63FF5 /* ViewController.m in Sources */,
 				F79D31F21DBB69E400C63FF5 /* AppDelegate.m in Sources */,
 				F7075A5C1DF3102000DFC083 /* PalindromePartitioningII.m in Sources */,
 				F705E09E1DBB86C90081CEED /* DynamicHeightViewController.m in Sources */,
-				F7450FC21F04AAF2000A9282 /* EAPromotionViewContentData.m in Sources */,
 				F7749E011DF2D11D0065F2D2 /* DecodeWays.m in Sources */,
 				F7B443C61E3337A400F330DC /* UIImageLikeAnimationView.m in Sources */,
 				F78079BA1ED187A7000B434F /* Ch2CollectionViewReladViewController.m in Sources */,
@@ -1017,7 +977,6 @@
 				F705E06D1DBB6B800081CEED /* ListingCollectionViewCell.m in Sources */,
 				F782BE9D1DD9546600B6B63F /* ADKCollectionViewDynamicSizeSubCell.m in Sources */,
 				F705E08B1DBB715F0081CEED /* Ch2DetailViewController.m in Sources */,
-				F7450FBF1F04A72E000A9282 /* EAPromotionPageData.m in Sources */,
 				F7FDE6381EA6FFD40036E885 /* CwngaDismissViewController.m in Sources */,
 				F70255D71DF701CC000DECA0 /* MaximumProductofWordLengths.m in Sources */,
 				F7F21CCE1DC24E2000E94E8B /* ADKImageColorViewController.m in Sources */,
@@ -1030,7 +989,6 @@
 				F70255CF1DF6EE29000DECA0 /* MinimumSizeSubarraySum.m in Sources */,
 				F7075A6D1DF4327A00DFC083 /* LongestPalindromicSubstring.m in Sources */,
 				F74397E11EAC4A5E0051A8A6 /* CwngaCh3WKWebViewController.m in Sources */,
-				F70257461F0390AF0081A539 /* EAPromotionManager.m in Sources */,
 				F705E0A41DBB86F90081CEED /* DynamicTextViewHeightViewController.m in Sources */,
 				F7075A681DF428B900DFC083 /* MaximumProductSubarray.m in Sources */,
 				F782BEA71DD9558500B6B63F /* DynamicLeftRightLabelViewController.m in Sources */,
@@ -1038,8 +996,6 @@
 				F70255B51DF59569000DECA0 /* CwngaListNode.m in Sources */,
 				F70255B81DF595CA000DECA0 /* AddTwoNumbers.m in Sources */,
 				F705E08D1DBB715F0081CEED /* Ch2ViewController.m in Sources */,
-				F7450FBC1F04A5F0000A9282 /* EAPromotionCMSParameterData.m in Sources */,
-				F7450FB91F04A5D9000A9282 /* EAPromotionViewData.m in Sources */,
 				F7BDDA4A1E924D6300F93C56 /* CollectionViewInsertPerformanceViewController.m in Sources */,
 				F7D5354B1E2F708700D2C35E /* SKViewController.m in Sources */,
 				F705E06B1DBB6B800081CEED /* CollectionViewCell.m in Sources */,
