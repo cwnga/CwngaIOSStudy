@@ -90,7 +90,6 @@
 		F79D31F81DBB69E400C63FF5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F79D31F61DBB69E400C63FF5 /* Main.storyboard */; };
 		F79D31FA1DBB69E400C63FF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F79D31F91DBB69E400C63FF5 /* Assets.xcassets */; };
 		F79D31FD1DBB69E400C63FF5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F79D31FB1DBB69E400C63FF5 /* LaunchScreen.storyboard */; };
-		F7A417F01ED6C7BF00386653 /* EALiveSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A417EF1ED6C7BF00386653 /* EALiveSocket.m */; };
 		F7B443C61E3337A400F330DC /* UIImageLikeAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = F7B443C51E3337A400F330DC /* UIImageLikeAnimationView.m */; };
 		F7BCA7621DC2EA6B00404F8E /* Ch3CombineLatestViewControlller.m in Sources */ = {isa = PBXBuildFile; fileRef = F7BCA7601DC2EA6B00404F8E /* Ch3CombineLatestViewControlller.m */; };
 		F7BCA7631DC2EA6B00404F8E /* Ch3CombineLatestViewControlller.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7BCA7611DC2EA6B00404F8E /* Ch3CombineLatestViewControlller.xib */; };
@@ -248,8 +247,6 @@
 		F79D31F91DBB69E400C63FF5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F79D31FC1DBB69E400C63FF5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F79D31FE1DBB69E400C63FF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F7A417EE1ED6C7BF00386653 /* EALiveSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EALiveSocket.h; sourceTree = "<group>"; };
-		F7A417EF1ED6C7BF00386653 /* EALiveSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EALiveSocket.m; sourceTree = "<group>"; };
 		F7B443C41E3337A400F330DC /* UIImageLikeAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImageLikeAnimationView.h; sourceTree = "<group>"; };
 		F7B443C51E3337A400F330DC /* UIImageLikeAnimationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIImageLikeAnimationView.m; sourceTree = "<group>"; };
 		F7BCA75F1DC2EA6B00404F8E /* Ch3CombineLatestViewControlller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ch3CombineLatestViewControlller.h; sourceTree = "<group>"; };
@@ -653,8 +650,6 @@
 				F79D31FB1DBB69E400C63FF5 /* LaunchScreen.storyboard */,
 				F79D31FE1DBB69E400C63FF5 /* Info.plist */,
 				F79D31ED1DBB69E400C63FF5 /* Supporting Files */,
-				F7A417EE1ED6C7BF00386653 /* EALiveSocket.h */,
-				F7A417EF1ED6C7BF00386653 /* EALiveSocket.m */,
 			);
 			path = CwngaIOSStudy;
 			sourceTree = "<group>";
@@ -1009,7 +1004,6 @@
 				F7075A621DF4191000DFC083 /* LongestSubstringWithoutRepeatingCharacters.m in Sources */,
 				F7749E0B1DF2EB0C0065F2D2 /* ContainsDuplicateIII.m in Sources */,
 				F705E0981DBB86630081CEED /* TextViewCollectionViewCell.m in Sources */,
-				F7A417F01ED6C7BF00386653 /* EALiveSocket.m in Sources */,
 				F70255BD1DF5A2E3000DECA0 /* CountCompleteTreeNodes.m in Sources */,
 				F7FDE63D1EA6FFF40036E885 /* CwngaPresentedViewController.m in Sources */,
 				F7864CA01EC2D1C600CE55EA /* CwngaCh4AlertHandleWKWebViewController.m in Sources */,
