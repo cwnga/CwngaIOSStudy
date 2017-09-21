@@ -35,17 +35,17 @@ static  NSString * const ReuseIdentifier = @"CollectionViewCell";
     NSURL* url = [[NSURL alloc] initWithString:@"ws://b-lm1.eps.ac.tw1.yahoo.com:4080"];
     SocketIOClient* socket = [[SocketIOClient alloc] initWithSocketURL:url config:@{@"log": @YES,
                                                                                     @"forceWebsockets": @YES,
-                                                                                  //  @"forcePolling":@YES,
+                                                                                    //  @"forcePolling":@YES,
 
                                                                                     @"path":@"/messages/v1/chatRooms",
-//                                                                                    @"secure":@NO,
-//                                                                                    @"selfSigned":@YES,
-//                                                                                    @"extraHeaders":@{
-//                                                                                            @"Upgrade": @"websocket",
-//                                                                                            @"Connection": @"Upgrade",
-//                                                                                            @"Sec-WebSocket-Origin": @"*",
-//                                                                                            @"Sec-WebSocket-Version": @(13),
-//                                                                                            }
+                                                                                    //                                                                                    @"secure":@NO,
+                                                                                    //                                                                                    @"selfSigned":@YES,
+                                                                                    //                                                                                    @"extraHeaders":@{
+                                                                                    //                                                                                            @"Upgrade": @"websocket",
+                                                                                    //                                                                                            @"Connection": @"Upgrade",
+                                                                                    //                                                                                            @"Sec-WebSocket-Origin": @"*",
+                                                                                    //                                                                                            @"Sec-WebSocket-Version": @(13),
+                                                                                    //                                                                                            }
                                                                                     }];
 
     [socket on:@"connect" callback:^(NSArray* data, SocketAckEmitter* ack) {
@@ -57,36 +57,62 @@ static  NSString * const ReuseIdentifier = @"CollectionViewCell";
     [socket on:@"message" callback:^(NSArray* data, SocketAckEmitter* ack) {
         NSLog(@"socket connected");
     }];
-//    [socket onAny:^(SocketAnyEvent * test) {
-//        NSLog(@"%d", self.socket.status);
-//        /*
-//         /// The client has never been connected. Or the client has been reset.
-//         SocketIOClientStatusNotConnected = 0,
-//         /// The client was once connected, but not anymore.
-//         SocketIOClientStatusDisconnected = 1,
-//         /// The client is in the process of connecting.
-//         SocketIOClientStatusConnecting = 2,
-//         /// The client is currently connected.
-//         SocketIOClientStatusConnected = 3,
-//         */
-//
-//        NSLog(@"test");
-//
-//
-//        if (socket.status == 3) {
-//            [socket emit:@"connect" with:@[]];
-//       // [socket emit:@"{\"action\": \"join\",\"chatRoom\": {\"id\": \"23149440978655\"}}" with:@[]];
-//        }
-//
-//    }];
+    //    [socket onAny:^(SocketAnyEvent * test) {
+    //        NSLog(@"%d", self.socket.status);
+    //        /*
+    //         /// The client has never been connected. Or the client has been reset.
+    //         SocketIOClientStatusNotConnected = 0,
+    //         /// The client was once connected, but not anymore.
+    //         SocketIOClientStatusDisconnected = 1,
+    //         /// The client is in the process of connecting.
+    //         SocketIOClientStatusConnecting = 2,
+    //         /// The client is currently connected.
+    //         SocketIOClientStatusConnected = 3,
+    //         */
+    //
+    //        NSLog(@"test");
+    //
+    //
+    //        if (socket.status == 3) {
+    //            [socket emit:@"connect" with:@[]];
+    //       // [socket emit:@"{\"action\": \"join\",\"chatRoom\": {\"id\": \"23149440978655\"}}" with:@[]];
+    //        }
+    //
+    //    }];
 
-    
+
 
     [socket connect];
     self.socket = socket;
 
 
     self.data = @[
+
+                  @{
+                      @"title": @"ReactiveCoCoa",
+                      @"cells": @[
+                              @{
+                                  @"title" : @"RectiveCocoa getting start",
+                                  @"className": @"RectiveCocoaGettingStartViewController"
+                                  },
+                              @{
+                                  @"title" : @"CH1",
+                                  @"className": @"Ch1ViewController"
+                                  },
+                              @{
+                                  @"title" : @"CH2",
+                                  @"className": @"Ch2ViewController"
+                                  },
+                              //Ch3CombineLatest
+                              @{
+                                  @"title" : @"Ch3 - CombineLatest",
+                                  @"className": @"Ch3CombineLatestViewControlller"
+                                  },
+
+                              ]
+
+                      },
+
                   //UIVisualEffectViewTestController
                   @{
                       @"title": @"Dismss",
@@ -127,7 +153,7 @@ static  NSString * const ReuseIdentifier = @"CollectionViewCell";
                                   @"className": @"CollectionViewInsertPerformanceViewController"
                                   },
                               //Ch2CollectionViewReladViewController.h
-  @{
+                              @{
                                   @"title" : @"CollectionView reload",
                                   @"className": @"Ch2CollectionViewReladViewController"
                                   }
@@ -192,26 +218,6 @@ static  NSString * const ReuseIdentifier = @"CollectionViewCell";
 
                       },
 
-                  @{
-                      @"title": @"ReactiveCoCoa",
-                      @"cells": @[
-                              @{
-                                  @"title" : @"CH1",
-                                  @"className": @"Ch1ViewController"
-                                  },
-                              @{
-                                  @"title" : @"CH2",
-                                  @"className": @"Ch2ViewController"
-                                  },
-                              //Ch3CombineLatest
-                              @{
-                                  @"title" : @"Ch3 - CombineLatest",
-                                  @"className": @"Ch3CombineLatestViewControlller"
-                                  },
-
-                              ]
-
-                      }
                   ];
     [self.collectionView registerNib:[UINib nibWithNibName:ReuseIdentifier bundle:nil] forCellWithReuseIdentifier:ReuseIdentifier];
 
@@ -258,7 +264,7 @@ static  NSString * const ReuseIdentifier = @"CollectionViewCell";
 
 - (UICollectionReusableView *)collectionView: (UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath  {
     TitleCollectionReusableView *titleView = [self.collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:TitleCollectionReusableViewIdentifier forIndexPath:indexPath];
-
+    
     titleView.titleLabel.text = self.data[indexPath.section][@"title"];
     return titleView;
 }

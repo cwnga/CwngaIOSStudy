@@ -98,6 +98,8 @@
 		F7D5354B1E2F708700D2C35E /* SKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7D535491E2F708700D2C35E /* SKViewController.m */; };
 		F7D5354C1E2F708700D2C35E /* SKViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7D5354A1E2F708700D2C35E /* SKViewController.xib */; };
 		F7D5354F1E2F70B000D2C35E /* SKImageLikeAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = F7D5354E1E2F70B000D2C35E /* SKImageLikeAnimationView.m */; };
+		F7E6DF281F735E8500099CC1 /* RectiveCocoaGettingStartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7E6DF261F735E8500099CC1 /* RectiveCocoaGettingStartViewController.m */; };
+		F7E6DF291F735E8500099CC1 /* RectiveCocoaGettingStartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7E6DF271F735E8500099CC1 /* RectiveCocoaGettingStartViewController.xib */; };
 		F7F21CCE1DC24E2000E94E8B /* ADKImageColorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7F21CCC1DC24E2000E94E8B /* ADKImageColorViewController.m */; };
 		F7F21CCF1DC24E2000E94E8B /* ADKImageColorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7F21CCD1DC24E2000E94E8B /* ADKImageColorViewController.xib */; };
 		F7FDE6381EA6FFD40036E885 /* CwngaDismissViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7FDE6361EA6FFD40036E885 /* CwngaDismissViewController.m */; };
@@ -262,6 +264,9 @@
 		F7D5354A1E2F708700D2C35E /* SKViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SKViewController.xib; sourceTree = "<group>"; };
 		F7D5354D1E2F70B000D2C35E /* SKImageLikeAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKImageLikeAnimationView.h; sourceTree = "<group>"; };
 		F7D5354E1E2F70B000D2C35E /* SKImageLikeAnimationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKImageLikeAnimationView.m; sourceTree = "<group>"; };
+		F7E6DF251F735E8500099CC1 /* RectiveCocoaGettingStartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RectiveCocoaGettingStartViewController.h; sourceTree = "<group>"; };
+		F7E6DF261F735E8500099CC1 /* RectiveCocoaGettingStartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RectiveCocoaGettingStartViewController.m; sourceTree = "<group>"; };
+		F7E6DF271F735E8500099CC1 /* RectiveCocoaGettingStartViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RectiveCocoaGettingStartViewController.xib; sourceTree = "<group>"; };
 		F7F21CCB1DC24E2000E94E8B /* ADKImageColorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADKImageColorViewController.h; sourceTree = "<group>"; };
 		F7F21CCC1DC24E2000E94E8B /* ADKImageColorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADKImageColorViewController.m; sourceTree = "<group>"; };
 		F7F21CCD1DC24E2000E94E8B /* ADKImageColorViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ADKImageColorViewController.xib; sourceTree = "<group>"; };
@@ -371,6 +376,7 @@
 		F705E07D1DBB715F0081CEED /* ReactiveCocoa */ = {
 			isa = PBXGroup;
 			children = (
+				F7E6DF241F735E4C00099CC1 /* RectiveCocoa_getting_start */,
 				F705E07E1DBB715F0081CEED /* Ch1 */,
 				F705E0821DBB715F0081CEED /* Ch2 */,
 				F7BCA75E1DC2EA5C00404F8E /* Ch3-CombineLatest */,
@@ -710,6 +716,16 @@
 			path = SK;
 			sourceTree = "<group>";
 		};
+		F7E6DF241F735E4C00099CC1 /* RectiveCocoa_getting_start */ = {
+			isa = PBXGroup;
+			children = (
+				F7E6DF251F735E8500099CC1 /* RectiveCocoaGettingStartViewController.h */,
+				F7E6DF261F735E8500099CC1 /* RectiveCocoaGettingStartViewController.m */,
+				F7E6DF271F735E8500099CC1 /* RectiveCocoaGettingStartViewController.xib */,
+			);
+			path = RectiveCocoa_getting_start;
+			sourceTree = "<group>";
+		};
 		F7F21CCA1DC24E0E00E94E8B /* Ch3-ADKImageColorViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -831,6 +847,7 @@
 				F73576341E7ED4CB002BC9D7 /* CwngaCh2WKWebViewController.xib in Resources */,
 				F705E08A1DBB715F0081CEED /* Ch1ViewController.xib in Resources */,
 				F782BEA81DD9558500B6B63F /* DynamicLeftRightLabelViewController.xib in Resources */,
+				F7E6DF291F735E8500099CC1 /* RectiveCocoaGettingStartViewController.xib in Resources */,
 				F705E08E1DBB715F0081CEED /* Ch2ViewController.xib in Resources */,
 				F79D31FD1DBB69E400C63FF5 /* LaunchScreen.storyboard in Resources */,
 				F705E0761DBB6BE90081CEED /* ViewController.xib in Resources */,
@@ -1009,6 +1026,7 @@
 				F7FDE63D1EA6FFF40036E885 /* CwngaPresentedViewController.m in Sources */,
 				F7864CA01EC2D1C600CE55EA /* CwngaCh4AlertHandleWKWebViewController.m in Sources */,
 				F73576331E7ED4CB002BC9D7 /* CwngaCh2WKWebViewController.m in Sources */,
+				F7E6DF281F735E8500099CC1 /* RectiveCocoaGettingStartViewController.m in Sources */,
 				F70255C51DF64C60000DECA0 /* MaxSequenceSubArrayCount.m in Sources */,
 				F70255D41DF6FF23000DECA0 /* MaximumDepthofBinaryTree.m in Sources */,
 				F7075A571DF30BC700DFC083 /* LargestNumber.m in Sources */,
