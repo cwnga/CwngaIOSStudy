@@ -9,7 +9,6 @@
 #import "AppDelegate.h"
 #import "ViewController.h"
 
-@import SocketIO;
 
 @interface AppDelegate ()
 

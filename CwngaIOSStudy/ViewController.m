@@ -10,13 +10,11 @@
 #import "TitleCollectionReusableView.h"
 #import "CollectionViewCell.h"
 #import "ReverseWordsInAString.h"
-#import <SocketIO/SocketIO-Swift.h>
 
 static  NSString * const ReuseIdentifier = @"CollectionViewCell";
 @interface ViewController () <UICollectionViewDelegate, UICollectionViewDataSource>
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 @property (strong, nonatomic) NSArray *data;
-@property (strong, nonatomic) SocketIOClient *socket;
 
 @end
 
@@ -32,59 +30,6 @@ static  NSString * const ReuseIdentifier = @"CollectionViewCell";
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
-    NSURL* url = [[NSURL alloc] initWithString:@"ws://b-lm1.eps.ac.tw1.yahoo.com:4080"];
-    SocketIOClient* socket = [[SocketIOClient alloc] initWithSocketURL:url config:@{@"log": @YES,
-                                                                                    @"forceWebsockets": @YES,
-                                                                                    //  @"forcePolling":@YES,
-
-                                                                                    @"path":@"/messages/v1/chatRooms",
-                                                                                    //                                                                                    @"secure":@NO,
-                                                                                    //                                                                                    @"selfSigned":@YES,
-                                                                                    //                                                                                    @"extraHeaders":@{
-                                                                                    //                                                                                            @"Upgrade": @"websocket",
-                                                                                    //                                                                                            @"Connection": @"Upgrade",
-                                                                                    //                                                                                            @"Sec-WebSocket-Origin": @"*",
-                                                                                    //                                                                                            @"Sec-WebSocket-Version": @(13),
-                                                                                    //                                                                                            }
-                                                                                    }];
-
-    [socket on:@"connect" callback:^(NSArray* data, SocketAckEmitter* ack) {
-        NSLog(@"socket connected");
-    }];
-    [socket on:@"open" callback:^(NSArray* data, SocketAckEmitter* ack) {
-        NSLog(@"socket connected");
-    }];
-    [socket on:@"message" callback:^(NSArray* data, SocketAckEmitter* ack) {
-        NSLog(@"socket connected");
-    }];
-    //    [socket onAny:^(SocketAnyEvent * test) {
-    //        NSLog(@"%d", self.socket.status);
-    //        /*
-    //         /// The client has never been connected. Or the client has been reset.
-    //         SocketIOClientStatusNotConnected = 0,
-    //         /// The client was once connected, but not anymore.
-    //         SocketIOClientStatusDisconnected = 1,
-    //         /// The client is in the process of connecting.
-    //         SocketIOClientStatusConnecting = 2,
-    //         /// The client is currently connected.
-    //         SocketIOClientStatusConnected = 3,
-    //         */
-    //
-    //        NSLog(@"test");
-    //
-    //
-    //        if (socket.status == 3) {
-    //            [socket emit:@"connect" with:@[]];
-    //       // [socket emit:@"{\"action\": \"join\",\"chatRoom\": {\"id\": \"23149440978655\"}}" with:@[]];
-    //        }
-    //
-    //    }];
-
-
-
-    [socket connect];
-    self.socket = socket;
-
 
     self.data = @[
 
